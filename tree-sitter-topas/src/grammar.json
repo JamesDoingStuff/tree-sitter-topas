@@ -1,0 +1,2207 @@
+{
+  "name": "topas",
+  "rules": {
+    "source_file": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "definition"
+        }
+      ]
+    },
+    "definition": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "a"
+        },
+        {
+          "type": "STRING",
+          "value": "aberration_range_change_allowed"
+        },
+        {
+          "type": "STRING",
+          "value": "accumulate_phases_and_save_to_file"
+        },
+        {
+          "type": "STRING",
+          "value": "accumulate_phases_when"
+        },
+        {
+          "type": "STRING",
+          "value": "activate"
+        },
+        {
+          "type": "STRING",
+          "value": "add_pop_1st_2nd_peak"
+        },
+        {
+          "type": "STRING",
+          "value": "add_to_cloud_N"
+        },
+        {
+          "type": "STRING",
+          "value": "add_to_cloud_when"
+        },
+        {
+          "type": "STRING",
+          "value": "add_to_phases_of_weak_reflections"
+        },
+        {
+          "type": "STRING",
+          "value": "adps"
+        },
+        {
+          "type": "STRING",
+          "value": "ai_anti_bump"
+        },
+        {
+          "type": "STRING",
+          "value": "ai_closest_N"
+        },
+        {
+          "type": "STRING",
+          "value": "ai_exclude_eq_0"
+        },
+        {
+          "type": "STRING",
+          "value": "ai_flatten_with_tollerance_of"
+        },
+        {
+          "type": "STRING",
+          "value": "ai_no_self_interation"
+        },
+        {
+          "type": "STRING",
+          "value": "ai_only_eq_0"
+        },
+        {
+          "type": "STRING",
+          "value": "ai_radius"
+        },
+        {
+          "type": "STRING",
+          "value": "ai_sites_1"
+        },
+        {
+          "type": "STRING",
+          "value": "ai_sites_2"
+        },
+        {
+          "type": "STRING",
+          "value": "al"
+        },
+        {
+          "type": "STRING",
+          "value": "amorphous_area"
+        },
+        {
+          "type": "STRING",
+          "value": "amorphous_phase"
+        },
+        {
+          "type": "STRING",
+          "value": "append_bond_lengths"
+        },
+        {
+          "type": "STRING",
+          "value": "append_cartesian"
+        },
+        {
+          "type": "STRING",
+          "value": "append_fractional"
+        },
+        {
+          "type": "STRING",
+          "value": "apply_exp_scale"
+        },
+        {
+          "type": "STRING",
+          "value": "approximate_A"
+        },
+        {
+          "type": "STRING",
+          "value": "atomic_interaction"
+        },
+        {
+          "type": "STRING",
+          "value": "atom_out"
+        },
+        {
+          "type": "STRING",
+          "value": "auto_scale"
+        },
+        {
+          "type": "STRING",
+          "value": "auto_sparse_CG"
+        },
+        {
+          "type": "STRING",
+          "value": "axial_conv"
+        },
+        {
+          "type": "STRING",
+          "value": "axial_del"
+        },
+        {
+          "type": "STRING",
+          "value": "axial_n_beta"
+        },
+        {
+          "type": "STRING",
+          "value": "a_add"
+        },
+        {
+          "type": "STRING",
+          "value": "A_matrix"
+        },
+        {
+          "type": "STRING",
+          "value": "A_matrix_normalized"
+        },
+        {
+          "type": "STRING",
+          "value": "A_matrix_prm_filter"
+        },
+        {
+          "type": "STRING",
+          "value": "b"
+        },
+        {
+          "type": "STRING",
+          "value": "be"
+        },
+        {
+          "type": "STRING",
+          "value": "beq"
+        },
+        {
+          "type": "STRING",
+          "value": "bkg"
+        },
+        {
+          "type": "STRING",
+          "value": "bootstrap_errors"
+        },
+        {
+          "type": "STRING",
+          "value": "box_interaction"
+        },
+        {
+          "type": "STRING",
+          "value": "break_cycle_if_true"
+        },
+        {
+          "type": "STRING",
+          "value": "brindley_spherical_r_cm"
+        },
+        {
+          "type": "STRING",
+          "value": "bring_2nd_peak_to_top"
+        },
+        {
+          "type": "STRING",
+          "value": "broaden_peaks"
+        },
+        {
+          "type": "STRING",
+          "value": "b_add"
+        },
+        {
+          "type": "STRING",
+          "value": "c"
+        },
+        {
+          "type": "STRING",
+          "value": "calculate_Lam"
+        },
+        {
+          "type": "STRING",
+          "value": "capillary_diameter_mm"
+        },
+        {
+          "type": "STRING",
+          "value": "capillary_divergent_beam"
+        },
+        {
+          "type": "STRING",
+          "value": "capillary_parallel_beam"
+        },
+        {
+          "type": "STRING",
+          "value": "capillary_u_cm_inv"
+        },
+        {
+          "type": "STRING",
+          "value": "cell_mass"
+        },
+        {
+          "type": "STRING",
+          "value": "cell_volume"
+        },
+        {
+          "type": "STRING",
+          "value": "cf_hkl_file"
+        },
+        {
+          "type": "STRING",
+          "value": "cf_in_A_matrix"
+        },
+        {
+          "type": "STRING",
+          "value": "charge_flipping"
+        },
+        {
+          "type": "STRING",
+          "value": "chi2"
+        },
+        {
+          "type": "STRING",
+          "value": "chi2_convergence_criteria"
+        },
+        {
+          "type": "STRING",
+          "value": "chk_for_best"
+        },
+        {
+          "type": "STRING",
+          "value": "choose_from"
+        },
+        {
+          "type": "STRING",
+          "value": "choose_randomly"
+        },
+        {
+          "type": "STRING",
+          "value": "choose_to"
+        },
+        {
+          "type": "STRING",
+          "value": "circles_conv"
+        },
+        {
+          "type": "STRING",
+          "value": "cloud"
+        },
+        {
+          "type": "STRING",
+          "value": "cloud"
+        },
+        {
+          "type": "STRING",
+          "value": "cloud_atomic_separation"
+        },
+        {
+          "type": "STRING",
+          "value": "cloud_atomic_separation"
+        },
+        {
+          "type": "STRING",
+          "value": "cloud_extract_and_save_xyzs"
+        },
+        {
+          "type": "STRING",
+          "value": "cloud_fit"
+        },
+        {
+          "type": "STRING",
+          "value": "cloud_formation_omit_rwps"
+        },
+        {
+          "type": "STRING",
+          "value": "cloud_gauss_fwhm"
+        },
+        {
+          "type": "STRING",
+          "value": "cloud_gauss_fwhm"
+        },
+        {
+          "type": "STRING",
+          "value": "cloud_I"
+        },
+        {
+          "type": "STRING",
+          "value": "cloud_load"
+        },
+        {
+          "type": "STRING",
+          "value": "cloud_load_fixed_starting"
+        },
+        {
+          "type": "STRING",
+          "value": "cloud_load_xyzs"
+        },
+        {
+          "type": "STRING",
+          "value": "cloud_load_xyzs"
+        },
+        {
+          "type": "STRING",
+          "value": "cloud_load_xyzs_omit_rwps"
+        },
+        {
+          "type": "STRING",
+          "value": "cloud_match_gauss_fwhm"
+        },
+        {
+          "type": "STRING",
+          "value": "cloud_min_intensity"
+        },
+        {
+          "type": "STRING",
+          "value": "cloud_number_to_extract"
+        },
+        {
+          "type": "STRING",
+          "value": "cloud_N_to_extract"
+        },
+        {
+          "type": "STRING",
+          "value": "cloud_population"
+        },
+        {
+          "type": "STRING",
+          "value": "cloud_population"
+        },
+        {
+          "type": "STRING",
+          "value": "cloud_pre_randimize_add_to"
+        },
+        {
+          "type": "STRING",
+          "value": "cloud_save"
+        },
+        {
+          "type": "STRING",
+          "value": "cloud_save"
+        },
+        {
+          "type": "STRING",
+          "value": "cloud_save_match_xy"
+        },
+        {
+          "type": "STRING",
+          "value": "cloud_save_processed_xyzs"
+        },
+        {
+          "type": "STRING",
+          "value": "cloud_save_xyzs"
+        },
+        {
+          "type": "STRING",
+          "value": "cloud_save_xyzs"
+        },
+        {
+          "type": "STRING",
+          "value": "cloud_stay_within"
+        },
+        {
+          "type": "STRING",
+          "value": "cloud_try_accept"
+        },
+        {
+          "type": "STRING",
+          "value": "conserve_memory"
+        },
+        {
+          "type": "STRING",
+          "value": "consider_lattice_parameters"
+        },
+        {
+          "type": "STRING",
+          "value": "continue_after_convergence"
+        },
+        {
+          "type": "STRING",
+          "value": "convolute_X_recal"
+        },
+        {
+          "type": "STRING",
+          "value": "convolution_step"
+        },
+        {
+          "type": "STRING",
+          "value": "corrected_weight_percent"
+        },
+        {
+          "type": "STRING",
+          "value": "correct_for_atomic_scattering_factors"
+        },
+        {
+          "type": "STRING",
+          "value": "correct_for_temperature_effects"
+        },
+        {
+          "type": "STRING",
+          "value": "crystalline_area"
+        },
+        {
+          "type": "STRING",
+          "value": "current_peak_max_x"
+        },
+        {
+          "type": "STRING",
+          "value": "current_peak_min_x"
+        },
+        {
+          "type": "STRING",
+          "value": "C_matrix"
+        },
+        {
+          "type": "STRING",
+          "value": "C_matrix_normalized"
+        },
+        {
+          "type": "STRING",
+          "value": "d"
+        },
+        {
+          "type": "STRING",
+          "value": "def"
+        },
+        {
+          "type": "STRING",
+          "value": "default_I_attributes"
+        },
+        {
+          "type": "STRING",
+          "value": "degree_of_crystallinity"
+        },
+        {
+          "type": "STRING",
+          "value": "del"
+        },
+        {
+          "type": "STRING",
+          "value": "delete_observed_reflections"
+        },
+        {
+          "type": "STRING",
+          "value": "del_approx"
+        },
+        {
+          "type": "STRING",
+          "value": "determine_values_from_samples"
+        },
+        {
+          "type": "STRING",
+          "value": "displace"
+        },
+        {
+          "type": "STRING",
+          "value": "dont_merge_equivalent_reflections"
+        },
+        {
+          "type": "STRING",
+          "value": "dont_merge_Friedel_pairs"
+        },
+        {
+          "type": "STRING",
+          "value": "do_errors"
+        },
+        {
+          "type": "STRING",
+          "value": "do_errors_include_penalties"
+        },
+        {
+          "type": "STRING",
+          "value": "do_errors_include_restraints"
+        },
+        {
+          "type": "STRING",
+          "value": "dummy"
+        },
+        {
+          "type": "STRING",
+          "value": "dummy_str"
+        },
+        {
+          "type": "STRING",
+          "value": "d_Is"
+        },
+        {
+          "type": "STRING",
+          "value": "elemental_composition"
+        },
+        {
+          "type": "STRING",
+          "value": "element_weight_percent"
+        },
+        {
+          "type": "STRING",
+          "value": "element_weight_percent_known"
+        },
+        {
+          "type": "STRING",
+          "value": "exclude"
+        },
+        {
+          "type": "STRING",
+          "value": "existing_prm"
+        },
+        {
+          "type": "STRING",
+          "value": "exp_conv_const"
+        },
+        {
+          "type": "STRING",
+          "value": "exp_limit"
+        },
+        {
+          "type": "STRING",
+          "value": "extend_calculated_sphere_to"
+        },
+        {
+          "type": "STRING",
+          "value": "extra_X"
+        },
+        {
+          "type": "STRING",
+          "value": "extra_X_left"
+        },
+        {
+          "type": "STRING",
+          "value": "extra_X_right"
+        },
+        {
+          "type": "STRING",
+          "value": "f0"
+        },
+        {
+          "type": "STRING",
+          "value": "f0_f1_f11_atom"
+        },
+        {
+          "type": "STRING",
+          "value": "f11"
+        },
+        {
+          "type": "STRING",
+          "value": "f1"
+        },
+        {
+          "type": "STRING",
+          "value": "filament_length"
+        },
+        {
+          "type": "STRING",
+          "value": "file_out"
+        },
+        {
+          "type": "STRING",
+          "value": "find_origin"
+        },
+        {
+          "type": "STRING",
+          "value": "finish_X"
+        },
+        {
+          "type": "STRING",
+          "value": "fit_obj"
+        },
+        {
+          "type": "STRING",
+          "value": "fit_obj_phase"
+        },
+        {
+          "type": "STRING",
+          "value": "Flack"
+        },
+        {
+          "type": "STRING",
+          "value": "flat_crystal_pre_monochromator_axial_const"
+        },
+        {
+          "type": "STRING",
+          "value": "flip_equation"
+        },
+        {
+          "type": "STRING",
+          "value": "flip_neutron"
+        },
+        {
+          "type": "STRING",
+          "value": "flip_regime_2"
+        },
+        {
+          "type": "STRING",
+          "value": "flip_regime_3"
+        },
+        {
+          "type": "STRING",
+          "value": "fn"
+        },
+        {
+          "type": "STRING",
+          "value": "fourier_map"
+        },
+        {
+          "type": "STRING",
+          "value": "fourier_map_formula"
+        },
+        {
+          "type": "STRING",
+          "value": "fo_transform_X"
+        },
+        {
+          "type": "STRING",
+          "value": "fraction_density_to_flip"
+        },
+        {
+          "type": "STRING",
+          "value": "fraction_of_yobs_to_resample"
+        },
+        {
+          "type": "STRING",
+          "value": "fraction_reflections_weak"
+        },
+        {
+          "type": "STRING",
+          "value": "ft_conv"
+        },
+        {
+          "type": "STRING",
+          "value": "ft_convolution"
+        },
+        {
+          "type": "STRING",
+          "value": "ft_L_max"
+        },
+        {
+          "type": "STRING",
+          "value": "ft_min"
+        },
+        {
+          "type": "STRING",
+          "value": "ft_x_axis_range"
+        },
+        {
+          "type": "STRING",
+          "value": "fullprof_format"
+        },
+        {
+          "type": "STRING",
+          "value": "f_atom_quantity"
+        },
+        {
+          "type": "STRING",
+          "value": "f_atom_type"
+        },
+        {
+          "type": "STRING",
+          "value": "ga"
+        },
+        {
+          "type": "STRING",
+          "value": "gauss_fwhm"
+        },
+        {
+          "type": "STRING",
+          "value": "generate_name_append"
+        },
+        {
+          "type": "STRING",
+          "value": "generate_stack_sequences"
+        },
+        {
+          "type": "STRING",
+          "value": "generate_these"
+        },
+        {
+          "type": "STRING",
+          "value": "gof"
+        },
+        {
+          "type": "STRING",
+          "value": "grs_interaction"
+        },
+        {
+          "type": "STRING",
+          "value": "gsas_format"
+        },
+        {
+          "type": "STRING",
+          "value": "gui_add_bkg"
+        },
+        {
+          "type": "STRING",
+          "value": "h1"
+        },
+        {
+          "type": "STRING",
+          "value": "h2"
+        },
+        {
+          "type": "STRING",
+          "value": "half_hat"
+        },
+        {
+          "type": "STRING",
+          "value": "hat"
+        },
+        {
+          "type": "STRING",
+          "value": "hat_height"
+        },
+        {
+          "type": "STRING",
+          "value": "height"
+        },
+        {
+          "type": "STRING",
+          "value": "histogram_match_scale_fwhm"
+        },
+        {
+          "type": "STRING",
+          "value": "hklis"
+        },
+        {
+          "type": "STRING",
+          "value": "hkl_Is"
+        },
+        {
+          "type": "STRING",
+          "value": "hkl_m_d_th2"
+        },
+        {
+          "type": "STRING",
+          "value": "hkl_Re_Im"
+        },
+        {
+          "type": "STRING",
+          "value": "hm_covalent_fwhm"
+        },
+        {
+          "type": "STRING",
+          "value": "hm_size_limit_in_fwhm"
+        },
+        {
+          "type": "STRING",
+          "value": "I"
+        },
+        {
+          "type": "STRING",
+          "value": "ignore_differences_in_Friedel_pairs"
+        },
+        {
+          "type": "STRING",
+          "value": "index_d"
+        },
+        {
+          "type": "STRING",
+          "value": "index_exclude_max_on_min_lp_less_than"
+        },
+        {
+          "type": "STRING",
+          "value": "index_I"
+        },
+        {
+          "type": "STRING",
+          "value": "index_lam"
+        },
+        {
+          "type": "STRING",
+          "value": "index_max_lp"
+        },
+        {
+          "type": "STRING",
+          "value": "index_max_Nc_on_No"
+        },
+        {
+          "type": "STRING",
+          "value": "index_max_number_of_solutions"
+        },
+        {
+          "type": "STRING",
+          "value": "index_max_th2_error"
+        },
+        {
+          "type": "STRING",
+          "value": "index_max_zero_error"
+        },
+        {
+          "type": "STRING",
+          "value": "index_min_lp"
+        },
+        {
+          "type": "STRING",
+          "value": "index_th2"
+        },
+        {
+          "type": "STRING",
+          "value": "index_th2_resolution"
+        },
+        {
+          "type": "STRING",
+          "value": "index_x0"
+        },
+        {
+          "type": "STRING",
+          "value": "index_zero_error"
+        },
+        {
+          "type": "STRING",
+          "value": "insert"
+        },
+        {
+          "type": "STRING",
+          "value": "inter"
+        },
+        {
+          "type": "STRING",
+          "value": "in_cartesian"
+        },
+        {
+          "type": "STRING",
+          "value": "in_FC"
+        },
+        {
+          "type": "STRING",
+          "value": "in_str_format"
+        },
+        {
+          "type": "STRING",
+          "value": "iters"
+        },
+        {
+          "type": "STRING",
+          "value": "i_on_error_ratio_tolerance"
+        },
+        {
+          "type": "STRING",
+          "value": "I_parameter_names_have_hkl"
+        },
+        {
+          "type": "STRING",
+          "value": "la"
+        },
+        {
+          "type": "STRING",
+          "value": "Lam"
+        },
+        {
+          "type": "STRING",
+          "value": "lam"
+        },
+        {
+          "type": "STRING",
+          "value": "layer"
+        },
+        {
+          "type": "STRING",
+          "value": "layers_tol"
+        },
+        {
+          "type": "STRING",
+          "value": "lebail"
+        },
+        {
+          "type": "STRING",
+          "value": "lg"
+        },
+        {
+          "type": "STRING",
+          "value": "lh"
+        },
+        {
+          "type": "STRING",
+          "value": "line_min"
+        },
+        {
+          "type": "STRING",
+          "value": "lo"
+        },
+        {
+          "type": "STRING",
+          "value": "load"
+        },
+        {
+          "type": "STRING",
+          "value": "local"
+        },
+        {
+          "type": "STRING",
+          "value": "lor_fwhm"
+        },
+        {
+          "type": "STRING",
+          "value": "lpsd_beam_spill_correct_intensity"
+        },
+        {
+          "type": "STRING",
+          "value": "lpsd_equitorial_divergence_degrees"
+        },
+        {
+          "type": "STRING",
+          "value": "lpsd_equitorial_sample_length_mm"
+        },
+        {
+          "type": "STRING",
+          "value": "lpsd_th2_angular_range_degrees"
+        },
+        {
+          "type": "STRING",
+          "value": "lp_search"
+        },
+        {
+          "type": "STRING",
+          "value": "m1"
+        },
+        {
+          "type": "STRING",
+          "value": "m2"
+        },
+        {
+          "type": "STRING",
+          "value": "macro"
+        },
+        {
+          "type": "STRING",
+          "value": "mag_atom_out"
+        },
+        {
+          "type": "STRING",
+          "value": "mag_only"
+        },
+        {
+          "type": "STRING",
+          "value": "mag_only_for_mag_sites"
+        },
+        {
+          "type": "STRING",
+          "value": "mag_space_group"
+        },
+        {
+          "type": "STRING",
+          "value": "marquardt_constant"
+        },
+        {
+          "type": "STRING",
+          "value": "match_transition_matrix_stats"
+        },
+        {
+          "type": "STRING",
+          "value": "max"
+        },
+        {
+          "type": "STRING",
+          "value": "max_r"
+        },
+        {
+          "type": "STRING",
+          "value": "max_X"
+        },
+        {
+          "type": "STRING",
+          "value": "mg"
+        },
+        {
+          "type": "STRING",
+          "value": "min"
+        },
+        {
+          "type": "STRING",
+          "value": "min_d"
+        },
+        {
+          "type": "STRING",
+          "value": "min_grid_spacing"
+        },
+        {
+          "type": "STRING",
+          "value": "min_r"
+        },
+        {
+          "type": "STRING",
+          "value": "min_X"
+        },
+        {
+          "type": "STRING",
+          "value": "mixture_density_g_on_cm3"
+        },
+        {
+          "type": "STRING",
+          "value": "mixture_MAC"
+        },
+        {
+          "type": "STRING",
+          "value": "mlx"
+        },
+        {
+          "type": "STRING",
+          "value": "mly"
+        },
+        {
+          "type": "STRING",
+          "value": "mlz"
+        },
+        {
+          "type": "STRING",
+          "value": "modify_initial_phases"
+        },
+        {
+          "type": "STRING",
+          "value": "modify_peak"
+        },
+        {
+          "type": "STRING",
+          "value": "modify_peak_apply_before_convolutions"
+        },
+        {
+          "type": "STRING",
+          "value": "modify_peak_eqn"
+        },
+        {
+          "type": "STRING",
+          "value": "more_accurate_Voigt"
+        },
+        {
+          "type": "STRING",
+          "value": "move_to"
+        },
+        {
+          "type": "STRING",
+          "value": "move_to_the_next_temperature_regardless_of_the_change_in_rwp"
+        },
+        {
+          "type": "STRING",
+          "value": "n1"
+        },
+        {
+          "type": "STRING",
+          "value": "n2"
+        },
+        {
+          "type": "STRING",
+          "value": "n3"
+        },
+        {
+          "type": "STRING",
+          "value": "n"
+        },
+        {
+          "type": "STRING",
+          "value": "ndx_allp"
+        },
+        {
+          "type": "STRING",
+          "value": "ndx_alp"
+        },
+        {
+          "type": "STRING",
+          "value": "ndx_belp"
+        },
+        {
+          "type": "STRING",
+          "value": "ndx_blp"
+        },
+        {
+          "type": "STRING",
+          "value": "ndx_clp"
+        },
+        {
+          "type": "STRING",
+          "value": "ndx_galp"
+        },
+        {
+          "type": "STRING",
+          "value": "ndx_gof"
+        },
+        {
+          "type": "STRING",
+          "value": "ndx_sg"
+        },
+        {
+          "type": "STRING",
+          "value": "ndx_uni"
+        },
+        {
+          "type": "STRING",
+          "value": "ndx_vol"
+        },
+        {
+          "type": "STRING",
+          "value": "ndx_ze"
+        },
+        {
+          "type": "STRING",
+          "value": "neutron_data"
+        },
+        {
+          "type": "STRING",
+          "value": "normalize_FCs"
+        },
+        {
+          "type": "STRING",
+          "value": "normals_plot"
+        },
+        {
+          "type": "STRING",
+          "value": "normals_plot_min_d"
+        },
+        {
+          "type": "STRING",
+          "value": "no_f11"
+        },
+        {
+          "type": "STRING",
+          "value": "no_inline"
+        },
+        {
+          "type": "STRING",
+          "value": "no_LIMIT_warnings"
+        },
+        {
+          "type": "STRING",
+          "value": "no_normal_equations"
+        },
+        {
+          "type": "STRING",
+          "value": "no_th_dependence"
+        },
+        {
+          "type": "STRING",
+          "value": "number_of_sequences"
+        },
+        {
+          "type": "STRING",
+          "value": "number_of_stacks_per_sequence"
+        },
+        {
+          "type": "STRING",
+          "value": "numerical_area"
+        },
+        {
+          "type": "STRING",
+          "value": "numerical_lor_gauss_conv"
+        },
+        {
+          "type": "STRING",
+          "value": "numerical_lor_ymin_on_ymax"
+        },
+        {
+          "type": "STRING",
+          "value": "num_hats"
+        },
+        {
+          "type": "STRING",
+          "value": "num_highest_I_values_to_keep"
+        },
+        {
+          "type": "STRING",
+          "value": "num_patterns_at_a_time"
+        },
+        {
+          "type": "STRING",
+          "value": "num_posns"
+        },
+        {
+          "type": "STRING",
+          "value": "num_runs"
+        },
+        {
+          "type": "STRING",
+          "value": "num_unique_vx_vy"
+        },
+        {
+          "type": "STRING",
+          "value": "n_avg"
+        },
+        {
+          "type": "STRING",
+          "value": "occ"
+        },
+        {
+          "type": "STRING",
+          "value": "occ_merge"
+        },
+        {
+          "type": "STRING",
+          "value": "occ_merge_radius"
+        },
+        {
+          "type": "STRING",
+          "value": "omit"
+        },
+        {
+          "type": "STRING",
+          "value": "omit_hkls"
+        },
+        {
+          "type": "STRING",
+          "value": "one_on_x_conv"
+        },
+        {
+          "type": "STRING",
+          "value": "only_lps"
+        },
+        {
+          "type": "STRING",
+          "value": "only_penalties"
+        },
+        {
+          "type": "STRING",
+          "value": "on_best_goto"
+        },
+        {
+          "type": "STRING",
+          "value": "on_best_rewind"
+        },
+        {
+          "type": "STRING",
+          "value": "operate_on_points"
+        },
+        {
+          "type": "STRING",
+          "value": "out"
+        },
+        {
+          "type": "STRING",
+          "value": "out_A_matrix"
+        },
+        {
+          "type": "STRING",
+          "value": "out_chi2"
+        },
+        {
+          "type": "STRING",
+          "value": "out_dependences"
+        },
+        {
+          "type": "STRING",
+          "value": "out_dependents_for"
+        },
+        {
+          "type": "STRING",
+          "value": "out_eqn"
+        },
+        {
+          "type": "STRING",
+          "value": "out_file"
+        },
+        {
+          "type": "STRING",
+          "value": "out_fmt"
+        },
+        {
+          "type": "STRING",
+          "value": "out_fmt_err"
+        },
+        {
+          "type": "STRING",
+          "value": "out_prm_vals_dependents_filter"
+        },
+        {
+          "type": "STRING",
+          "value": "out_prm_vals_filter"
+        },
+        {
+          "type": "STRING",
+          "value": "out_prm_vals_on_convergence"
+        },
+        {
+          "type": "STRING",
+          "value": "out_prm_vals_per_iteration"
+        },
+        {
+          "type": "STRING",
+          "value": "out_record"
+        },
+        {
+          "type": "STRING",
+          "value": "out_refinement_stats"
+        },
+        {
+          "type": "STRING",
+          "value": "out_rwp"
+        },
+        {
+          "type": "STRING",
+          "value": "pdf_convolute"
+        },
+        {
+          "type": "STRING",
+          "value": "pdf_data"
+        },
+        {
+          "type": "STRING",
+          "value": "pdf_for_pairs"
+        },
+        {
+          "type": "STRING",
+          "value": "pdf_gauss_fwhm"
+        },
+        {
+          "type": "STRING",
+          "value": "pdf_info"
+        },
+        {
+          "type": "STRING",
+          "value": "pdf_only_eq_0"
+        },
+        {
+          "type": "STRING",
+          "value": "pdf_scale_simple"
+        },
+        {
+          "type": "STRING",
+          "value": "pdf_ymin_on_ymax"
+        },
+        {
+          "type": "STRING",
+          "value": "pdf_zero"
+        },
+        {
+          "type": "STRING",
+          "value": "peak_buffer_based_on"
+        },
+        {
+          "type": "STRING",
+          "value": "peak_buffer_based_on_tol"
+        },
+        {
+          "type": "STRING",
+          "value": "peak_buffer_step"
+        },
+        {
+          "type": "STRING",
+          "value": "peak_type"
+        },
+        {
+          "type": "STRING",
+          "value": "penalties_weighting_K1"
+        },
+        {
+          "type": "STRING",
+          "value": "penalty"
+        },
+        {
+          "type": "STRING",
+          "value": "pen_weight"
+        },
+        {
+          "type": "STRING",
+          "value": "percent_zeros_before_sparse_A"
+        },
+        {
+          "type": "STRING",
+          "value": "phase_MAC"
+        },
+        {
+          "type": "STRING",
+          "value": "phase_name"
+        },
+        {
+          "type": "STRING",
+          "value": "phase_out"
+        },
+        {
+          "type": "STRING",
+          "value": "phase_penalties"
+        },
+        {
+          "type": "STRING",
+          "value": "pick_atoms"
+        },
+        {
+          "type": "STRING",
+          "value": "pick_atoms_when"
+        },
+        {
+          "type": "STRING",
+          "value": "pk_xo"
+        },
+        {
+          "type": "STRING",
+          "value": "point_for_site"
+        },
+        {
+          "type": "STRING",
+          "value": "primary_soller_angle"
+        },
+        {
+          "type": "STRING",
+          "value": "prm"
+        },
+        {
+          "type": "STRING",
+          "value": "prm_with_error"
+        },
+        {
+          "type": "STRING",
+          "value": "process_times"
+        },
+        {
+          "type": "STRING",
+          "value": "pr_str"
+        },
+        {
+          "type": "STRING",
+          "value": "push_peak"
+        },
+        {
+          "type": "STRING",
+          "value": "pv_fwhm"
+        },
+        {
+          "type": "STRING",
+          "value": "pv_lor"
+        },
+        {
+          "type": "STRING",
+          "value": "qa"
+        },
+        {
+          "type": "STRING",
+          "value": "qb"
+        },
+        {
+          "type": "STRING",
+          "value": "qc"
+        },
+        {
+          "type": "STRING",
+          "value": "quick_refine"
+        },
+        {
+          "type": "STRING",
+          "value": "quick_refine_remove"
+        },
+        {
+          "type": "STRING",
+          "value": "qx"
+        },
+        {
+          "type": "STRING",
+          "value": "qy"
+        },
+        {
+          "type": "STRING",
+          "value": "qz"
+        },
+        {
+          "type": "STRING",
+          "value": "randomize_initial_phases_by"
+        },
+        {
+          "type": "STRING",
+          "value": "randomize_on_errors"
+        },
+        {
+          "type": "STRING",
+          "value": "randomize_phases_on_new_cycle_by"
+        },
+        {
+          "type": "STRING",
+          "value": "rand_xyz"
+        },
+        {
+          "type": "STRING",
+          "value": "range"
+        },
+        {
+          "type": "STRING",
+          "value": "rebin_min_merge"
+        },
+        {
+          "type": "STRING",
+          "value": "rebin_tollerance_in_Y"
+        },
+        {
+          "type": "STRING",
+          "value": "rebin_with_dx_of"
+        },
+        {
+          "type": "STRING",
+          "value": "recal_weighting_on_iter"
+        },
+        {
+          "type": "STRING",
+          "value": "receiving_slit_length"
+        },
+        {
+          "type": "STRING",
+          "value": "redo_hkls"
+        },
+        {
+          "type": "STRING",
+          "value": "remove_phase"
+        },
+        {
+          "type": "STRING",
+          "value": "report_on"
+        },
+        {
+          "type": "STRING",
+          "value": "report_on_str"
+        },
+        {
+          "type": "STRING",
+          "value": "resample_from_current_ycalc"
+        },
+        {
+          "type": "STRING",
+          "value": "restraint"
+        },
+        {
+          "type": "STRING",
+          "value": "return"
+        },
+        {
+          "type": "STRING",
+          "value": "rigid"
+        },
+        {
+          "type": "STRING",
+          "value": "rotate"
+        },
+        {
+          "type": "STRING",
+          "value": "Rp"
+        },
+        {
+          "type": "STRING",
+          "value": "Rs"
+        },
+        {
+          "type": "STRING",
+          "value": "r_bragg"
+        },
+        {
+          "type": "STRING",
+          "value": "r_exp"
+        },
+        {
+          "type": "STRING",
+          "value": "r_exp_dash"
+        },
+        {
+          "type": "STRING",
+          "value": "r_p"
+        },
+        {
+          "type": "STRING",
+          "value": "r_p_dash"
+        },
+        {
+          "type": "STRING",
+          "value": "r_wp"
+        },
+        {
+          "type": "STRING",
+          "value": "r_wp_dash"
+        },
+        {
+          "type": "STRING",
+          "value": "r_wp_normal"
+        },
+        {
+          "type": "STRING",
+          "value": "sample_length"
+        },
+        {
+          "type": "STRING",
+          "value": "save_best_chi2"
+        },
+        {
+          "type": "STRING",
+          "value": "save_sequences"
+        },
+        {
+          "type": "STRING",
+          "value": "save_sequences_as_strs"
+        },
+        {
+          "type": "STRING",
+          "value": "save_values_as_best_after_randomization"
+        },
+        {
+          "type": "STRING",
+          "value": "scale"
+        },
+        {
+          "type": "STRING",
+          "value": "scale_Aij"
+        },
+        {
+          "type": "STRING",
+          "value": "scale_density_below_threshold"
+        },
+        {
+          "type": "STRING",
+          "value": "scale_E"
+        },
+        {
+          "type": "STRING",
+          "value": "scale_F000"
+        },
+        {
+          "type": "STRING",
+          "value": "scale_F"
+        },
+        {
+          "type": "STRING",
+          "value": "scale_phases"
+        },
+        {
+          "type": "STRING",
+          "value": "scale_phase_X"
+        },
+        {
+          "type": "STRING",
+          "value": "scale_pks"
+        },
+        {
+          "type": "STRING",
+          "value": "scale_top_peak"
+        },
+        {
+          "type": "STRING",
+          "value": "scale_weak_reflections"
+        },
+        {
+          "type": "STRING",
+          "value": "secondary_soller_angle"
+        },
+        {
+          "type": "STRING",
+          "value": "seed"
+        },
+        {
+          "type": "STRING",
+          "value": "set_initial_phases_to"
+        },
+        {
+          "type": "STRING",
+          "value": "sh_alpha"
+        },
+        {
+          "type": "STRING",
+          "value": "sh_Cij_prm"
+        },
+        {
+          "type": "STRING",
+          "value": "sh_order"
+        },
+        {
+          "type": "STRING",
+          "value": "site"
+        },
+        {
+          "type": "STRING",
+          "value": "sites_angle"
+        },
+        {
+          "type": "STRING",
+          "value": "sites_avg_rand_xyz"
+        },
+        {
+          "type": "STRING",
+          "value": "sites_distance"
+        },
+        {
+          "type": "STRING",
+          "value": "sites_flatten"
+        },
+        {
+          "type": "STRING",
+          "value": "sites_geometry"
+        },
+        {
+          "type": "STRING",
+          "value": "sites_rand_on_avg"
+        },
+        {
+          "type": "STRING",
+          "value": "sites_rand_on_avg_distance_to_randomize"
+        },
+        {
+          "type": "STRING",
+          "value": "sites_rand_on_avg_min_distance"
+        },
+        {
+          "type": "STRING",
+          "value": "site_to_restrain"
+        },
+        {
+          "type": "STRING",
+          "value": "siv_s1_s2"
+        },
+        {
+          "type": "STRING",
+          "value": "smooth"
+        },
+        {
+          "type": "STRING",
+          "value": "space_group"
+        },
+        {
+          "type": "STRING",
+          "value": "sparse_A"
+        },
+        {
+          "type": "STRING",
+          "value": "spherical_harmonics_hkl"
+        },
+        {
+          "type": "STRING",
+          "value": "spiked_phase_measured_weight_percent"
+        },
+        {
+          "type": "STRING",
+          "value": "spv_h1"
+        },
+        {
+          "type": "STRING",
+          "value": "spv_h2"
+        },
+        {
+          "type": "STRING",
+          "value": "spv_l1"
+        },
+        {
+          "type": "STRING",
+          "value": "spv_l2"
+        },
+        {
+          "type": "STRING",
+          "value": "stack"
+        },
+        {
+          "type": "STRING",
+          "value": "stacked_hats_conv"
+        },
+        {
+          "type": "STRING",
+          "value": "start_values_from_site"
+        },
+        {
+          "type": "STRING",
+          "value": "start_X"
+        },
+        {
+          "type": "STRING",
+          "value": "stop_when"
+        },
+        {
+          "type": "STRING",
+          "value": "str"
+        },
+        {
+          "type": "STRING",
+          "value": "strs"
+        },
+        {
+          "type": "STRING",
+          "value": "str_hkl_angle"
+        },
+        {
+          "type": "STRING",
+          "value": "str_hkl_smallest_angle"
+        },
+        {
+          "type": "STRING",
+          "value": "str_mass"
+        },
+        {
+          "type": "STRING",
+          "value": "str_mass"
+        },
+        {
+          "type": "STRING",
+          "value": "sx"
+        },
+        {
+          "type": "STRING",
+          "value": "sy"
+        },
+        {
+          "type": "STRING",
+          "value": "symmetry_obey_0_to_1"
+        },
+        {
+          "type": "STRING",
+          "value": "system_after_save_OUT"
+        },
+        {
+          "type": "STRING",
+          "value": "system_before_save_OUT"
+        },
+        {
+          "type": "STRING",
+          "value": "sz"
+        },
+        {
+          "type": "STRING",
+          "value": "ta"
+        },
+        {
+          "type": "STRING",
+          "value": "tag"
+        },
+        {
+          "type": "STRING",
+          "value": "tag_2"
+        },
+        {
+          "type": "STRING",
+          "value": "tangent_max_triplets_per_h"
+        },
+        {
+          "type": "STRING",
+          "value": "tangent_min_triplets_per_h"
+        },
+        {
+          "type": "STRING",
+          "value": "tangent_num_h_keep"
+        },
+        {
+          "type": "STRING",
+          "value": "tangent_num_h_read"
+        },
+        {
+          "type": "STRING",
+          "value": "tangent_num_k_read"
+        },
+        {
+          "type": "STRING",
+          "value": "tangent_scale_difference_by"
+        },
+        {
+          "type": "STRING",
+          "value": "tangent_tiny"
+        },
+        {
+          "type": "STRING",
+          "value": "tb"
+        },
+        {
+          "type": "STRING",
+          "value": "tc"
+        },
+        {
+          "type": "STRING",
+          "value": "temperature"
+        },
+        {
+          "type": "STRING",
+          "value": "test_a"
+        },
+        {
+          "type": "STRING",
+          "value": "test_al"
+        },
+        {
+          "type": "STRING",
+          "value": "test_b"
+        },
+        {
+          "type": "STRING",
+          "value": "test_be"
+        },
+        {
+          "type": "STRING",
+          "value": "test_c"
+        },
+        {
+          "type": "STRING",
+          "value": "test_ga"
+        },
+        {
+          "type": "STRING",
+          "value": "th2_offset"
+        },
+        {
+          "type": "STRING",
+          "value": "to"
+        },
+        {
+          "type": "STRING",
+          "value": "transition"
+        },
+        {
+          "type": "STRING",
+          "value": "translate"
+        },
+        {
+          "type": "STRING",
+          "value": "try_space_groups"
+        },
+        {
+          "type": "STRING",
+          "value": "two_theta_calibration"
+        },
+        {
+          "type": "STRING",
+          "value": "tx"
+        },
+        {
+          "type": "STRING",
+          "value": "ty"
+        },
+        {
+          "type": "STRING",
+          "value": "tz"
+        },
+        {
+          "type": "STRING",
+          "value": "u11"
+        },
+        {
+          "type": "STRING",
+          "value": "u12"
+        },
+        {
+          "type": "STRING",
+          "value": "u13"
+        },
+        {
+          "type": "STRING",
+          "value": "u22"
+        },
+        {
+          "type": "STRING",
+          "value": "u23"
+        },
+        {
+          "type": "STRING",
+          "value": "u33"
+        },
+        {
+          "type": "STRING",
+          "value": "ua"
+        },
+        {
+          "type": "STRING",
+          "value": "ub"
+        },
+        {
+          "type": "STRING",
+          "value": "uc"
+        },
+        {
+          "type": "STRING",
+          "value": "update"
+        },
+        {
+          "type": "STRING",
+          "value": "user_defined_convolution"
+        },
+        {
+          "type": "STRING",
+          "value": "user_threshold"
+        },
+        {
+          "type": "STRING",
+          "value": "user_y"
+        },
+        {
+          "type": "STRING",
+          "value": "use_best_values"
+        },
+        {
+          "type": "STRING",
+          "value": "use_CG"
+        },
+        {
+          "type": "STRING",
+          "value": "use_extrapolation"
+        },
+        {
+          "type": "STRING",
+          "value": "use_Fc"
+        },
+        {
+          "type": "STRING",
+          "value": "use_layer"
+        },
+        {
+          "type": "STRING",
+          "value": "use_LU"
+        },
+        {
+          "type": "STRING",
+          "value": "use_LU_for_errors"
+        },
+        {
+          "type": "STRING",
+          "value": "use_tube_dispersion_coefficients"
+        },
+        {
+          "type": "STRING",
+          "value": "ux"
+        },
+        {
+          "type": "STRING",
+          "value": "uy"
+        },
+        {
+          "type": "STRING",
+          "value": "uz"
+        },
+        {
+          "type": "STRING",
+          "value": "v1"
+        },
+        {
+          "type": "STRING",
+          "value": "val_on_continue"
+        },
+        {
+          "type": "STRING",
+          "value": "verbose"
+        },
+        {
+          "type": "STRING",
+          "value": "view_cloud"
+        },
+        {
+          "type": "STRING",
+          "value": "view_structure"
+        },
+        {
+          "type": "STRING",
+          "value": "volume"
+        },
+        {
+          "type": "STRING",
+          "value": "weighted_Durbin_Watson"
+        },
+        {
+          "type": "STRING",
+          "value": "weighting"
+        },
+        {
+          "type": "STRING",
+          "value": "weighting_normal"
+        },
+        {
+          "type": "STRING",
+          "value": "weight_percent"
+        },
+        {
+          "type": "STRING",
+          "value": "weight_percent_amorphous"
+        },
+        {
+          "type": "STRING",
+          "value": "whole_hat"
+        },
+        {
+          "type": "STRING",
+          "value": "WPPM_correct_Is"
+        },
+        {
+          "type": "STRING",
+          "value": "WPPM_ft_conv"
+        },
+        {
+          "type": "STRING",
+          "value": "WPPM_L_max"
+        },
+        {
+          "type": "STRING",
+          "value": "WPPM_th2_range"
+        },
+        {
+          "type": "STRING",
+          "value": "x"
+        },
+        {
+          "type": "STRING",
+          "value": "xdd"
+        },
+        {
+          "type": "STRING",
+          "value": "xdds"
+        },
+        {
+          "type": "STRING",
+          "value": "xdd_out"
+        },
+        {
+          "type": "STRING",
+          "value": "xdd_scr"
+        },
+        {
+          "type": "STRING",
+          "value": "xdd_sum"
+        },
+        {
+          "type": "STRING",
+          "value": "xo"
+        },
+        {
+          "type": "STRING",
+          "value": "xo_Is"
+        },
+        {
+          "type": "STRING",
+          "value": "xye_format"
+        },
+        {
+          "type": "STRING",
+          "value": "x_angle_scaler"
+        },
+        {
+          "type": "STRING",
+          "value": "x_axis_to_energy_in_eV"
+        },
+        {
+          "type": "STRING",
+          "value": "x_calculation_step"
+        },
+        {
+          "type": "STRING",
+          "value": "x_scaler"
+        },
+        {
+          "type": "STRING",
+          "value": "y"
+        },
+        {
+          "type": "STRING",
+          "value": "yc_eqn"
+        },
+        {
+          "type": "STRING",
+          "value": "ymin_on_ymax"
+        },
+        {
+          "type": "STRING",
+          "value": "yobs_eqn"
+        },
+        {
+          "type": "STRING",
+          "value": "yobs_to_xo_posn_yobs"
+        },
+        {
+          "type": "STRING",
+          "value": "z"
+        },
+        {
+          "type": "STRING",
+          "value": "z_add"
+        },
+        {
+          "type": "STRING",
+          "value": "z_matrix"
+        }
+      ]
+    }
+  },
+  "extras": [
+    {
+      "type": "PATTERN",
+      "value": "\\s"
+    }
+  ],
+  "conflicts": [],
+  "precedences": [],
+  "externals": [],
+  "inline": [],
+  "supertypes": []
+}
+
