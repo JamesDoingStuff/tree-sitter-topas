@@ -7,9 +7,10 @@ module.exports = grammar({
   rules: {
 	//Add the actual grammar rules here
 	//program: $ => repeat(/\w/)
-  source_file: $ => repeat(choice($.definition,$.test_word)),
-  
-  test_word: $ => 'foo',
+  source_file: $ => repeat(choice($.ml_comment,$.comment,$.definition)),
+  ml_comment: $ => / \/ \* [\s\S]* \* \/ /,
+  comment: $ => /'.*/,
+  //comment: $ => choice(/\/\*[\s\S]*\*\//, /'.*/),
   definition: $ => choice(
     'a',
     'aberration_range_change_allowed',

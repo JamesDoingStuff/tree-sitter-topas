@@ -8,18 +8,26 @@
         "members": [
           {
             "type": "SYMBOL",
-            "name": "definition"
+            "name": "ml_comment"
           },
           {
             "type": "SYMBOL",
-            "name": "test_word"
+            "name": "comment"
+          },
+          {
+            "type": "SYMBOL",
+            "name": "definition"
           }
         ]
       }
     },
-    "test_word": {
-      "type": "STRING",
-      "value": "foo"
+    "ml_comment": {
+      "type": "PATTERN",
+      "value": "\\/\\*[\\s\\S]*\\*\\/"
+    },
+    "comment": {
+      "type": "PATTERN",
+      "value": "'.*"
     },
     "definition": {
       "type": "CHOICE",
