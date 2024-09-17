@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Topas grammar for tree-sitter",
   "main": "bindings/node",
-  "tree-sitter":[
+  "tree-sitter": [
     {
       "scope": "source.topas",
-      "file-types":[
+      "file-types": [
         "inp"
       ],
       "injection-regex": "topas",
