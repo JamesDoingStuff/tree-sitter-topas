@@ -7,8 +7,9 @@ module.exports = grammar({
   rules: {
 	//Add the actual grammar rules here
 	//program: $ => repeat(/\w/)
-  source_file: $ => choice($.definition),
-
+  source_file: $ => repeat(choice($.definition,$.test_word)),
+  
+  test_word: $ => 'foo',
   definition: $ => choice(
     'a',
     'aberration_range_change_allowed',
@@ -556,7 +557,7 @@ module.exports = grammar({
     'z_matrix',
 
   )
-
+  
 }
 });
 

@@ -2,13 +2,24 @@
   "name": "topas",
   "rules": {
     "source_file": {
-      "type": "CHOICE",
-      "members": [
-        {
-          "type": "SYMBOL",
-          "name": "definition"
-        }
-      ]
+      "type": "REPEAT",
+      "content": {
+        "type": "CHOICE",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "name": "definition"
+          },
+          {
+            "type": "SYMBOL",
+            "name": "test_word"
+          }
+        ]
+      }
+    },
+    "test_word": {
+      "type": "STRING",
+      "value": "foo"
     },
     "definition": {
       "type": "CHOICE",

@@ -1,0 +1,9 @@
+{
+  "parser-directories": [
+    "/scratch/gmg29649/topas-tools"
+  ],
+  "theme": {
+	"keyword1": "red",
+	"string": "green"
+  }
+}

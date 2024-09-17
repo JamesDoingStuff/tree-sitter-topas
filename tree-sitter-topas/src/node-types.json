@@ -9,11 +9,15 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": false,
-      "required": true,
+      "multiple": true,
+      "required": false,
       "types": [
         {
           "type": "definition",
+          "named": true
+        },
+        {
+          "type": "test_word",
           "named": true
         }
       ]
@@ -1898,6 +1902,10 @@
   {
     "type": "test_ga",
     "named": false
+  },
+  {
+    "type": "test_word",
+    "named": true
   },
   {
     "type": "th2_offset",
