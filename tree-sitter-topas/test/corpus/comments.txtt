@@ -7,10 +7,15 @@ activate
 'activate
 /* multi-line
 comment */
+activate
 --------
 
 (source_file
-    (comment)
-    (definition)
-    (comment)
-    (ml_comment))
+  (comment
+    (line_comment))
+  (definition)
+  (comment
+    (line_comment))
+  (comment
+    (block_comment))
+  (definition))
