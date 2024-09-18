@@ -1,9 +1,0 @@
-========
-ML Comments
-========
-
-/* multi line comment */
---------
-
-(source_file
-    (ml_comment))
