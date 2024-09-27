@@ -5,6 +5,7 @@ module.exports = grammar({
   name:'topas',
 
   rules: {
+    source_file: $ => repeat(/\s/),
 }
 });
 
