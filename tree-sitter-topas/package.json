@@ -1,0 +1,23 @@
+{
+  "name": "tree-sitter-topas",
+  "version": "1.0.0",
+  "description": "Topas grammar for tree-sitter",
+  "main": "bindings/node",
+  "tree-sitter": [
+    {
+      "scope": "source.topas",
+      "injection-regex": "topas",
+    }
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nan": "^2.20.0"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "0.20.1"
+  }
+}
