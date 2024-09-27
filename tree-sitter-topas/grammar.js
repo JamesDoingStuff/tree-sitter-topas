@@ -5,7 +5,17 @@ module.exports = grammar({
   name:'topas',
 
   rules: {
-    source_file: $ => repeat($.definition),
+    source_file: $ => repeat(choice($.comment,$.definition)),
+
+    comment: $ => choice($.line_comment,$.block_comment),
+      
+    line_comment: $ => /'.*/,
+
+    block_comment: $ => seq(
+      '/*',     
+      repeat(/./),  
+      '*/'
+    ),
 
     definition: $ => choice(
       'a',

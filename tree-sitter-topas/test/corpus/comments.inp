@@ -1,0 +1,22 @@
+========
+Comments
+========
+
+'test comment
+activate
+'activate
+/* multi-line
+comment */
+activate
+--------
+
+(source_file
+  (comment
+    (line_comment))
+  (definition)
+  (comment
+    (line_comment))
+  (comment
+    (block_comment))
+  (definition))
+
