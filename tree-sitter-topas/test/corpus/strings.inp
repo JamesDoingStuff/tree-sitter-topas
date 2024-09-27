@@ -1,0 +1,13 @@
+=======
+Strings
+=======
+
+"This is_a string 123"
+"activate"
+
+-------
+
+(source_file
+      (string_literal)
+      (string_literal))
+

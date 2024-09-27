@@ -5,7 +5,7 @@ module.exports = grammar({
   name:'topas',
 
   rules: {
-    source_file: $ => repeat(choice($.comment,$.definition)),
+    source_file: $ => repeat(choice($.comment,$.definition,$._literal)),
 
     comment: $ => choice($.line_comment,$.block_comment),
       
@@ -15,6 +15,17 @@ module.exports = grammar({
       '/*',     
       repeat(/./),  
       '*/'
+    ),
+    
+    _literal: $ => choice($.string_literal,$.integer_literal,$.float_literal),
+
+    string_literal: $ => /".*"/, // Anything between quote marks e.g., "a word"
+
+    integer_literal: $ => /-?\d+/,
+
+    float_literal: $ => choice(
+      /-?\d*\.\d+/, // Ordinary floats e.g., 1.23
+      /-?\d+(\.\d+)?(e|E)-?\d+(\.\d+)?/ // Scientific notation e.g., 1.3e4 or 2e5.5
     ),
 
     definition: $ => choice(
