@@ -1,0 +1,2 @@
+(definition) @keyword
+(comment) @comment
