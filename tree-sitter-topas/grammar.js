@@ -5,7 +5,7 @@ module.exports = grammar({
   name:'topas',
 
   rules: {
-    source_file: $ => repeat(choice($.comment,$.definition,$._literal)),
+    source_file: $ => repeat(choice($.comment,$.macro_invocation,$.definition,$._literal)),
 
     comment: $ => choice($.line_comment,$.block_comment),
       
@@ -27,6 +27,35 @@ module.exports = grammar({
       /-?\d*\.\d+/, // Ordinary floats e.g., 1.23
       /-?\d+(\.\d+)?(e|E)-?\d+(\.\d+)?/ // Scientific notation e.g., 1.3e4 or 2e5.5
     ),
+    
+    macro_invocation: $ => seq(
+      field('name',$.identifier), 
+      field('arguments',optional($.argument_list)),
+    ),
+
+    identifier: $ => /[A-Za-z]\w*/,  // Initial letter character, then any alpha-numeric or underscore characters are permitted
+    
+    _argument: $ => choice(
+      $._literal,
+      $.identifier,  
+      $.refined_parameter, 
+      $.unrefined_parameter,
+    ),
+
+    argument_list: $ => seq(
+      token.immediate('('),
+      optional($._argument),
+      repeat(seq(',',optional($._argument))), // N.B. Empty arguments *are* permitted
+      ')'
+    ),
+
+    refined_parameter: $ => seq(
+      '@',
+      optional($.identifier),  // Parameter name, ignored internally
+      optional(choice($.integer_literal, $.float_literal))  // Initial value
+    ),
+
+    unrefined_parameter: $ => seq('!',optional(choice($.identifier, $._literal))),
 
     definition: $ => choice(
       'a',

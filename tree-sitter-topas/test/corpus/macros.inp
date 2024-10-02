@@ -1,0 +1,43 @@
+=================
+Macro Invocations
+=================
+
+Cubic(cv)
+Cubic(cv,cv2)
+Testmacro2
+PO(arg1,,arg3)
+
+Failmacro (arg)
+Failmacro2(%)
+-----------------
+
+(source_file
+    (macro_invocation
+        (identifier)
+        (argument_list
+          (identifier)))
+    (macro_invocation
+        (identifier)
+        (argument_list
+          (identifier)
+          (identifier)))
+    (macro_invocation
+        (identifier))
+    (macro_invocation
+        (identifier)
+        (argument_list
+          (identifier)
+          (identifier)))
+
+    (macro_invocation
+        (identifier))
+      (ERROR)
+    (macro_invocation
+      (identifier))
+    (ERROR)
+    (macro_invocation
+      (identifier)
+      (argument_list
+        (ERROR
+          (UNEXPECTED '%')))))
+
