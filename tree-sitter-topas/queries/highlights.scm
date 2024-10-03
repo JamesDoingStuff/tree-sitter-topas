@@ -8,4 +8,9 @@
 
 "@" @operator
 "!" @operator
+
+(binary_expression operator: _ @operator)
+
+(unary_expression "-" @operator)
+
 (identifier) @variable.parameter

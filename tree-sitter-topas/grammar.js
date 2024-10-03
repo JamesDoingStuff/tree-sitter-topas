@@ -1,11 +1,19 @@
 /// <reference types="tree-sitter-cli/dsl" />
 // @ts-check
 
+const PRECEDENCE = {
+  exponentiation: 5,
+  unary: 4,
+  multiplicative: 3,
+  additive: 2,
+  comparative: 1,
+};
+
 module.exports = grammar({
   name:'topas',
 
   rules: {
-    source_file: $ => repeat(choice($.comment,$.macro_invocation,$.definition,$._literal)),
+    source_file: $ => repeat(choice($.comment, $.macro_invocation, $.equation, $.definition, $._literal)),
 
     comment: $ => choice($.line_comment,$.block_comment),
       
@@ -55,6 +63,63 @@ module.exports = grammar({
     ),
 
     unrefined_parameter: $ => seq('!',optional(choice($.identifier, $._literal))),
+
+    equation: $ => choice(
+      seq(
+        field('left', $.definition), // Keyword equations
+        '=',
+        field('right', $._expression),
+        ';',
+        optional(seq(':',choice($.float_literal, $.integer_literal, $.identifier)))), 
+      seq(
+        field('left', choice($.identifier,$.refined_parameter, $.unrefined_parameter)), // Variable assignment equations
+        choice('=','+=','-=','*=','/=','^='), 
+        field('right', $._expression),
+        ';',
+        optional(seq(':',choice($.float_literal, $.integer_literal, $.identifier))))  
+    ), 
+    
+    _expression: $ => choice(
+      prec(1,$.identifier), // Prioritised to prevent macros being identified as identifier * parenthesised expression
+      $.macro_invocation, 
+      $.parenthesised_expression,
+      $.unary_expression,
+      $.binary_expression,
+      $._literal,
+    ),
+    
+    parenthesised_expression: $ => seq(
+      '(',
+      $._expression,
+      ')'
+    ), 
+
+    binary_expression: $ => {
+      const table = [
+        {precedence: PRECEDENCE.comparative, operator: $.comparative},
+        {precedence: PRECEDENCE.additive,operator: $.additive},
+        {precedence: PRECEDENCE.multiplicative,operator: optional($.multiplicative)},
+        {precedence: PRECEDENCE.exponentiation,operator: $.exponentiation},
+      ]
+
+      
+      return choice(...table.map(({precedence,operator}) => prec.left(precedence, seq(
+        field('left', $._expression),
+        
+        field('operator', operator),
+        field('right', $._expression),
+      ))));
+    },
+
+    comparative: $ => choice('==','<=','>=','<','>'),
+    additive: $ => choice('+','-'),
+    multiplicative: $ => choice('*','/','%'),
+    exponentiation: $ => '^',
+
+    unary_expression: $ => prec(PRECEDENCE.unary, seq(
+      '-', 
+      field('argument', $._expression)
+    )),
 
     definition: $ => choice(
       'a',
