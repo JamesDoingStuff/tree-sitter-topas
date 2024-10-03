@@ -30,16 +30,15 @@ module.exports = grammar({
     
     macro_invocation: $ => seq(
       field('name',$.identifier), 
-      field('arguments',optional($.argument_list)),
+      field('arguments', prec(1, optional($.argument_list))),
     ),
 
     identifier: $ => /[A-Za-z]\w*/,  // Initial letter character, then any alpha-numeric or underscore characters are permitted
     
     _argument: $ => choice(
-      $._literal,
-      $.identifier,  
       $.refined_parameter, 
       $.unrefined_parameter,
+      $._expression,
     ),
 
     argument_list: $ => seq(
