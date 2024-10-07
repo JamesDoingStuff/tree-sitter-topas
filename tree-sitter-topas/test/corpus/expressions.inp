@@ -1,0 +1,93 @@
+===========
+Expressions
+===========
+
+x = 5;
+new_var = 1 /old_var;
+new_var *= old_var+1 / 2;
+new_var *= (old_var+1) * 2;
+maths = - a1 * b2;
+exponent = -a2 ^ 3;
+implicit = var1 var2;
+implicit = var1 var2 ^ 3.2;
+ident_test = var1 (var2);
+macro_test = var1(var2);
+eqn_params = Divide(a/b);
+
+fail_test = 1 * 2
+-----------
+
+(source_file
+      (equation
+        (definition)
+        (integer_literal))
+      (equation
+        (identifier)
+        (binary_expression
+          (integer_literal)
+          (identifier)))
+      (equation
+        (identifier)
+        (binary_expression
+          (identifier)
+          (binary_expression
+            (integer_literal)
+            (integer_literal))))
+      (equation
+        (identifier)
+        (binary_expression
+          (parenthesised_expression
+            (binary_expression
+              (identifier)
+              (integer_literal)))
+          (integer_literal)))
+      (equation
+        (identifier)
+        (binary_expression
+          (unary_expression
+            (identifier))
+          (identifier)))
+      (equation
+        (identifier)
+        (unary_expression
+          (binary_expression
+            (identifier)
+            (integer_literal))))
+      (equation
+        (identifier)
+        (binary_expression
+          (identifier)
+          (identifier)))
+      (equation
+        (identifier)
+        (binary_expression
+          (identifier)
+          (binary_expression
+            (identifier)
+            (float_literal))))
+      (equation
+        (identifier)
+        (binary_expression
+          (identifier)
+          (parenthesised_expression
+            (identifier))))
+      (equation
+        (identifier)
+        (macro_invocation
+          (identifier)
+          (argument_list
+            (identifier))))
+      (equation
+        (identifier)
+      (macro_invocation
+          (identifier)
+          (argument_list
+            (binary_expression
+              (identifier)
+              (identifier)))))
+      (equation
+        (identifier)
+        (binary_expression
+          (integer_literal)
+          (integer_literal))
+        (MISSING ";")))

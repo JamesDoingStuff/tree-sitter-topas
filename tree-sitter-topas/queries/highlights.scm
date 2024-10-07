@@ -5,7 +5,12 @@
 (float_literal) @number
 
 (macro_invocation name: (identifier) @function.macro)
-(argument_list ( _ (identifier) @variable.parameter))
 
 "@" @operator
 "!" @operator
+
+(binary_expression operator: _ @operator)
+
+(unary_expression "-" @operator)
+
+(identifier) @variable.parameter

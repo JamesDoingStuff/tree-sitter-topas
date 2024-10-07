@@ -8,7 +8,7 @@ Testmacro2
 PO(arg1,,arg3)
 
 Failmacro (arg)
-Failmacro2(%)
+Failmacro2($)
 -----------------
 
 (source_file
@@ -39,5 +39,5 @@ Failmacro2(%)
       (identifier)
       (argument_list
         (ERROR
-          (UNEXPECTED '%')))))
+          (UNEXPECTED '$')))))
 
