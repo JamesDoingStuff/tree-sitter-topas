@@ -96,10 +96,10 @@ module.exports = grammar({
 
     binary_expression: $ => {
       const table = [
-        {precedence: PRECEDENCE.comparative, operator: $.comparative},
-        {precedence: PRECEDENCE.additive,operator: $.additive},
-        {precedence: PRECEDENCE.multiplicative,operator: optional($.multiplicative)},
-        {precedence: PRECEDENCE.exponentiation,operator: $.exponentiation},
+        {precedence: PRECEDENCE.comparative, operator: $._comparative},
+        {precedence: PRECEDENCE.additive,operator: $._additive},
+        {precedence: PRECEDENCE.multiplicative,operator: optional($._multiplicative)},
+        {precedence: PRECEDENCE.exponentiation,operator: $._exponentiation},
       ]
 
       
@@ -111,10 +111,10 @@ module.exports = grammar({
       ))));
     },
 
-    comparative: $ => choice('==','<=','>=','<','>'),
-    additive: $ => choice('+','-'),
-    multiplicative: $ => choice('*','/','%'),
-    exponentiation: $ => '^',
+    _comparative: $ => choice('==','<=','>=','<','>'),
+    _additive: $ => choice('+','-'),
+    _multiplicative: $ => choice('*','/','%'),
+    _exponentiation: $ => '^',
 
     unary_expression: $ => prec(PRECEDENCE.unary, seq(
       '-', 
