@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+
+jobs:
+  test:
+    name: Test parser
+    runs-on: ${{matrix.os}}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up tree-sitter
+        uses: tree-sitter/setup-action/cli@v1
+
+      - name: Verify generated parser
+        shell: sh
+        run: |-
+          tree-sitter generate --no-bindings
+          git diff --exit-code -- src/parser.c
+        working-directory: tree-sitter-topas/
+
+      - name: Run parser tests
+        shell: sh
+        run: tree-sitter test
+        working-directory: tree-sitter-topas/
