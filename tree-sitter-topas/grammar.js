@@ -10,22 +10,22 @@ const PRECEDENCE = {
 };
 
 module.exports = grammar({
-  name:'topas',
+  name: 'topas',
 
   rules: {
     source_file: $ => repeat(choice($.comment, $.macro_invocation, $.equation, $.definition, $._literal)),
 
-    comment: $ => choice($.line_comment,$.block_comment),
-      
+    comment: $ => choice($.line_comment, $.block_comment),
+
     line_comment: $ => /'.*/,
 
     block_comment: $ => seq(
-      '/*',     
-      repeat(/./),  
-      '*/'
+      '/*',
+      repeat(/./),
+      '*/',
     ),
-    
-    _literal: $ => choice($.string_literal,$.integer_literal,$.float_literal),
+
+    _literal: $ => choice($.string_literal, $.integer_literal, $.float_literal),
 
     string_literal: $ => /".*"/, // Anything between quote marks e.g., "a word"
 
@@ -33,18 +33,18 @@ module.exports = grammar({
 
     float_literal: $ => choice(
       /-?\d*\.\d+/, // Ordinary floats e.g., 1.23
-      /-?\d+(\.\d+)?(e|E)-?\d+(\.\d+)?/ // Scientific notation e.g., 1.3e4 or 2e5.5
+      /-?\d+(\.\d+)?(e|E)-?\d+(\.\d+)?/, // Scientific notation e.g., 1.3e4 or 2e5.5
     ),
-    
+
     macro_invocation: $ => seq(
-      field('name',$.identifier), 
+      field('name', $.identifier),
       field('arguments', prec(1, optional($.argument_list))),
     ),
 
-    identifier: $ => /[A-Za-z]\w*/,  // Initial letter character, then any alpha-numeric or underscore characters are permitted
-    
+    identifier: $ => /[A-Za-z]\w*/, // Initial letter character, then any alpha-numeric or underscore characters are permitted
+
     _argument: $ => choice(
-      $.refined_parameter, 
+      $.refined_parameter,
       $.unrefined_parameter,
       $._expression,
     ),
@@ -52,17 +52,17 @@ module.exports = grammar({
     argument_list: $ => seq(
       token.immediate('('),
       optional($._argument),
-      repeat(seq(',',optional($._argument))), // N.B. Empty arguments *are* permitted
-      ')'
+      repeat(seq(',', optional($._argument))), // N.B. Empty arguments *are* permitted
+      ')',
     ),
 
     refined_parameter: $ => seq(
       '@',
-      optional($.identifier),  // Parameter name, ignored internally
-      optional(choice($.integer_literal, $.float_literal))  // Initial value
+      optional($.identifier), // Parameter name, ignored internally
+      optional(choice($.integer_literal, $.float_literal)), // Initial value
     ),
 
-    unrefined_parameter: $ => seq('!',optional(choice($.identifier, $._literal))),
+    unrefined_parameter: $ => seq('!', optional(choice($.identifier, $._literal))),
 
     equation: $ => choice(
       seq(
@@ -70,55 +70,55 @@ module.exports = grammar({
         '=',
         field('right', $._expression),
         ';',
-        optional(seq(':',choice($.float_literal, $.integer_literal, $.identifier)))), 
+        optional(seq(':', choice($.float_literal, $.integer_literal, $.identifier)))),
       seq(
-        field('left', choice($.identifier,$.refined_parameter, $.unrefined_parameter)), // Variable assignment equations
-        choice('=','+=','-=','*=','/=','^='), 
+        field('left', choice($.identifier, $.refined_parameter, $.unrefined_parameter)), // Variable assignment equations
+        choice('=', '+=', '-=', '*=', '/=', '^='),
         field('right', $._expression),
         ';',
-        optional(seq(':',choice($.float_literal, $.integer_literal, $.identifier))))  
-    ), 
-    
+        optional(seq(':', choice($.float_literal, $.integer_literal, $.identifier)))),
+    ),
+
     _expression: $ => choice(
-      prec(1,$.identifier), // Prioritised to prevent macros being identified as identifier * parenthesised expression
-      $.macro_invocation, 
+      prec(1, $.identifier), // Prioritised to prevent macros being identified as identifier * parenthesised expression
+      $.macro_invocation,
       $.parenthesised_expression,
       $.unary_expression,
       $.binary_expression,
       $._literal,
     ),
-    
+
     parenthesised_expression: $ => seq(
       '(',
       $._expression,
-      ')'
-    ), 
+      ')',
+    ),
 
     binary_expression: $ => {
       const table = [
         {precedence: PRECEDENCE.comparative, operator: $._comparative},
-        {precedence: PRECEDENCE.additive,operator: $._additive},
-        {precedence: PRECEDENCE.multiplicative,operator: optional($._multiplicative)},
-        {precedence: PRECEDENCE.exponentiation,operator: $._exponentiation},
-      ]
+        {precedence: PRECEDENCE.additive, operator: $._additive},
+        {precedence: PRECEDENCE.multiplicative, operator: optional($._multiplicative)},
+        {precedence: PRECEDENCE.exponentiation, operator: $._exponentiation},
+      ];
 
-      
-      return choice(...table.map(({precedence,operator}) => prec.left(precedence, seq(
+
+      return choice(...table.map(({precedence, operator}) => prec.left(precedence, seq(
         field('left', $._expression),
-        
+
         field('operator', operator),
         field('right', $._expression),
       ))));
     },
 
-    _comparative: $ => choice('==','<=','>=','<','>'),
-    _additive: $ => choice('+','-'),
-    _multiplicative: $ => choice('*','/','%'),
+    _comparative: $ => choice('==', '<=', '>=', '<', '>'),
+    _additive: $ => choice('+', '-'),
+    _multiplicative: $ => choice('*', '/', '%'),
     _exponentiation: $ => '^',
 
     unary_expression: $ => prec(PRECEDENCE.unary, seq(
-      '-', 
-      field('argument', $._expression)
+      '-',
+      field('argument', $._expression),
     )),
 
     definition: $ => choice(
@@ -667,7 +667,7 @@ module.exports = grammar({
       'z_add',
       'z_matrix',
 
-    )
-}
+    ),
+  },
 });
 
