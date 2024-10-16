@@ -131,7 +131,28 @@ module.exports = grammar({
       $.unrefined_parameter,
     ),
 
+    parameter_list: $ => seq(
+      token.immediate('('),
+      optional('&'),
+      optional($.identifier),
+      repeat(seq(',', optional('&'), optional($.identifier))),
+      ')',
+    ),
+
+    macro_declaration: $ => seq(
+      token('macro'),
+      optional('&'),
+      field('name', $.identifier),
+      field('parameters', optional($.parameter_list)),
+      field('body', seq(
+        '{',
+        repeat($._block_item),
+        '}',
+      )),
+    ),
+
     _global_preprocessor_directive: $ => choice(
+      $.macro_declaration,
       $.preprocessor_include,
       $.preprocessor_delete,
       $.preprocessor_define,
@@ -425,7 +446,6 @@ module.exports = grammar({
       'lp_search',
       'm1',
       'm2',
-      'macro',
       'mag_atom_out',
       'mag_only',
       'mag_only_for_mag_sites',
