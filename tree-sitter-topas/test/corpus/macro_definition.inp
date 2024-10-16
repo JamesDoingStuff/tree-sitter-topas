@@ -1,0 +1,28 @@
+==================
+Macro Declarations
+==================
+
+macro My_macro(& var1, var2){
+    a = 5 * 2; : 0 
+    activate PI
+} 
+macro name {}
+
+------------------
+
+(source_file
+    (macro_declaration
+        (identifier)
+        (parameter_list
+            (identifier)
+            (identifier))
+        (equation
+            (definition)
+            (binary_expression
+                (integer_literal)
+                (integer_literal))
+        (integer_literal))
+        (definition)
+        (identifier))
+    (macro_declaration
+        (identifier)))
