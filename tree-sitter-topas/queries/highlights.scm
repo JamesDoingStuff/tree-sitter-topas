@@ -6,8 +6,12 @@
 
 (macro_invocation name: (identifier) @function.macro)
 
-"@" @operator
-"!" @operator
+[
+    "@"
+    "!" 
+] @operator
+
+( _ directive: _ @keyword.preprocessor)
 
 (binary_expression operator: _ @operator)
 

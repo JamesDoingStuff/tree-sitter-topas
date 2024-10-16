@@ -1,0 +1,41 @@
+============
+If statement
+============
+
+#ifdef STANDARD_MACROS
+    #undef STANDARD_MACROS
+    #define STANDARD_MACROS
+#endif
+
+------------
+(source_file
+    (preprocessor_if_statement
+        (identifier)
+        (preprocessor_define
+            (identifier))
+        (preprocessor_define
+            (identifier))))
+
+=============
+Delete macros
+=============
+
+#delete_macros {Macro1 Macro2 Macro3}
+
+-------------
+(source_file
+    (preprocessor_delete
+        (identifier)
+        (identifier)
+        (identifier)))
+
+============
+Include file
+============
+
+#include "my include file.inc"
+
+------------
+(source_file
+    (preprocessor_include
+        (string_literal)))

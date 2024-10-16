@@ -13,7 +13,7 @@ module.exports = grammar({
   name: 'topas',
 
   rules: {
-    source_file: $ => repeat(choice($.comment, $.macro_invocation, $.equation, $.definition, $._literal)),
+    source_file: $ => repeat(choice($.comment, $.macro_invocation, $.equation, $.definition, $._literal, $._global_preprocessor_directive)),
 
     comment: $ => choice($.line_comment, $.block_comment),
 
@@ -56,13 +56,13 @@ module.exports = grammar({
       ')',
     ),
 
-    refined_parameter: $ => seq(
+    refined_parameter: $ => prec.left(seq(
       '@',
       optional($.identifier), // Parameter name, ignored internally
       optional(choice($.integer_literal, $.float_literal)), // Initial value
-    ),
+    )),
 
-    unrefined_parameter: $ => seq('!', optional(choice($.identifier, $._literal))),
+    unrefined_parameter: $ => prec.left(seq('!', optional(choice($.identifier, $._literal)))),
 
     equation: $ => choice(
       seq(
@@ -120,6 +120,74 @@ module.exports = grammar({
       '-',
       field('argument', $._expression),
     )),
+
+    _block_item: $ => choice(
+      $.definition,
+      $.equation,
+      $.comment,
+      $._global_preprocessor_directive,
+      $._expression,
+      $.refined_parameter,
+      $.unrefined_parameter,
+    ),
+
+    _global_preprocessor_directive: $ => choice(
+      $.preprocessor_include,
+      $.preprocessor_delete,
+      $.preprocessor_define,
+      $.preprocessor_call,
+      $.preprocessor_if_statement,
+    ),
+
+    preprocessor_include: $ => seq(field('directive', '#include'), field('path', $.string_literal)),
+    preprocessor_delete: $ => seq(field('directive', '#delete_macros'), field('arguments', seq('{', repeat($.identifier), '}'))),
+    preprocessor_define: $ => seq(field('directive', choice('#define', '#undef')), field('argument', $.identifier)),
+    preprocessor_call: $ => field('directive', '#seed'),
+
+    preprocessor_if_statement: $ => seq(
+      choice(
+        $._preproc_if,
+        $._preproc_ifdef,
+        $._preproc_ifndef,
+      ),
+      repeat($._preproc_elseif),
+      optional($._preproc_else),
+      field('directive', '#endif'),
+    ),
+
+    _preproc_if: $ => seq(
+      field('directive', '#if'),
+      optional('='),
+      field('condition', $._expression),
+      ';',
+      optional(repeat($._block_item)),
+    ),
+
+    _preproc_ifdef: $ => seq(
+      field('directive', '#ifdef'),
+      optional('!'),
+      field('argument', $.identifier),
+      optional(repeat($._block_item)),
+    ),
+
+    _preproc_ifndef: $ => seq(
+      field('directive', '#ifndef'),
+      field('argument', $.identifier),
+      optional(repeat($._block_item)),
+    ),
+
+    _preproc_elseif: $ => seq(
+      field('directive', '#elseif'),
+      optional('='),
+      field('condition', $._expression),
+      ';',
+      optional(repeat($._block_item)),
+    ),
+
+    _preproc_else: $ => seq(
+      field('directive', '#else'),
+      optional(repeat($._block_item)),
+    ),
 
     definition: $ => choice(
       'a',
