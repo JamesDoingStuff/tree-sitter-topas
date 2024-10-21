@@ -146,7 +146,7 @@ module.exports = grammar({
       field('parameters', optional($.parameter_list)),
       field('body', seq(
         '{',
-        repeat($._block_item),
+        repeat(choice($._block_item, $._macro_preprocessor_directive)),
         '}',
       )),
     ),
@@ -209,6 +209,58 @@ module.exports = grammar({
       field('directive', '#else'),
       optional(repeat($._block_item)),
     ),
+
+    _macro_preprocessor_directive: $ => choice(
+      $.macro_if_statement,
+      $.macro_operator_directive,
+      alias($._macro_unique, $.macro_operator_directive),
+    ),
+
+    macro_if_statement: $ => seq(
+      choice(
+        $._m_if,
+        $._m_ifarg,
+      ),
+      repeat($._m_elseif),
+      optional($._m_else),
+      field('directive', '#m_endif'),
+    ),
+
+    _m_if: $ => seq(
+      field('directive', '#m_if'),
+      field('argument', $.binary_expression),
+      ';',
+      optional(repeat($._block_item)),
+    ),
+
+    _m_elseif: $ => seq(
+      field('directive', '#m_elseif'),
+      field('argument', $.binary_expression),
+      ';',
+      optional(repeat($._block_item)),
+    ),
+
+    _m_ifarg: $ => seq(
+      field('directive', '#m_ifarg'),
+      field('argument', $.identifier),
+      choice(
+        field('directive', choice('#m_code', '#_eqn', '#m_code_refine', '#m_one_word')),
+        $.string_literal,
+      ),
+      optional(repeat($._block_item)),
+    ),
+
+    _m_else: $ => seq(
+      field('directive', '#m_else'),
+      optional(repeat($._block_item)),
+    ),
+
+    macro_operator_directive: $ => choice(
+      field('directive', choice('#m_argu', '#m_first_word', '#m_unique_not_refine')),
+      field('argument', $.identifier),
+    ),
+
+    _macro_unique: $ => field('directive', '#m_unique'),
 
     definition: $ => choice(
       'a',

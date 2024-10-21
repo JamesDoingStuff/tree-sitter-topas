@@ -39,3 +39,93 @@ Include file
 (source_file
     (preprocessor_include
         (string_literal)))
+
+============================
+Macro directive if statement
+============================
+
+macro TEST(arg1) {
+    #m_if arg1 == 2;
+        al arg1
+    #m_elseif arg1 == 1;
+        be arg1
+    #m_else
+        ga arg1
+    #m_endif
+}
+
+----------------------------
+
+(source_file
+    (macro_declaration
+        (identifier)
+        (parameter_list
+          (identifier))
+          (macro_if_statement
+            (binary_expression
+              (identifier)
+              (integer_literal))
+            (definition)
+            (identifier)
+            (binary_expression
+              (identifier)
+              (integer_literal))
+            (definition)
+            (identifier)
+            (definition)
+            (identifier))))
+
+======================
+Macro directive if_arg
+======================
+
+macro TEST(arg1) {
+    #m_ifarg arg1 "some string"
+        parameter = 5;
+    #m_endif
+
+    #m_ifarg arg1 #m_code
+        parameter = 1;
+    #m_endif
+}
+
+----------------------
+(source_file
+    (macro_declaration
+        (identifier)
+        (parameter_list
+          (identifier))
+        (macro_if_statement
+          (identifier)
+          (string_literal)
+          (equation
+            (identifier)
+            (integer_literal)))
+        (macro_if_statement
+          (identifier)
+          (equation
+            (identifier)
+            (integer_literal)))))
+
+========================
+Macro directive operator
+========================
+
+macro Operate(arg) {
+    #m_first_word arg
+    #m_unique_not_refine arg
+    #m_argu arg
+}
+
+------------------------
+(source_file
+      (macro_declaration
+        (identifier)
+        (parameter_list
+          (identifier))
+        (macro_operator_directive)
+        (identifier)
+        (macro_operator_directive)
+        (identifier)
+        (macro_operator_directive)
+        (identifier)))
