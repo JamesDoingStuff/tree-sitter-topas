@@ -2,8 +2,8 @@
 Strings
 =======
 
-"This is_a string 123"
-"activate"
+"string"
+"%!=+"
 
 -------
 
@@ -11,3 +11,23 @@ Strings
       (string_literal)
       (string_literal))
 
+=======================================
+Strings containing numbers and keywords
+=======================================
+
+"string 123"
+"activate"
+
+---------------------------------------
+(source_file
+      (string_literal)
+      (string_literal))
+
+======================
+Missing closing quotes
+:error
+======================
+
+"open string
+
+----------------------

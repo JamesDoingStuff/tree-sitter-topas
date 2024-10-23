@@ -1,21 +1,31 @@
-========
-Comments
-========
+=============
+Line comments
+=============
 
 'test comment
 activate
 'activate
-/* multi-line
-comment */
-activate
---------
 
+-------------
 (source_file
   (comment
     (line_comment))
   (definition)
   (comment
-    (line_comment))
+    (line_comment)))
+
+==============
+Block comments
+==============
+
+/* multi-line
+correct_for_atomic_scattering_factors
+'line comment within a block comment
+comment */
+activate
+
+--------------
+(source_file
   (comment
     (block_comment))
   (definition))
