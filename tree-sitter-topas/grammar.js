@@ -80,46 +80,74 @@ module.exports = grammar({
     ),
 
     _expression: $ => choice(
-      prec(1, $.identifier), // Prioritised to prevent macros being identified as identifier * parenthesised expression
-      $.macro_invocation,
-      $.parenthesised_expression,
+      $._closed_expression,
       $.unary_expression,
       $.binary_expression,
+    ),
+
+    _closed_expression: $ => choice(
+      prec(1, $.identifier),
+      $.macro_invocation,
+      $.parenthesised_expression,
       $._literal,
     ),
+
+    _exponentiation: $ => prec.left(PRECEDENCE.exponentiation, seq(
+      field('left', choice(
+        $._closed_expression,
+        alias($._exponentiation, $.binary_expression),
+      )),
+      field('operator', '^'),
+      field('right', $._expression),
+    )),
+
+    binary_expression: $ => choice(
+
+      $._exponentiation,
+
+      prec.left(PRECEDENCE.multiplicative, seq(
+        field('left', $._expression),
+        field('operator', choice('*', '/', '%')),
+        field('right', $._expression),
+      )),
+
+      prec.left(PRECEDENCE.multiplicative, seq(
+        field('left', $._expression),
+        field('right', choice(
+          $._closed_expression,
+          alias($._exponentiation, $.binary_expression),
+        )),
+      )),
+
+      prec.left(PRECEDENCE.additive, seq(
+        field('left', $._expression),
+        field('operator', choice('+', '-')),
+        field('right', $._expression),
+      )),
+
+      prec.left(PRECEDENCE.comparative, seq(
+        field('left', $._expression),
+        field('operator', choice('==', '<', '>', '<=', '>=')),
+        field('right', $._expression),
+      )),
+    ),
+
+    unary_expression: $ => prec.right(PRECEDENCE.unary, seq(
+      field('operator', choice('+', '-')),
+      field('argument', choice(
+        $.identifier,
+        $.parenthesised_expression,
+        $.float_literal,
+        $.integer_literal,
+        alias($._exponentiation, $.binary_expression),
+      )),
+    )),
 
     parenthesised_expression: $ => seq(
       '(',
       $._expression,
       ')',
     ),
-
-    binary_expression: $ => {
-      const table = [
-        {precedence: PRECEDENCE.comparative, operator: $._comparative},
-        {precedence: PRECEDENCE.additive, operator: $._additive},
-        {precedence: PRECEDENCE.multiplicative, operator: optional($._multiplicative)},
-        {precedence: PRECEDENCE.exponentiation, operator: $._exponentiation},
-      ];
-
-
-      return choice(...table.map(({precedence, operator}) => prec.left(precedence, seq(
-        field('left', $._expression),
-
-        field('operator', operator),
-        field('right', $._expression),
-      ))));
-    },
-
-    _comparative: $ => choice('==', '<=', '>=', '<', '>'),
-    _additive: $ => choice('+', '-'),
-    _multiplicative: $ => choice('*', '/', '%'),
-    _exponentiation: $ => '^',
-
-    unary_expression: $ => prec(PRECEDENCE.unary, seq(
-      '-',
-      field('argument', $._expression),
-    )),
 
     _block_item: $ => choice(
       $.definition,
