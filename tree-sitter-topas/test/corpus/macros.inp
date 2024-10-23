@@ -1,43 +1,75 @@
-=================
-Macro Invocations
-=================
+============
+No arguments
+============
+
+Testmacro2
+
+------------
+(source_file
+  (macro_invocation
+    (identifier)))
+
+===============
+Single argument
+===============
 
 Cubic(cv)
+Maths(12.4)
+
+---------------
+(source_file
+  (macro_invocation
+    (identifier)
+    (argument_list
+      (identifier)))
+  (macro_invocation
+    (identifier)
+    (argument_list
+      (float_literal))))
+
+==================
+Multiple arguments
+==================
+
 Cubic(cv,cv2)
-Testmacro2
+
+------------------
+(source_file
+  (macro_invocation
+    (identifier)
+    (argument_list
+      (identifier)
+      (identifier))))
+
+==============
+Empty argument
+==============
+
 PO(arg1,,arg3)
 
+--------------
+(source_file
+  (macro_invocation
+    (identifier)
+    (argument_list
+      (identifier)
+      (identifier))))
+
+====================
+Erroneous whitespace
+:error
+====================
+
 Failmacro (arg)
-Failmacro2($)
+
 -----------------
 
-(source_file
-    (macro_invocation
-        (identifier)
-        (argument_list
-          (identifier)))
-    (macro_invocation
-        (identifier)
-        (argument_list
-          (identifier)
-          (identifier)))
-    (macro_invocation
-        (identifier))
-    (macro_invocation
-        (identifier)
-        (argument_list
-          (identifier)
-          (identifier)))
+================
+Invalid argument
+:error
+================
 
-    (macro_invocation
-        (identifier))
-      (ERROR)
-    (macro_invocation
-      (identifier))
-    (ERROR)
-    (macro_invocation
-      (identifier)
-      (argument_list
-        (ERROR
-          (UNEXPECTED '$')))))
+Failmacro2($)
+
+----------------
 
