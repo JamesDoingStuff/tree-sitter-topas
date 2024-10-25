@@ -15,6 +15,7 @@
 
 "macro" @keyword.preprocessor
 (macro_declaration name: (identifier) @function.macro)
+(macro_list name: (identifier) @function.macro)
 
 ( _ directive: _ @keyword.preprocessor)
 
