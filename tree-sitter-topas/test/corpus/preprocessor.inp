@@ -56,6 +56,20 @@ Output
         (identifier))
       (integer_literal))
 
+=================================
+Preprocessor variable declaration
+=================================
+
+#prm a1 = "a_string";
+
+---------------------------------
+
+(source_file
+    (preprocessor_variable_declaration
+        (identifier)
+        (simple_assignment
+            (string_literal))))
+
 ============================
 Macro directive if statement
 ============================
@@ -114,14 +128,14 @@ macro TEST(arg1) {
         (macro_if_statement
           (identifier)
           (string_literal)
-          (identifier)
-          (simple_assignment
-            (integer_literal)))
+            (identifier)
+            (simple_assignment
+                (integer_literal)))
         (macro_if_statement
-          (identifier)
-          (identifier)
-          (simple_assignment
-            (integer_literal)))))
+            (identifier)
+            (identifier)
+            (simple_assignment
+                (integer_literal)))))
 
 ========================
 Macro directive operator

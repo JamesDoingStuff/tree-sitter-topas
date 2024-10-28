@@ -2,184 +2,204 @@
 Simple expressions
 ==================
 
-x1 = 5;
-new_var = 1 /old_var;
-subtraction = x - 5;
-addition = 5 + x;
-exponentiation = 15.2 ^ x;
+prm x = 5;
+prm new_var = 1 /old_var;
+local subtraction = x - 5;
+prm addition = 5 + x;
+existing_prm exponentiation = 15.2 ^ x;
 
 ------------------
 (source_file
-  (identifier)
-  (simple_assignment
-    (integer_literal))
-  (identifier)
-  (simple_assignment
-    (binary_expression
-      (integer_literal)
-      (identifier)))
-  (identifier)
-  (simple_assignment
-    (binary_expression
-      (identifier)
+  (variable_declaration
+    (identifier)
+    (simple_assignment
       (integer_literal)))
-  (identifier)
-  (simple_assignment
-    (binary_expression
-      (integer_literal)
-      (identifier)))
-  (identifier)
-  (simple_assignment
-    (binary_expression
-      (float_literal)
-      (identifier))))
+  (variable_declaration
+    (identifier)
+    (simple_assignment
+      (binary_expression
+        (integer_literal)
+        (identifier))))
+  (variable_declaration
+    (identifier)
+    (simple_assignment
+      (binary_expression
+        (identifier)
+        (integer_literal))))
+  (variable_declaration
+    (identifier)
+    (simple_assignment
+      (binary_expression
+        (integer_literal)
+        (identifier))))
+  (variable_assignment
+    (identifier)
+    (simple_assignment
+      (binary_expression
+        (float_literal)
+        (identifier)))))
 
 ==========================
 Binary operator precedence
 ==========================
 
-new_var *= old_var+1 / 2;
-new_var *= (old_var+1) * 2;
+existing_prm new_var *= old_var+1 / 2;
+existing_prm new_var *= (old_var+1) * 2;
 
 --------------------------
 (source_file
-  (identifier)
-  (compound_assignment
-    (binary_expression
-      (identifier)
+  (variable_assignment
+    (identifier)
+    (compound_assignment
       (binary_expression
-        (integer_literal)
-        (integer_literal))))
-  (identifier)
-  (compound_assignment
-    (binary_expression
-      (parenthesised_expression
+        (identifier)
         (binary_expression
-          (identifier)
-          (integer_literal)))
-      (integer_literal))))
+          (integer_literal)
+          (integer_literal)))))
+  (variable_assignment
+    (identifier)
+    (compound_assignment
+      (binary_expression
+        (parenthesised_expression
+          (binary_expression
+            (identifier)
+            (integer_literal)))
+        (integer_literal)))))
 
 =========================
 Unary operator precedence
 =========================
-maths = - a1 * b2;
-exponent = -a2 ^ 3;
-multiply = a4 * - b5;
-negative_parentheses = - (a_variable);
-unary_subtraction = - 5 - 5;
-unary_exponent = x ^ +y;
+prm maths = - a1 * b2;
+prm exponent = -a2 ^ 3;
+prm multiply = a4 * - b5;
+prm negative_parentheses = - (a_variable);
+prm unary_subtraction = - 5 - 5;
+prm unary_exponent = x ^ +y;
 
 -------------------------
 (source_file
-  (identifier)
+  (variable_declaration
+    (identifier)
     (simple_assignment
-      (binary_expression
-        (unary_expression
-          (identifier))
-        (identifier)))
+        (binary_expression
+          (unary_expression
+            (identifier))
+          (identifier))))
+  (variable_declaration
     (identifier)
     (simple_assignment
       (unary_expression
         (binary_expression
           (identifier)
-          (integer_literal))))
-    (identifier)
-    (simple_assignment
-      (binary_expression
-        (identifier)
-        (unary_expression
-          (identifier))))
-    (identifier)
-    (simple_assignment
-      (unary_expression
-        (parenthesised_expression
-          (identifier))))
-    (identifier)
-    (simple_assignment
-      (binary_expression
-        (unary_expression
-          (integer_literal))
-        (integer_literal)))
+          (integer_literal)))))
+  (variable_declaration
     (identifier)
     (simple_assignment
       (binary_expression
         (identifier)
         (unary_expression
           (identifier)))))
+  (variable_declaration
+    (identifier)
+    (simple_assignment
+      (unary_expression
+        (parenthesised_expression
+          (identifier)))))
+  (variable_declaration
+    (identifier)
+    (simple_assignment
+      (binary_expression
+        (unary_expression
+          (integer_literal))
+        (integer_literal))))
+  (variable_declaration
+    (identifier)
+    (simple_assignment
+      (binary_expression
+        (identifier)
+        (unary_expression
+          (identifier))))))
 
 =======================
 Implicit multiplication
 =======================
 
-implicit = var1 var2;
-implicit = var1 var2 ^ 3.2;
-ident_test = var1 (var2);
-macro_test = var1(var2);
-parentheses = (12.5/2) (var1 + 8);
-as_second_term = first_param / second_param 13.37;
+prm implicit = var1 var2;
+prm implicit = var1 var2 ^ 3.2;
+prm ident_test = var1 (var2);
+prm macro_test = var1(var2);
+prm parentheses = (12.5/2) (var1 + 8);
+prm as_second_term = first_param / second_param 13.37;
 
 -----------------------
 (source_file
-  (identifier)
-  (simple_assignment
-    (binary_expression
-      (identifier)
-      (identifier)))
-  (identifier)
-  (simple_assignment
-    (binary_expression
-      (identifier)
+  (variable_declaration
+    (identifier)
+    (simple_assignment
       (binary_expression
         (identifier)
-        (float_literal))))
-  (identifier)
-  (simple_assignment
-    (binary_expression
-      (identifier)
-      (parenthesised_expression
         (identifier))))
-  (identifier)
-  (simple_assignment
-    (macro_invocation
-      (identifier)
-      (argument_list
-        (identifier))))
-  (identifier)
-  (simple_assignment
-    (binary_expression
-      (parenthesised_expression
-        (binary_expression
-          (float_literal)
-          (integer_literal)))
-      (parenthesised_expression
+  (variable_declaration
+    (identifier)
+    (simple_assignment
+      (binary_expression
+        (identifier)
         (binary_expression
           (identifier)
-          (integer_literal)))))
-  (identifier)
-  (simple_assignment
-    (binary_expression
+          (float_literal)))))
+  (variable_declaration
+    (identifier)
+    (simple_assignment
       (binary_expression
         (identifier)
-        (identifier))
-      (float_literal))))
+        (parenthesised_expression
+          (identifier)))))
+  (variable_declaration
+    (identifier)
+    (simple_assignment
+      (macro_invocation
+        (identifier)
+        (argument_list
+          (identifier)))))
+  (variable_declaration
+    (identifier)
+    (simple_assignment
+      (binary_expression
+        (parenthesised_expression
+          (binary_expression
+            (float_literal)
+            (integer_literal)))
+        (parenthesised_expression
+          (binary_expression
+            (identifier)
+            (integer_literal))))))
+  (variable_declaration
+    (identifier)
+    (simple_assignment
+      (binary_expression
+        (binary_expression
+          (identifier)
+          (identifier))
+        (float_literal)))))
 
 ==============================
 Expression as a macro argument
 ==============================
 
-eqn_params = Divide(a/b);
+prm eqn_params = Divide(a/b);
 
 ------------------------------
 
 (source_file
-  (identifier)
-  (simple_assignment
-    (macro_invocation
-      (identifier)
-      (argument_list
-        (binary_expression
-          (identifier)
-          (identifier))))))
+  (variable_declaration
+    (identifier)
+    (simple_assignment
+      (macro_invocation
+        (identifier)
+        (argument_list
+          (binary_expression
+            (identifier)
+            (identifier)))))))
 
 
 =================
@@ -187,6 +207,6 @@ Missing semicolon
 :error
 =================
 
-fail_test = 1 * 2
+prm fail_test = 1 * 2
 
 -----------------
