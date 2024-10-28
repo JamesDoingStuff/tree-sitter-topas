@@ -41,5 +41,4 @@ Number in a comment
 
 -------------------
 (source_file
-  (comment
-    (line_comment)))
+    (line_comment))

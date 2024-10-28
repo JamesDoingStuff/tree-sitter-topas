@@ -8,11 +8,9 @@ activate
 
 -------------
 (source_file
-  (comment
-    (line_comment))
+  (line_comment)
   (definition)
-  (comment
-    (line_comment)))
+  (line_comment))
 
 ==============
 Block comments
@@ -26,7 +24,7 @@ activate
 
 --------------
 (source_file
-  (comment
-    (block_comment))
+  (block_comment
+    (line_comment))
   (definition))
 

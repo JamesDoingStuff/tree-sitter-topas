@@ -12,10 +12,14 @@ const PRECEDENCE = {
 module.exports = grammar({
   name: 'topas',
 
-  rules: {
-    source_file: $ => repeat(choice($.comment, $.macro_invocation, $.equation, $.definition, $._literal, $._global_preprocessor_directive)),
+  extras: $ => [
+    /\s|\n/,
+    $.line_comment,
+    $.block_comment,
+  ],
 
-    comment: $ => choice($.line_comment, $.block_comment),
+  rules: {
+    source_file: $ => repeat(choice($.macro_invocation, $.equation, $.definition, $._literal, $._global_preprocessor_directive)),
 
     line_comment: $ => /'.*/,
 
@@ -152,7 +156,6 @@ module.exports = grammar({
     _block_item: $ => choice(
       $.definition,
       $.equation,
-      $.comment,
       $._global_preprocessor_directive,
       $._expression,
       $.refined_parameter,

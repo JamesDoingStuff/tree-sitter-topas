@@ -1,5 +1,6 @@
 (definition) @keyword
-(comment) @comment
+(line_comment) @comment
+(block_comment) @comment
 (string_literal) @string
 (integer_literal) @number
 (float_literal) @number
