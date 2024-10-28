@@ -19,7 +19,7 @@ module.exports = grammar({
   ],
 
   rules: {
-    source_file: $ => repeat(choice($.macro_invocation, $._equation, $.definition, $._literal, $._global_preprocessor_directive)),
+    source_file: $ => repeat(choice($.macro_invocation, $._keyword_statement, $.definition, $._literal, $._global_preprocessor_directive)),
 
     line_comment: $ => /'.*/,
 
@@ -76,14 +76,6 @@ module.exports = grammar({
     _fixed_value_expression: $ => choice(
       $.simple_assignment,
       seq(optional($.identifier), $._literal),
-    ),
-
-    _equation: $ => seq(
-      $.identifier,
-      choice(
-        $.simple_assignment,
-        $.compound_assignment,
-      ),
     ),
 
     simple_assignment: $ => equation('=', $),
@@ -165,6 +157,7 @@ module.exports = grammar({
     _block_item: $ => prec.right(choice(
       $.definition,
       $._global_preprocessor_directive,
+      $._keyword_statement,
       $._expression,
       $.refined_parameter,
       $.unrefined_parameter,
@@ -201,6 +194,7 @@ module.exports = grammar({
       $.preprocessor_define,
       $.preprocessor_call,
       $.preprocessor_if_statement,
+      $.preprocessor_variable_declaration,
       $.preprocessor_output,
       $.macro_list,
     ),
@@ -284,6 +278,12 @@ module.exports = grammar({
       '}',
     ),
 
+    preprocessor_variable_declaration: $ => seq(
+      field('directive', '#prm'),
+      field('name', $.identifier),
+      field('value', $.simple_assignment),
+    ),
+
     preprocessor_output: $ => seq(
       field('directive', '#out'),
       field('argument', $.identifier),
@@ -345,6 +345,28 @@ module.exports = grammar({
     macro_parameter_output: $ => seq(
       field('directive', '#m_out'),
       field('argument', $.identifier),
+    ),
+
+    // ------- Keywords -------- //
+
+    _keyword_statement: $ => choice(
+      $.variable_declaration,
+      $.variable_assignment,
+    ),
+
+    variable_declaration: $ => seq(
+      field('keyword', choice('prm', 'local')),
+      field('name', refineable($.identifier)),
+      field('value', choice($._literal, $.simple_assignment)),
+    ),
+
+    variable_assignment: $ => seq(
+      field('keyword', 'existing_prm'),
+      field('name', refineable($.identifier)),
+      field('value', choice(
+        $.simple_assignment,
+        $.compound_assignment,
+      )),
     ),
 
     definition: $ => choice(
@@ -479,7 +501,6 @@ module.exports = grammar({
       'element_weight_percent',
       'element_weight_percent_known',
       'exclude',
-      'existing_prm',
       'exp_conv_const',
       'exp_limit',
       'extend_calculated_sphere_to',
@@ -574,7 +595,6 @@ module.exports = grammar({
       'line_min',
       'lo',
       'load',
-      'local',
       'lor_fwhm',
       'lpsd_beam_spill_correct_intensity',
       'lpsd_equitorial_divergence_degrees',
@@ -699,7 +719,6 @@ module.exports = grammar({
       'pk_xo',
       'point_for_site',
       'primary_soller_angle',
-      'prm',
       'prm_with_error',
       'process_times',
       'pr_str',
