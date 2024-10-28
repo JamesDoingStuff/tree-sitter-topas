@@ -189,6 +189,7 @@ module.exports = grammar({
       $.preprocessor_define,
       $.preprocessor_call,
       $.preprocessor_if_statement,
+      $.macro_list,
     ),
 
     preprocessor_include: $ => seq(field('directive', '#include'), field('path', $.string_literal)),
@@ -239,6 +240,35 @@ module.exports = grammar({
     _preproc_else: $ => seq(
       field('directive', '#else'),
       optional(repeat($._block_item)),
+    ),
+
+    macro_list: $ => seq(
+      field('directive', '#list'),
+      repeat1(seq(
+        optional('&'),
+        field('name', $.identifier),
+        field('parameters', optional($.parameter_list)),
+      )),
+      field('body', seq(
+        '{',
+        repeat(choice(
+          $._literal,
+          $.identifier,
+          $.refined_parameter,
+          $.unrefined_parameter,
+          $.delimited_block,
+        )),
+        '}',
+      )),
+    ),
+
+    delimited_block: $ => seq(
+      '{',
+      repeat(choice(
+        $._block_item,
+        $._macro_preprocessor_directive,
+      )),
+      '}',
     ),
 
     _macro_preprocessor_directive: $ => choice(

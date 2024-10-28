@@ -26,3 +26,60 @@ macro name {}
         (identifier))
     (macro_declaration
         (identifier)))
+
+===========
+Macro lists
+===========
+
+#list File_Name & Temperature(, & la) Time {
+File0001xy 300 0.0
+{ File0002xy } 320 10.2 ' Line with curly brackets
+File0003xy 340 21.0
+File0017xy { 360 + la } 28.9 ' Line with curly brackets
+File0107xy 380 101.2 }
+
+#list First_macro Second_macro {
+  {@a1} a1
+  b1  @b1
+}
+
+-----------
+
+ (source_file
+      (macro_list
+        (identifier)
+        (identifier)
+        (parameter_list
+          (identifier))
+        (identifier)
+        (identifier)
+        (integer_literal)
+        (float_literal)
+        (delimited_block
+          (identifier))
+        (integer_literal)
+        (float_literal)
+        (line_comment)
+        (identifier)
+        (integer_literal)
+        (float_literal)
+        (identifier)
+        (delimited_block
+          (binary_expression
+            (integer_literal)
+            (identifier)))
+        (float_literal)
+        (line_comment)
+        (identifier)
+        (integer_literal)
+        (float_literal))
+      (macro_list
+        (identifier)
+        (identifier)
+        (delimited_block
+          (refined_parameter)
+          (identifier))
+        (identifier)
+        (identifier)
+        (refined_parameter)
+        (identifier)))
