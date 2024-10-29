@@ -19,7 +19,7 @@ module.exports = grammar({
   ],
 
   rules: {
-    source_file: $ => repeat(choice($.macro_invocation, $.equation, $.definition, $._literal, $._global_preprocessor_directive)),
+    source_file: $ => repeat(choice($.macro_invocation, $._equation, $.definition, $._literal, $._global_preprocessor_directive)),
 
     line_comment: $ => /'.*/,
 
@@ -68,20 +68,29 @@ module.exports = grammar({
 
     unrefined_parameter: $ => prec.left(seq('!', optional(choice($.identifier, $._literal)))),
 
-    equation: $ => choice(
-      seq(
-        field('left', $.definition), // Keyword equations
-        '=',
-        field('right', $._expression),
-        ';',
-        optional(seq(':', choice($.float_literal, $.integer_literal, $.identifier)))),
-      seq(
-        field('left', choice($.identifier, $.refined_parameter, $.unrefined_parameter)), // Variable assignment equations
-        choice('=', '+=', '-=', '*=', '/=', '^='),
-        field('right', $._expression),
-        ';',
-        optional(seq(':', choice($.float_literal, $.integer_literal, $.identifier)))),
+    _refineable_value_expression: $ => choice(
+      $.simple_assignment,
+      refineable(seq(optional($.identifier), $._literal)),
     ),
+
+    _fixed_value_expression: $ => choice(
+      $.simple_assignment,
+      seq(optional($.identifier), $._literal),
+    ),
+
+    _equation: $ => seq(
+      $.identifier,
+      choice(
+        $.simple_assignment,
+        $.compound_assignment,
+      ),
+    ),
+
+    simple_assignment: $ => equation('=', $),
+
+    compound_assignment: $ => equation(choice('+=', '-=', '*=', '/=', '^='), $),
+
+    // ------ Expressions ------- //
 
     _expression: $ => choice(
       $._closed_expression,
@@ -153,14 +162,17 @@ module.exports = grammar({
       ')',
     ),
 
-    _block_item: $ => choice(
+    _block_item: $ => prec.right(choice(
       $.definition,
-      $.equation,
       $._global_preprocessor_directive,
       $._expression,
       $.refined_parameter,
       $.unrefined_parameter,
-    ),
+      $.simple_assignment,
+      $.compound_assignment,
+    )),
+
+    // ------- Preprocessor -------- //
 
     parameter_list: $ => seq(
       token.immediate('('),
@@ -884,3 +896,32 @@ module.exports = grammar({
   },
 });
 
+
+/**
+ * Creates a rule to optionally allow or disallow refinement of a rule
+ *
+ * @param {Rule} rule
+ *
+ * @returns {SeqRule}
+ */
+function refineable(rule) {
+  return seq(optional(choice('@', '!')), rule);
+}
+
+/**
+ * Creates a rule for the TOPAS equation structure
+ *
+ * @param {Rule | string} operator
+ *
+ * @param {GrammarSymbols<string>} $
+ *
+ * @returns {SeqRule}
+ */
+function equation(operator, $) {
+  return seq(
+    field('operator', operator),
+    field('body', $._expression),
+    ';',
+    optional(seq(':', choice($.float_literal, $.integer_literal, $.identifier))),
+  );
+}
