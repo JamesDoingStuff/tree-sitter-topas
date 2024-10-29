@@ -40,6 +40,22 @@ Include file
     (preprocessor_include
         (string_literal)))
 
+======
+Output
+======
+
+#out var1
+#out var1 2
+
+------
+
+(source_file
+      (preprocessor_output
+        (identifier))
+      (preprocessor_output
+        (identifier))
+      (integer_literal))
+
 ============================
 Macro directive if statement
 ============================
@@ -129,3 +145,25 @@ macro Operate(arg) {
         (identifier)
         (macro_operator_directive)
         (identifier)))
+
+============
+Macro output
+============
+
+macro Var_out(var1) {
+    #m_out var1
+    #m_out var1 2
+}
+
+------------
+
+(source_file
+      (macro_declaration
+        (identifier)
+        (parameter_list
+            (identifier))
+        (macro_parameter_output
+            (identifier))
+        (macro_parameter_output
+            (identifier))
+        (integer_literal)))

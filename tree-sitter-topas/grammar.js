@@ -189,6 +189,7 @@ module.exports = grammar({
       $.preprocessor_define,
       $.preprocessor_call,
       $.preprocessor_if_statement,
+      $.preprocessor_output,
       $.macro_list,
     ),
 
@@ -271,10 +272,16 @@ module.exports = grammar({
       '}',
     ),
 
+    preprocessor_output: $ => seq(
+      field('directive', '#out'),
+      field('argument', $.identifier),
+    ),
+
     _macro_preprocessor_directive: $ => choice(
       $.macro_if_statement,
       $.macro_operator_directive,
       alias($._macro_unique, $.macro_operator_directive),
+      $.macro_parameter_output,
     ),
 
     macro_if_statement: $ => seq(
@@ -322,6 +329,11 @@ module.exports = grammar({
     ),
 
     _macro_unique: $ => field('directive', '#m_unique'),
+
+    macro_parameter_output: $ => seq(
+      field('directive', '#m_out'),
+      field('argument', $.identifier),
+    ),
 
     definition: $ => choice(
       'a',
