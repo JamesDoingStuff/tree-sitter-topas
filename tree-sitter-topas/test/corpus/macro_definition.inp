@@ -16,8 +16,8 @@ macro name {}
         (parameter_list
             (identifier)
             (identifier))
-        (equation
-            (definition)
+        (definition)
+        (simple_assignment
             (binary_expression
                 (integer_literal)
                 (integer_literal))

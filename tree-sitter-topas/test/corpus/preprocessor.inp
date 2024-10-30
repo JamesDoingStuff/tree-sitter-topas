@@ -114,13 +114,13 @@ macro TEST(arg1) {
         (macro_if_statement
           (identifier)
           (string_literal)
-          (equation
-            (identifier)
+          (identifier)
+          (simple_assignment
             (integer_literal)))
         (macro_if_statement
           (identifier)
-          (equation
-            (identifier)
+          (identifier)
+          (simple_assignment
             (integer_literal)))))
 
 ========================
