@@ -2,7 +2,7 @@
 Simple expressions
 ==================
 
-x = 5;
+x1 = 5;
 new_var = 1 /old_var;
 subtraction = x - 5;
 addition = 5 + x;
@@ -10,26 +10,26 @@ exponentiation = 15.2 ^ x;
 
 ------------------
 (source_file
-  (equation
-    (definition)
+  (identifier)
+  (simple_assignment
     (integer_literal))
-  (equation
-    (identifier)
+  (identifier)
+  (simple_assignment
     (binary_expression
       (integer_literal)
       (identifier)))
-  (equation
-    (identifier)
+  (identifier)
+  (simple_assignment
     (binary_expression
       (identifier)
       (integer_literal)))
-  (equation
-    (identifier)
+  (identifier)
+  (simple_assignment
     (binary_expression
       (integer_literal)
       (identifier)))
-  (equation
-    (identifier)
+  (identifier)
+  (simple_assignment
     (binary_expression
       (float_literal)
       (identifier))))
@@ -43,15 +43,15 @@ new_var *= (old_var+1) * 2;
 
 --------------------------
 (source_file
-  (equation
-    (identifier)
+  (identifier)
+  (compound_assignment
     (binary_expression
       (identifier)
       (binary_expression
         (integer_literal)
         (integer_literal))))
-  (equation
-    (identifier)
+  (identifier)
+  (compound_assignment
     (binary_expression
       (parenthesised_expression
         (binary_expression
@@ -71,37 +71,37 @@ unary_exponent = x ^ +y;
 
 -------------------------
 (source_file
-  (equation
-      (identifier)
+  (identifier)
+    (simple_assignment
       (binary_expression
         (unary_expression
           (identifier))
         (identifier)))
-    (equation
-      (identifier)
+    (identifier)
+    (simple_assignment
       (unary_expression
         (binary_expression
           (identifier)
           (integer_literal))))
-    (equation
-      (identifier)
+    (identifier)
+    (simple_assignment
       (binary_expression
         (identifier)
         (unary_expression
           (identifier))))
-    (equation
-      (identifier)
+    (identifier)
+    (simple_assignment
       (unary_expression
         (parenthesised_expression
           (identifier))))
-    (equation
-      (identifier)
+    (identifier)
+    (simple_assignment
       (binary_expression
         (unary_expression
           (integer_literal))
         (integer_literal)))
-    (equation
-      (identifier)
+    (identifier)
+    (simple_assignment
       (binary_expression
         (identifier)
         (unary_expression
@@ -120,32 +120,32 @@ as_second_term = first_param / second_param 13.37;
 
 -----------------------
 (source_file
-  (equation
-    (identifier)
+  (identifier)
+  (simple_assignment
     (binary_expression
       (identifier)
       (identifier)))
-  (equation
-    (identifier)
+  (identifier)
+  (simple_assignment
     (binary_expression
       (identifier)
       (binary_expression
         (identifier)
         (float_literal))))
-  (equation
-    (identifier)
+  (identifier)
+  (simple_assignment
     (binary_expression
       (identifier)
       (parenthesised_expression
         (identifier))))
-  (equation
-    (identifier)
+  (identifier)
+  (simple_assignment
     (macro_invocation
       (identifier)
       (argument_list
         (identifier))))
-  (equation
-    (identifier)
+  (identifier)
+  (simple_assignment
     (binary_expression
       (parenthesised_expression
         (binary_expression
@@ -155,8 +155,8 @@ as_second_term = first_param / second_param 13.37;
         (binary_expression
           (identifier)
           (integer_literal)))))
-  (equation
-    (identifier)
+  (identifier)
+  (simple_assignment
     (binary_expression
       (binary_expression
         (identifier)
@@ -172,8 +172,8 @@ eqn_params = Divide(a/b);
 ------------------------------
 
 (source_file
-  (equation
-    (identifier)
+  (identifier)
+  (simple_assignment
     (macro_invocation
       (identifier)
       (argument_list
