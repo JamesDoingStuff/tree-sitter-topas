@@ -14,12 +14,10 @@ jobs:
         uses: actions/setup-node@v4.0.4
         with:
           cache: npm
-          cache-dependency-path: tree-sitter-topas/package-lock.json
+          cache-dependency-path: package-lock.json
           
       - name: Install modules
         run: npm ci
-        working-directory: tree-sitter-topas/
         
       - name: Run ESLint
         run: npx eslint grammar.js
-        working-directory: tree-sitter-topas/

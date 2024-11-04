@@ -23,9 +23,7 @@ jobs:
         run: |-
           tree-sitter generate --no-bindings
           git diff --exit-code -- src/parser.c
-        working-directory: tree-sitter-topas/
 
       - name: Run parser tests
         shell: sh
         run: tree-sitter test
-        working-directory: tree-sitter-topas/
