@@ -1,0 +1,37 @@
+=====================
+Variable declarations
+=====================
+
+prm variable -2.2
+prm a1 = 12;
+local var 5
+local b2 = 16 e;
+existing_prm c3 *= Its_a_macro(argu, ments);
+
+---------------------
+
+(source_file
+      (variable_declaration
+        (identifier)
+        (float_literal))
+      (variable_declaration
+        (identifier)
+        (simple_assignment
+          (integer_literal)))
+      (variable_declaration
+        (identifier)
+        (integer_literal))
+      (variable_declaration
+        (identifier)
+        (simple_assignment
+          (binary_expression
+            (integer_literal)
+            (identifier))))
+      (variable_assignment
+        (identifier)
+        (compound_assignment
+          (macro_invocation
+            (identifier)
+            (argument_list
+              (identifier)
+              (identifier))))))

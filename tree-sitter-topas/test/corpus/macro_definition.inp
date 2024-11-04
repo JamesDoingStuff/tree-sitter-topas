@@ -3,7 +3,7 @@ Macro Declarations
 ==================
 
 macro My_macro(& var1, var2){
-    a = 5 * 2; : 0 
+    prm a1 = 5 * 2; : 0 
     activate PI
 } 
 macro name {}
@@ -16,12 +16,13 @@ macro name {}
         (parameter_list
             (identifier)
             (identifier))
-        (definition)
-        (simple_assignment
-            (binary_expression
-                (integer_literal)
-                (integer_literal))
-        (integer_literal))
+        (variable_declaration
+            (identifier)
+            (simple_assignment
+                (binary_expression
+                    (integer_literal)
+                    (integer_literal))
+            (integer_literal)))
         (definition)
         (identifier))
     (macro_declaration
