@@ -22,7 +22,7 @@ jobs:
         shell: sh
         run: |-
           tree-sitter generate --no-bindings
-          git diff --exit-code -- src/parser.c
+          git diff --exit-code -- src
 
       - name: Run parser tests
         shell: sh
