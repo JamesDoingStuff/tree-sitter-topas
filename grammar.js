@@ -951,3 +951,27 @@ function equation(operator, $) {
     optional(seq(':', choice($.float_literal, $.integer_literal, $.identifier))),
   );
 }
+
+/**
+ * Creates a rule for the structure of simple keywords i.e. those that take
+ * only an equation or value and have no nested keywords beneath them. Refinement
+ * symbols are allowed by default but can be disallowed using third argument.
+ *
+ * @param {string | RegExp} keyword
+ * @param {GrammarSymbols<string>} $
+ * @param {boolean} refine
+ * @returns {SeqRule}
+ */
+function simple_keyword(keyword, $, refine=true) {
+  if (refine) {
+    return seq(
+      field('keyword', token(prec(1, keyword))),
+      field('value', $._refineable_value_expression),
+    );
+  } else {
+    return seq(
+      field('keyword', token(prec(1, keyword))),
+      field('value', $._fixed_value_expression),
+    );
+  }
+}
