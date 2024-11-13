@@ -35,3 +35,82 @@ existing_prm c3 *= Its_a_macro(argu, ments);
             (argument_list
               (identifier)
               (identifier))))))
+
+====
+Site
+====
+
+site Al_2 x 0 y @ z @ .2 adps
+site #fe z = 1/3;
+site B num_posns 6 x  0.19169 y  0.5 z  0.5 
+site 5p£c1@l_C#@r@cter$;'/() rand_xyz 2 occ H 1 beq = parameter; : 0 
+----
+(source_file
+  (site_declaration
+    (site_name_string)
+    (keyword_statement
+      (integer_literal))
+    (keyword_statement)
+    (keyword_statement
+      (float_literal))
+    (keyword_statement))
+  (site_declaration
+    (site_name_string)
+    (keyword_statement
+      (simple_assignment
+        (binary_expression
+          (integer_literal)
+          (integer_literal)))))
+  (site_declaration
+        (site_name_string)
+        (keyword_statement
+          (integer_literal))
+        (keyword_statement
+          (float_literal))
+        (keyword_statement
+          (float_literal))
+        (keyword_statement
+          (float_literal)))
+  (site_declaration
+        (site_name_string)
+        (keyword_statement
+          (integer_literal))
+        (keyword_statement
+          (atom)
+          (integer_literal)
+          (keyword_statement
+            (simple_assignment
+              (identifier)
+              (integer_literal))))))
+
+====
+Occ
+====
+
+site Pb  x 0.16716 y  0.18774 z  0.25
+  occ Pb+2  1  beq 0.5 num_posns 0
+  occ Al+3  0.5 beq 0.25
+
+----
+
+(source_file
+  (site_declaration
+    (site_name_string)
+    (keyword_statement
+      (float_literal))
+    (keyword_statement
+      (float_literal))
+    (keyword_statement
+      (float_literal))
+    (keyword_statement
+      (atom)
+      (integer_literal)
+      (keyword_statement
+        (float_literal)))
+    (keyword_statement
+      (integer_literal))
+    (keyword_statement
+      (atom)
+      (float_literal)
+      (keyword_statement
+        (float_literal)))))
