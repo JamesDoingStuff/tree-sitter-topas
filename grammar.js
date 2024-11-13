@@ -9,6 +9,8 @@ const PRECEDENCE = {
   comparative: 1,
 };
 
+const atoms = require('./grammar/atoms.js');
+
 module.exports = grammar({
   name: 'topas',
 
@@ -32,6 +34,15 @@ module.exports = grammar({
     _literal: $ => choice($.string_literal, $.integer_literal, $.float_literal),
 
     string_literal: $ => /".*"/, // Anything between quote marks e.g., "a word"
+
+    site_name_string: $ => /\S+/,
+
+    site_query_string: $ => token(choice(
+      seq(optional(/\S+/), '*'),
+      seq('"', repeat(seq(optional('!'), /\S+/, optional('*'))), '"'),
+    )),
+
+    ...atoms,
 
     integer_literal: $ => /-?\d+/,
 
@@ -351,11 +362,21 @@ module.exports = grammar({
 
     _Ttop: $ => choice(
       $._Tcomm_2,
+      $._Tstr_details, // At top-level temporarily for test purposes, until [str] keyword is added
     ),
 
     _Tcomm_2: $ => choice(
       $.variable_declaration,
       $.variable_assignment,
+    ),
+
+    _Tstr_details: $ => choice(
+      $.site_declaration,
+    ),
+
+    _Tmin_r_max_r: $ => choice(
+      simple_keyword('min_r', $, false),
+      simple_keyword('max_r', $, false),
     ),
 
     variable_declaration: $ => seq(
@@ -373,6 +394,50 @@ module.exports = grammar({
       )),
     ),
 
+    /*
+
+    [site [x][y][z]]...
+      [occ [beq][scale_occ]]...
+      [num_posns][rand_xyz][inter]
+      [adps][u11][u22][u33][u12][u13][u23]
+
+    */
+
+    site_declaration: $ => prec.right(seq(
+      field('keyword', 'site'),
+      field('name', $.site_name_string),
+      repeat(choice(
+        alias($._site_nested_keyword, $.keyword_statement),
+        alias($._Tmin_r_max_r, $.keyword_statement),
+        $._global_preprocessor_directive,
+        prec(-1, $.macro_invocation),
+      )),
+    )),
+
+    _site_nested_keyword: $ => choice(
+      simple_keyword(/[xyz]/, $),
+      $._occ_keyword_statement,
+      simple_keyword('num_posns', $),
+      simple_keyword('rand_xyz', $, false),
+      simple_keyword('inter', $, false),
+      choice(
+        field('keyword', 'adps'),
+        prec.right(repeat1(simple_keyword(/u(1[123]|2[23]|33)/, $))),
+      ),
+    ),
+
+    _occ_keyword_statement: $ => seq(
+      field('keyword', 'occ'),
+      $.atom,
+      $._refineable_value_expression,
+      repeat(alias($._occ_nested_keyword, $.keyword_statement)),
+    ),
+
+    _occ_nested_keyword: $ => choice(
+      simple_keyword('beq', $),
+      simple_keyword('scale_occ', $),
+    ),
+
     definition: $ => choice(
       'a',
       'aberration_range_change_allowed',
@@ -383,7 +448,6 @@ module.exports = grammar({
       'add_to_cloud_N',
       'add_to_cloud_when',
       'add_to_phases_of_weak_reflections',
-      'adps',
       'ai_anti_bump',
       'ai_closest_N',
       'ai_exclude_eq_0',
@@ -414,7 +478,6 @@ module.exports = grammar({
       'A_matrix_prm_filter',
       'b',
       'be',
-      'beq',
       'bkg',
       'bootstrap_errors',
       'box_interaction',
@@ -581,7 +644,6 @@ module.exports = grammar({
       'index_x0',
       'index_zero_error',
       'insert',
-      'inter',
       'in_cartesian',
       'in_FC',
       'in_str_format',
@@ -666,11 +728,9 @@ module.exports = grammar({
       'num_hats',
       'num_highest_I_values_to_keep',
       'num_patterns_at_a_time',
-      'num_posns',
       'num_runs',
       'num_unique_vx_vy',
       'n_avg',
-      'occ',
       'occ_merge',
       'occ_merge_radius',
       'omit',
@@ -740,7 +800,6 @@ module.exports = grammar({
       'randomize_initial_phases_by',
       'randomize_on_errors',
       'randomize_phases_on_new_cycle_by',
-      'rand_xyz',
       'range',
       'rebin_min_merge',
       'rebin_tollerance_in_Y',
@@ -788,7 +847,6 @@ module.exports = grammar({
       'sh_alpha',
       'sh_Cij_prm',
       'sh_order',
-      'site',
       'sites_angle',
       'sites_avg_rand_xyz',
       'sites_distance',
@@ -853,12 +911,6 @@ module.exports = grammar({
       'tx',
       'ty',
       'tz',
-      'u11',
-      'u12',
-      'u13',
-      'u22',
-      'u23',
-      'u33',
       'ua',
       'ub',
       'uc',
