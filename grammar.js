@@ -19,7 +19,7 @@ module.exports = grammar({
   ],
 
   rules: {
-    source_file: $ => repeat(choice($.macro_invocation, $._keyword_statement, $.definition, $._literal, $._global_preprocessor_directive)),
+    source_file: $ => repeat(choice($.macro_invocation, $._Ttop, $.definition, $._literal, $._global_preprocessor_directive)),
 
     line_comment: $ => /'.*/,
 
@@ -157,7 +157,7 @@ module.exports = grammar({
     _block_item: $ => prec.right(choice(
       $.definition,
       $._global_preprocessor_directive,
-      $._keyword_statement,
+      $._Ttop,
       $._expression,
       $.refined_parameter,
       $.unrefined_parameter,
@@ -349,7 +349,11 @@ module.exports = grammar({
 
     // ------- Keywords -------- //
 
-    _keyword_statement: $ => choice(
+    _Ttop: $ => choice(
+      $._Tcomm_2,
+    ),
+
+    _Tcomm_2: $ => choice(
       $.variable_declaration,
       $.variable_assignment,
     ),
