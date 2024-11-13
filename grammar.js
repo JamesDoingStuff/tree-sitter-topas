@@ -925,10 +925,13 @@ module.exports = grammar({
  *
  * @param {Rule} rule
  *
- * @returns {SeqRule}
+ * @returns {ChoiceRule}
  */
 function refineable(rule) {
-  return seq(optional(choice('@', '!')), rule);
+  return choice(
+    seq(optional(choice('@', '!')), rule),
+    prec(-1, '@'),
+  );
 }
 
 /**
