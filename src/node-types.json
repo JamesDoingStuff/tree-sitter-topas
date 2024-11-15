@@ -51,6 +51,11 @@
     }
   },
   {
+    "type": "atom",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "binary_expression",
     "named": true,
     "fields": {
@@ -377,6 +382,10 @@
           "named": true
         },
         {
+          "type": "site_declaration",
+          "named": true
+        },
+        {
           "type": "string_literal",
           "named": true
         },
@@ -403,6 +412,122 @@
     "type": "float_literal",
     "named": true,
     "fields": {}
+  },
+  {
+    "type": "keyword_statement",
+    "named": true,
+    "fields": {
+      "keyword": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "adps",
+            "named": false
+          },
+          {
+            "type": "beq",
+            "named": false
+          },
+          {
+            "type": "inter",
+            "named": false
+          },
+          {
+            "type": "max_r",
+            "named": false
+          },
+          {
+            "type": "min_r",
+            "named": false
+          },
+          {
+            "type": "num_posns",
+            "named": false
+          },
+          {
+            "type": "occ",
+            "named": false
+          },
+          {
+            "type": "rand_xyz",
+            "named": false
+          },
+          {
+            "type": "scale_occ",
+            "named": false
+          }
+        ]
+      },
+      "value": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "!",
+            "named": false
+          },
+          {
+            "type": "@",
+            "named": false
+          },
+          {
+            "type": "float_literal",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "integer_literal",
+            "named": true
+          },
+          {
+            "type": "simple_assignment",
+            "named": true
+          },
+          {
+            "type": "string_literal",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "atom",
+          "named": true
+        },
+        {
+          "type": "float_literal",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "keyword_statement",
+          "named": true
+        },
+        {
+          "type": "simple_assignment",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        }
+      ]
+    }
   },
   {
     "type": "macro_declaration",
@@ -498,6 +623,10 @@
           },
           {
             "type": "simple_assignment",
+            "named": true
+          },
+          {
+            "type": "site_declaration",
             "named": true
           },
           {
@@ -691,6 +820,10 @@
         },
         {
           "type": "simple_assignment",
+          "named": true
+        },
+        {
+          "type": "site_declaration",
           "named": true
         },
         {
@@ -1186,6 +1319,10 @@
           "named": true
         },
         {
+          "type": "site_declaration",
+          "named": true
+        },
+        {
           "type": "string_literal",
           "named": true
         },
@@ -1392,6 +1529,82 @@
     }
   },
   {
+    "type": "site_declaration",
+    "named": true,
+    "fields": {
+      "keyword": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "site",
+            "named": false
+          }
+        ]
+      },
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "site_name_string",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "keyword_statement",
+          "named": true
+        },
+        {
+          "type": "macro_declaration",
+          "named": true
+        },
+        {
+          "type": "macro_invocation",
+          "named": true
+        },
+        {
+          "type": "macro_list",
+          "named": true
+        },
+        {
+          "type": "preprocessor_call",
+          "named": true
+        },
+        {
+          "type": "preprocessor_define",
+          "named": true
+        },
+        {
+          "type": "preprocessor_delete",
+          "named": true
+        },
+        {
+          "type": "preprocessor_if_statement",
+          "named": true
+        },
+        {
+          "type": "preprocessor_include",
+          "named": true
+        },
+        {
+          "type": "preprocessor_output",
+          "named": true
+        },
+        {
+          "type": "preprocessor_variable_declaration",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "source_file",
     "named": true,
     "root": true,
@@ -1450,6 +1663,10 @@
         },
         {
           "type": "preprocessor_variable_declaration",
+          "named": true
+        },
+        {
+          "type": "site_declaration",
           "named": true
         },
         {
@@ -1825,6 +2042,990 @@
     "named": false
   },
   {
+    "type": "100Mo",
+    "named": false
+  },
+  {
+    "type": "102Pd",
+    "named": false
+  },
+  {
+    "type": "104Pd",
+    "named": false
+  },
+  {
+    "type": "105Pd",
+    "named": false
+  },
+  {
+    "type": "106Cd",
+    "named": false
+  },
+  {
+    "type": "106Pd",
+    "named": false
+  },
+  {
+    "type": "107Ag",
+    "named": false
+  },
+  {
+    "type": "108Cd",
+    "named": false
+  },
+  {
+    "type": "108Pd",
+    "named": false
+  },
+  {
+    "type": "109Ag",
+    "named": false
+  },
+  {
+    "type": "10B",
+    "named": false
+  },
+  {
+    "type": "110Cd",
+    "named": false
+  },
+  {
+    "type": "110Pd",
+    "named": false
+  },
+  {
+    "type": "111Cd",
+    "named": false
+  },
+  {
+    "type": "112Cd",
+    "named": false
+  },
+  {
+    "type": "112Sn",
+    "named": false
+  },
+  {
+    "type": "113Cd",
+    "named": false
+  },
+  {
+    "type": "113In",
+    "named": false
+  },
+  {
+    "type": "114Cd",
+    "named": false
+  },
+  {
+    "type": "114Sn",
+    "named": false
+  },
+  {
+    "type": "115In",
+    "named": false
+  },
+  {
+    "type": "115Sn",
+    "named": false
+  },
+  {
+    "type": "116Cd",
+    "named": false
+  },
+  {
+    "type": "116Sn",
+    "named": false
+  },
+  {
+    "type": "117Sn",
+    "named": false
+  },
+  {
+    "type": "118Sn",
+    "named": false
+  },
+  {
+    "type": "119Sn",
+    "named": false
+  },
+  {
+    "type": "11B",
+    "named": false
+  },
+  {
+    "type": "120Sn",
+    "named": false
+  },
+  {
+    "type": "120Te",
+    "named": false
+  },
+  {
+    "type": "121Sb",
+    "named": false
+  },
+  {
+    "type": "122Sn",
+    "named": false
+  },
+  {
+    "type": "122Te",
+    "named": false
+  },
+  {
+    "type": "123Sb",
+    "named": false
+  },
+  {
+    "type": "123Te",
+    "named": false
+  },
+  {
+    "type": "124Sn",
+    "named": false
+  },
+  {
+    "type": "124Te",
+    "named": false
+  },
+  {
+    "type": "125Te",
+    "named": false
+  },
+  {
+    "type": "126Te",
+    "named": false
+  },
+  {
+    "type": "128Te",
+    "named": false
+  },
+  {
+    "type": "12C",
+    "named": false
+  },
+  {
+    "type": "130Ba",
+    "named": false
+  },
+  {
+    "type": "130Te",
+    "named": false
+  },
+  {
+    "type": "132Ba",
+    "named": false
+  },
+  {
+    "type": "134Ba",
+    "named": false
+  },
+  {
+    "type": "135Ba",
+    "named": false
+  },
+  {
+    "type": "136Ba",
+    "named": false
+  },
+  {
+    "type": "136Ce",
+    "named": false
+  },
+  {
+    "type": "137Ba",
+    "named": false
+  },
+  {
+    "type": "138Ba",
+    "named": false
+  },
+  {
+    "type": "138Ce",
+    "named": false
+  },
+  {
+    "type": "138La",
+    "named": false
+  },
+  {
+    "type": "139La",
+    "named": false
+  },
+  {
+    "type": "13C",
+    "named": false
+  },
+  {
+    "type": "140Ce",
+    "named": false
+  },
+  {
+    "type": "142Ce",
+    "named": false
+  },
+  {
+    "type": "142Nd",
+    "named": false
+  },
+  {
+    "type": "143Nd",
+    "named": false
+  },
+  {
+    "type": "144Nd",
+    "named": false
+  },
+  {
+    "type": "144Sm",
+    "named": false
+  },
+  {
+    "type": "145Nd",
+    "named": false
+  },
+  {
+    "type": "146Nd",
+    "named": false
+  },
+  {
+    "type": "147Sm",
+    "named": false
+  },
+  {
+    "type": "148Nd",
+    "named": false
+  },
+  {
+    "type": "148Sm",
+    "named": false
+  },
+  {
+    "type": "149Sm",
+    "named": false
+  },
+  {
+    "type": "14N",
+    "named": false
+  },
+  {
+    "type": "150Nd",
+    "named": false
+  },
+  {
+    "type": "150Sm",
+    "named": false
+  },
+  {
+    "type": "151Eu",
+    "named": false
+  },
+  {
+    "type": "152Gd",
+    "named": false
+  },
+  {
+    "type": "152Sm",
+    "named": false
+  },
+  {
+    "type": "153Eu",
+    "named": false
+  },
+  {
+    "type": "154Gd",
+    "named": false
+  },
+  {
+    "type": "154Sm",
+    "named": false
+  },
+  {
+    "type": "155Gd",
+    "named": false
+  },
+  {
+    "type": "156Dy",
+    "named": false
+  },
+  {
+    "type": "156Gd",
+    "named": false
+  },
+  {
+    "type": "157Gd",
+    "named": false
+  },
+  {
+    "type": "158Dy",
+    "named": false
+  },
+  {
+    "type": "158Gd",
+    "named": false
+  },
+  {
+    "type": "15N",
+    "named": false
+  },
+  {
+    "type": "160Dy",
+    "named": false
+  },
+  {
+    "type": "160Gd",
+    "named": false
+  },
+  {
+    "type": "161Dy",
+    "named": false
+  },
+  {
+    "type": "162Dy",
+    "named": false
+  },
+  {
+    "type": "162Er",
+    "named": false
+  },
+  {
+    "type": "163Dy",
+    "named": false
+  },
+  {
+    "type": "164Dy",
+    "named": false
+  },
+  {
+    "type": "164Er",
+    "named": false
+  },
+  {
+    "type": "166Er",
+    "named": false
+  },
+  {
+    "type": "167Er",
+    "named": false
+  },
+  {
+    "type": "168Er",
+    "named": false
+  },
+  {
+    "type": "168Yb",
+    "named": false
+  },
+  {
+    "type": "16O",
+    "named": false
+  },
+  {
+    "type": "170Er",
+    "named": false
+  },
+  {
+    "type": "170Yb",
+    "named": false
+  },
+  {
+    "type": "171Yb",
+    "named": false
+  },
+  {
+    "type": "172Yb",
+    "named": false
+  },
+  {
+    "type": "173Yb",
+    "named": false
+  },
+  {
+    "type": "174Hf",
+    "named": false
+  },
+  {
+    "type": "174Yb",
+    "named": false
+  },
+  {
+    "type": "175Lu",
+    "named": false
+  },
+  {
+    "type": "176Hf",
+    "named": false
+  },
+  {
+    "type": "176Lu",
+    "named": false
+  },
+  {
+    "type": "176Yb",
+    "named": false
+  },
+  {
+    "type": "177Hf",
+    "named": false
+  },
+  {
+    "type": "178Hf",
+    "named": false
+  },
+  {
+    "type": "179Hf",
+    "named": false
+  },
+  {
+    "type": "17O",
+    "named": false
+  },
+  {
+    "type": "180Hf",
+    "named": false
+  },
+  {
+    "type": "180Ta",
+    "named": false
+  },
+  {
+    "type": "180W",
+    "named": false
+  },
+  {
+    "type": "181Ta",
+    "named": false
+  },
+  {
+    "type": "182W",
+    "named": false
+  },
+  {
+    "type": "183W",
+    "named": false
+  },
+  {
+    "type": "184W",
+    "named": false
+  },
+  {
+    "type": "185Re",
+    "named": false
+  },
+  {
+    "type": "186Os",
+    "named": false
+  },
+  {
+    "type": "186W",
+    "named": false
+  },
+  {
+    "type": "187Os",
+    "named": false
+  },
+  {
+    "type": "187Re",
+    "named": false
+  },
+  {
+    "type": "188Os",
+    "named": false
+  },
+  {
+    "type": "189Os",
+    "named": false
+  },
+  {
+    "type": "18O",
+    "named": false
+  },
+  {
+    "type": "190Os",
+    "named": false
+  },
+  {
+    "type": "190Pt",
+    "named": false
+  },
+  {
+    "type": "192Os",
+    "named": false
+  },
+  {
+    "type": "192Pt",
+    "named": false
+  },
+  {
+    "type": "194Pt",
+    "named": false
+  },
+  {
+    "type": "195Pt",
+    "named": false
+  },
+  {
+    "type": "196Hg",
+    "named": false
+  },
+  {
+    "type": "196Pt",
+    "named": false
+  },
+  {
+    "type": "198Pt",
+    "named": false
+  },
+  {
+    "type": "199Hg",
+    "named": false
+  },
+  {
+    "type": "1H",
+    "named": false
+  },
+  {
+    "type": "203Tl",
+    "named": false
+  },
+  {
+    "type": "204Pb",
+    "named": false
+  },
+  {
+    "type": "205Tl",
+    "named": false
+  },
+  {
+    "type": "206Pb",
+    "named": false
+  },
+  {
+    "type": "207Pb",
+    "named": false
+  },
+  {
+    "type": "208Pb",
+    "named": false
+  },
+  {
+    "type": "20Ne",
+    "named": false
+  },
+  {
+    "type": "21Ne",
+    "named": false
+  },
+  {
+    "type": "22Ne",
+    "named": false
+  },
+  {
+    "type": "233U",
+    "named": false
+  },
+  {
+    "type": "234U",
+    "named": false
+  },
+  {
+    "type": "235U",
+    "named": false
+  },
+  {
+    "type": "238Pu",
+    "named": false
+  },
+  {
+    "type": "238U",
+    "named": false
+  },
+  {
+    "type": "239Pu",
+    "named": false
+  },
+  {
+    "type": "240Pu",
+    "named": false
+  },
+  {
+    "type": "242Pu",
+    "named": false
+  },
+  {
+    "type": "244Cm",
+    "named": false
+  },
+  {
+    "type": "246Cm",
+    "named": false
+  },
+  {
+    "type": "248Cm",
+    "named": false
+  },
+  {
+    "type": "24Mg",
+    "named": false
+  },
+  {
+    "type": "25Mg",
+    "named": false
+  },
+  {
+    "type": "26Mg",
+    "named": false
+  },
+  {
+    "type": "28Si",
+    "named": false
+  },
+  {
+    "type": "29Si",
+    "named": false
+  },
+  {
+    "type": "2H",
+    "named": false
+  },
+  {
+    "type": "30Si",
+    "named": false
+  },
+  {
+    "type": "32S",
+    "named": false
+  },
+  {
+    "type": "33S",
+    "named": false
+  },
+  {
+    "type": "34S",
+    "named": false
+  },
+  {
+    "type": "35Cl",
+    "named": false
+  },
+  {
+    "type": "36Ar",
+    "named": false
+  },
+  {
+    "type": "36S",
+    "named": false
+  },
+  {
+    "type": "37Cl",
+    "named": false
+  },
+  {
+    "type": "38Ar",
+    "named": false
+  },
+  {
+    "type": "39K",
+    "named": false
+  },
+  {
+    "type": "3H",
+    "named": false
+  },
+  {
+    "type": "3He",
+    "named": false
+  },
+  {
+    "type": "40Ar",
+    "named": false
+  },
+  {
+    "type": "40Ca",
+    "named": false
+  },
+  {
+    "type": "40K",
+    "named": false
+  },
+  {
+    "type": "41K",
+    "named": false
+  },
+  {
+    "type": "42Ca",
+    "named": false
+  },
+  {
+    "type": "43Ca",
+    "named": false
+  },
+  {
+    "type": "44Ca",
+    "named": false
+  },
+  {
+    "type": "46Ca",
+    "named": false
+  },
+  {
+    "type": "46Ti",
+    "named": false
+  },
+  {
+    "type": "47Ti",
+    "named": false
+  },
+  {
+    "type": "48Ca",
+    "named": false
+  },
+  {
+    "type": "48Ti",
+    "named": false
+  },
+  {
+    "type": "49Ti",
+    "named": false
+  },
+  {
+    "type": "4He",
+    "named": false
+  },
+  {
+    "type": "50Cr",
+    "named": false
+  },
+  {
+    "type": "50Ti",
+    "named": false
+  },
+  {
+    "type": "50V",
+    "named": false
+  },
+  {
+    "type": "51V",
+    "named": false
+  },
+  {
+    "type": "52Cr",
+    "named": false
+  },
+  {
+    "type": "53Cr",
+    "named": false
+  },
+  {
+    "type": "54Cr",
+    "named": false
+  },
+  {
+    "type": "54Fe",
+    "named": false
+  },
+  {
+    "type": "56Fe",
+    "named": false
+  },
+  {
+    "type": "57Fe",
+    "named": false
+  },
+  {
+    "type": "58Fe",
+    "named": false
+  },
+  {
+    "type": "58Ni",
+    "named": false
+  },
+  {
+    "type": "60Ni",
+    "named": false
+  },
+  {
+    "type": "61Ni",
+    "named": false
+  },
+  {
+    "type": "62Ni",
+    "named": false
+  },
+  {
+    "type": "63Cu",
+    "named": false
+  },
+  {
+    "type": "64Ni",
+    "named": false
+  },
+  {
+    "type": "64Zn",
+    "named": false
+  },
+  {
+    "type": "65Cu",
+    "named": false
+  },
+  {
+    "type": "66Zn",
+    "named": false
+  },
+  {
+    "type": "67Zn",
+    "named": false
+  },
+  {
+    "type": "68Zn",
+    "named": false
+  },
+  {
+    "type": "69Ga",
+    "named": false
+  },
+  {
+    "type": "6Li",
+    "named": false
+  },
+  {
+    "type": "70Ge",
+    "named": false
+  },
+  {
+    "type": "70Zn",
+    "named": false
+  },
+  {
+    "type": "71Ga",
+    "named": false
+  },
+  {
+    "type": "72Ge",
+    "named": false
+  },
+  {
+    "type": "73Ge",
+    "named": false
+  },
+  {
+    "type": "74Ge",
+    "named": false
+  },
+  {
+    "type": "74Se",
+    "named": false
+  },
+  {
+    "type": "76Ge",
+    "named": false
+  },
+  {
+    "type": "76Se",
+    "named": false
+  },
+  {
+    "type": "77Se",
+    "named": false
+  },
+  {
+    "type": "78Se",
+    "named": false
+  },
+  {
+    "type": "79Br",
+    "named": false
+  },
+  {
+    "type": "7Li",
+    "named": false
+  },
+  {
+    "type": "80Se",
+    "named": false
+  },
+  {
+    "type": "81Br",
+    "named": false
+  },
+  {
+    "type": "82Se",
+    "named": false
+  },
+  {
+    "type": "84Sr",
+    "named": false
+  },
+  {
+    "type": "85Rb",
+    "named": false
+  },
+  {
+    "type": "86Kr",
+    "named": false
+  },
+  {
+    "type": "86Sr",
+    "named": false
+  },
+  {
+    "type": "87Rb",
+    "named": false
+  },
+  {
+    "type": "87Sr",
+    "named": false
+  },
+  {
+    "type": "88Sr",
+    "named": false
+  },
+  {
+    "type": "90Zr",
+    "named": false
+  },
+  {
+    "type": "91Zr",
+    "named": false
+  },
+  {
+    "type": "92Mo",
+    "named": false
+  },
+  {
+    "type": "92Zr",
+    "named": false
+  },
+  {
+    "type": "94Mo",
+    "named": false
+  },
+  {
+    "type": "94Zr",
+    "named": false
+  },
+  {
+    "type": "95Mo",
+    "named": false
+  },
+  {
+    "type": "96Mo",
+    "named": false
+  },
+  {
+    "type": "96Zr",
+    "named": false
+  },
+  {
+    "type": "97Mo",
+    "named": false
+  },
+  {
+    "type": "98Mo",
+    "named": false
+  },
+  {
     "type": ":",
     "named": false
   },
@@ -1873,6 +3074,110 @@
     "named": false
   },
   {
+    "type": "Ac",
+    "named": false
+  },
+  {
+    "type": "Ac+3",
+    "named": false
+  },
+  {
+    "type": "Ag",
+    "named": false
+  },
+  {
+    "type": "Ag+1",
+    "named": false
+  },
+  {
+    "type": "Ag+2",
+    "named": false
+  },
+  {
+    "type": "Al",
+    "named": false
+  },
+  {
+    "type": "Al+3",
+    "named": false
+  },
+  {
+    "type": "Am",
+    "named": false
+  },
+  {
+    "type": "Ar",
+    "named": false
+  },
+  {
+    "type": "As",
+    "named": false
+  },
+  {
+    "type": "At",
+    "named": false
+  },
+  {
+    "type": "Au",
+    "named": false
+  },
+  {
+    "type": "Au+1",
+    "named": false
+  },
+  {
+    "type": "Au+3",
+    "named": false
+  },
+  {
+    "type": "B",
+    "named": false
+  },
+  {
+    "type": "Ba",
+    "named": false
+  },
+  {
+    "type": "Ba+2",
+    "named": false
+  },
+  {
+    "type": "Be",
+    "named": false
+  },
+  {
+    "type": "Be+2",
+    "named": false
+  },
+  {
+    "type": "Bi",
+    "named": false
+  },
+  {
+    "type": "Bi+3",
+    "named": false
+  },
+  {
+    "type": "Bi+5",
+    "named": false
+  },
+  {
+    "type": "Bk",
+    "named": false
+  },
+  {
+    "type": "Br",
+    "named": false
+  },
+  {
+    "type": "Br-1",
+    "named": false
+  },
+  {
+    "type": "C",
+    "named": false
+  },
+  {
     "type": "C_matrix",
     "named": false
   },
@@ -1881,7 +3186,219 @@
     "named": false
   },
   {
+    "type": "Ca",
+    "named": false
+  },
+  {
+    "type": "Ca+2",
+    "named": false
+  },
+  {
+    "type": "Cd",
+    "named": false
+  },
+  {
+    "type": "Cd+2",
+    "named": false
+  },
+  {
+    "type": "Ce",
+    "named": false
+  },
+  {
+    "type": "Ce+3",
+    "named": false
+  },
+  {
+    "type": "Ce+4",
+    "named": false
+  },
+  {
+    "type": "Cf",
+    "named": false
+  },
+  {
+    "type": "Cl",
+    "named": false
+  },
+  {
+    "type": "Cl-1",
+    "named": false
+  },
+  {
+    "type": "Cm",
+    "named": false
+  },
+  {
+    "type": "Co",
+    "named": false
+  },
+  {
+    "type": "Co+2",
+    "named": false
+  },
+  {
+    "type": "Co+3",
+    "named": false
+  },
+  {
+    "type": "Cr",
+    "named": false
+  },
+  {
+    "type": "Cr+2",
+    "named": false
+  },
+  {
+    "type": "Cr+3",
+    "named": false
+  },
+  {
+    "type": "Cs",
+    "named": false
+  },
+  {
+    "type": "Cs+1",
+    "named": false
+  },
+  {
+    "type": "Cu",
+    "named": false
+  },
+  {
+    "type": "Cu+1",
+    "named": false
+  },
+  {
+    "type": "Cu+2",
+    "named": false
+  },
+  {
+    "type": "Cval",
+    "named": false
+  },
+  {
+    "type": "D-1",
+    "named": false
+  },
+  {
+    "type": "Dy",
+    "named": false
+  },
+  {
+    "type": "Dy+3",
+    "named": false
+  },
+  {
+    "type": "Er",
+    "named": false
+  },
+  {
+    "type": "Er+3",
+    "named": false
+  },
+  {
+    "type": "Eu",
+    "named": false
+  },
+  {
+    "type": "Eu+2",
+    "named": false
+  },
+  {
+    "type": "Eu+3",
+    "named": false
+  },
+  {
+    "type": "F",
+    "named": false
+  },
+  {
+    "type": "F-1",
+    "named": false
+  },
+  {
+    "type": "Fe",
+    "named": false
+  },
+  {
+    "type": "Fe+2",
+    "named": false
+  },
+  {
+    "type": "Fe+3",
+    "named": false
+  },
+  {
     "type": "Flack",
+    "named": false
+  },
+  {
+    "type": "Fr",
+    "named": false
+  },
+  {
+    "type": "Ga",
+    "named": false
+  },
+  {
+    "type": "Ga+3",
+    "named": false
+  },
+  {
+    "type": "Gd",
+    "named": false
+  },
+  {
+    "type": "Gd+3",
+    "named": false
+  },
+  {
+    "type": "Ge",
+    "named": false
+  },
+  {
+    "type": "Ge+4",
+    "named": false
+  },
+  {
+    "type": "H",
+    "named": false
+  },
+  {
+    "type": "H-1",
+    "named": false
+  },
+  {
+    "type": "He",
+    "named": false
+  },
+  {
+    "type": "Hf",
+    "named": false
+  },
+  {
+    "type": "Hf+4",
+    "named": false
+  },
+  {
+    "type": "Hg",
+    "named": false
+  },
+  {
+    "type": "Hg+1",
+    "named": false
+  },
+  {
+    "type": "Hg+2",
+    "named": false
+  },
+  {
+    "type": "Ho",
+    "named": false
+  },
+  {
+    "type": "Ho+3",
     "named": false
   },
   {
@@ -1889,11 +3406,319 @@
     "named": false
   },
   {
+    "type": "I-1",
+    "named": false
+  },
+  {
     "type": "I_parameter_names_have_hkl",
     "named": false
   },
   {
+    "type": "In",
+    "named": false
+  },
+  {
+    "type": "In+3",
+    "named": false
+  },
+  {
+    "type": "Ir",
+    "named": false
+  },
+  {
+    "type": "Ir+3",
+    "named": false
+  },
+  {
+    "type": "Ir+4",
+    "named": false
+  },
+  {
+    "type": "K",
+    "named": false
+  },
+  {
+    "type": "K+1",
+    "named": false
+  },
+  {
+    "type": "Kr",
+    "named": false
+  },
+  {
+    "type": "La",
+    "named": false
+  },
+  {
+    "type": "La+3",
+    "named": false
+  },
+  {
     "type": "Lam",
+    "named": false
+  },
+  {
+    "type": "Li",
+    "named": false
+  },
+  {
+    "type": "Li+1",
+    "named": false
+  },
+  {
+    "type": "Lu",
+    "named": false
+  },
+  {
+    "type": "Lu+3",
+    "named": false
+  },
+  {
+    "type": "Mg",
+    "named": false
+  },
+  {
+    "type": "Mg+2",
+    "named": false
+  },
+  {
+    "type": "Mn",
+    "named": false
+  },
+  {
+    "type": "Mn+2",
+    "named": false
+  },
+  {
+    "type": "Mn+3",
+    "named": false
+  },
+  {
+    "type": "Mn+4",
+    "named": false
+  },
+  {
+    "type": "Mo",
+    "named": false
+  },
+  {
+    "type": "Mo+3",
+    "named": false
+  },
+  {
+    "type": "Mo+5",
+    "named": false
+  },
+  {
+    "type": "Mo+6",
+    "named": false
+  },
+  {
+    "type": "N",
+    "named": false
+  },
+  {
+    "type": "Na",
+    "named": false
+  },
+  {
+    "type": "Na+1",
+    "named": false
+  },
+  {
+    "type": "Nb",
+    "named": false
+  },
+  {
+    "type": "Nb+3",
+    "named": false
+  },
+  {
+    "type": "Nb+5",
+    "named": false
+  },
+  {
+    "type": "Nd",
+    "named": false
+  },
+  {
+    "type": "Nd+3",
+    "named": false
+  },
+  {
+    "type": "Ne",
+    "named": false
+  },
+  {
+    "type": "Ni",
+    "named": false
+  },
+  {
+    "type": "Ni+2",
+    "named": false
+  },
+  {
+    "type": "Ni+3",
+    "named": false
+  },
+  {
+    "type": "Np",
+    "named": false
+  },
+  {
+    "type": "Np+3",
+    "named": false
+  },
+  {
+    "type": "Np+4",
+    "named": false
+  },
+  {
+    "type": "Np+6",
+    "named": false
+  },
+  {
+    "type": "O",
+    "named": false
+  },
+  {
+    "type": "O-1",
+    "named": false
+  },
+  {
+    "type": "O-2",
+    "named": false
+  },
+  {
+    "type": "Os",
+    "named": false
+  },
+  {
+    "type": "Os+4",
+    "named": false
+  },
+  {
+    "type": "P",
+    "named": false
+  },
+  {
+    "type": "Pa",
+    "named": false
+  },
+  {
+    "type": "Pb",
+    "named": false
+  },
+  {
+    "type": "Pb+2",
+    "named": false
+  },
+  {
+    "type": "Pb+4",
+    "named": false
+  },
+  {
+    "type": "Pd",
+    "named": false
+  },
+  {
+    "type": "Pd+2",
+    "named": false
+  },
+  {
+    "type": "Pd+4",
+    "named": false
+  },
+  {
+    "type": "Pm",
+    "named": false
+  },
+  {
+    "type": "Pm+3",
+    "named": false
+  },
+  {
+    "type": "Po",
+    "named": false
+  },
+  {
+    "type": "Pr",
+    "named": false
+  },
+  {
+    "type": "Pr+3",
+    "named": false
+  },
+  {
+    "type": "Pr+4",
+    "named": false
+  },
+  {
+    "type": "Pt",
+    "named": false
+  },
+  {
+    "type": "Pt+2",
+    "named": false
+  },
+  {
+    "type": "Pt+4",
+    "named": false
+  },
+  {
+    "type": "Pu",
+    "named": false
+  },
+  {
+    "type": "Pu+3",
+    "named": false
+  },
+  {
+    "type": "Pu+4",
+    "named": false
+  },
+  {
+    "type": "Pu+6",
+    "named": false
+  },
+  {
+    "type": "Q",
+    "named": false
+  },
+  {
+    "type": "Ra",
+    "named": false
+  },
+  {
+    "type": "Ra+2",
+    "named": false
+  },
+  {
+    "type": "Rb",
+    "named": false
+  },
+  {
+    "type": "Rb+1",
+    "named": false
+  },
+  {
+    "type": "Re",
+    "named": false
+  },
+  {
+    "type": "Rh",
+    "named": false
+  },
+  {
+    "type": "Rh+3",
+    "named": false
+  },
+  {
+    "type": "Rh+4",
+    "named": false
+  },
+  {
+    "type": "Rn",
     "named": false
   },
   {
@@ -1902,6 +3727,194 @@
   },
   {
     "type": "Rs",
+    "named": false
+  },
+  {
+    "type": "Ru",
+    "named": false
+  },
+  {
+    "type": "Ru+3",
+    "named": false
+  },
+  {
+    "type": "Ru+4",
+    "named": false
+  },
+  {
+    "type": "S",
+    "named": false
+  },
+  {
+    "type": "Sb",
+    "named": false
+  },
+  {
+    "type": "Sb+3",
+    "named": false
+  },
+  {
+    "type": "Sb+5",
+    "named": false
+  },
+  {
+    "type": "Sc",
+    "named": false
+  },
+  {
+    "type": "Sc+3",
+    "named": false
+  },
+  {
+    "type": "Se",
+    "named": false
+  },
+  {
+    "type": "Si",
+    "named": false
+  },
+  {
+    "type": "Si+4",
+    "named": false
+  },
+  {
+    "type": "Siva",
+    "named": false
+  },
+  {
+    "type": "Sm",
+    "named": false
+  },
+  {
+    "type": "Sm+3",
+    "named": false
+  },
+  {
+    "type": "Sn",
+    "named": false
+  },
+  {
+    "type": "Sn+2",
+    "named": false
+  },
+  {
+    "type": "Sn+4",
+    "named": false
+  },
+  {
+    "type": "Sr",
+    "named": false
+  },
+  {
+    "type": "Sr+2",
+    "named": false
+  },
+  {
+    "type": "Ta",
+    "named": false
+  },
+  {
+    "type": "Ta+5",
+    "named": false
+  },
+  {
+    "type": "Tb",
+    "named": false
+  },
+  {
+    "type": "Tb+3",
+    "named": false
+  },
+  {
+    "type": "Tc",
+    "named": false
+  },
+  {
+    "type": "Te",
+    "named": false
+  },
+  {
+    "type": "Th",
+    "named": false
+  },
+  {
+    "type": "Th+4",
+    "named": false
+  },
+  {
+    "type": "Ti",
+    "named": false
+  },
+  {
+    "type": "Ti+2",
+    "named": false
+  },
+  {
+    "type": "Ti+3",
+    "named": false
+  },
+  {
+    "type": "Ti+4",
+    "named": false
+  },
+  {
+    "type": "Tl",
+    "named": false
+  },
+  {
+    "type": "Tl+1",
+    "named": false
+  },
+  {
+    "type": "Tl+3",
+    "named": false
+  },
+  {
+    "type": "Tm",
+    "named": false
+  },
+  {
+    "type": "Tm+3",
+    "named": false
+  },
+  {
+    "type": "U",
+    "named": false
+  },
+  {
+    "type": "U+3",
+    "named": false
+  },
+  {
+    "type": "U+4",
+    "named": false
+  },
+  {
+    "type": "U+6",
+    "named": false
+  },
+  {
+    "type": "V",
+    "named": false
+  },
+  {
+    "type": "V+2",
+    "named": false
+  },
+  {
+    "type": "V+3",
+    "named": false
+  },
+  {
+    "type": "V+5",
+    "named": false
+  },
+  {
+    "type": "W",
+    "named": false
+  },
+  {
+    "type": "W+6",
     "named": false
   },
   {
@@ -1918,6 +3931,46 @@
   },
   {
     "type": "WPPM_th2_range",
+    "named": false
+  },
+  {
+    "type": "Xe",
+    "named": false
+  },
+  {
+    "type": "Y",
+    "named": false
+  },
+  {
+    "type": "Y+3",
+    "named": false
+  },
+  {
+    "type": "Yb",
+    "named": false
+  },
+  {
+    "type": "Yb+2",
+    "named": false
+  },
+  {
+    "type": "Yb+3",
+    "named": false
+  },
+  {
+    "type": "Zn",
+    "named": false
+  },
+  {
+    "type": "Zn+2",
+    "named": false
+  },
+  {
+    "type": "Zr",
+    "named": false
+  },
+  {
+    "type": "Zr+4",
     "named": false
   },
   {
@@ -3497,6 +5550,10 @@
     "named": false
   },
   {
+    "type": "scale_occ",
+    "named": false
+  },
+  {
     "type": "scale_phase_X",
     "named": false
   },
@@ -3543,6 +5600,10 @@
   {
     "type": "site",
     "named": false
+  },
+  {
+    "type": "site_name_string",
+    "named": true
   },
   {
     "type": "site_to_restrain",
@@ -3798,30 +5859,6 @@
   },
   {
     "type": "tz",
-    "named": false
-  },
-  {
-    "type": "u11",
-    "named": false
-  },
-  {
-    "type": "u12",
-    "named": false
-  },
-  {
-    "type": "u13",
-    "named": false
-  },
-  {
-    "type": "u22",
-    "named": false
-  },
-  {
-    "type": "u23",
-    "named": false
-  },
-  {
-    "type": "u33",
     "named": false
   },
   {
