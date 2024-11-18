@@ -54,6 +54,10 @@
         }
       ]
     },
+    "arrow_comment": {
+      "type": "PATTERN",
+      "value": "->.*"
+    },
     "_literal": {
       "type": "CHOICE",
       "members": [
@@ -6959,6 +6963,10 @@
     {
       "type": "SYMBOL",
       "name": "block_comment"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "arrow_comment"
     }
   ],
   "conflicts": [],
