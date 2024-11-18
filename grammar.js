@@ -18,6 +18,7 @@ module.exports = grammar({
     /\s|\n/,
     $.line_comment,
     $.block_comment,
+    $.arrow_comment,
   ],
 
   rules: {
@@ -30,6 +31,8 @@ module.exports = grammar({
       repeat(/./),
       '*/',
     ),
+
+    arrow_comment: $ => /->.*/,
 
     _literal: $ => choice($.string_literal, $.integer_literal, $.float_literal),
 
