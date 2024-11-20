@@ -28,3 +28,17 @@ activate
     (line_comment))
   (definition))
 
+==============
+Arrow comments
+==============
+
+-> Text to be replaced
+prm !dmin_value  ->enter min d-spacing reflections to use here
+
+--------------
+(source_file
+  (arrow_comment)
+  (variable_declaration
+    (identifier)
+    (arrow_comment)
+    (MISSING string_literal)))

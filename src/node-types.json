@@ -4094,6 +4094,10 @@
     "named": false
   },
   {
+    "type": "arrow_comment",
+    "named": true
+  },
+  {
     "type": "atom_out",
     "named": false
   },
