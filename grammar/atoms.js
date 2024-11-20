@@ -1,5 +1,5 @@
 module.exports = {
-  atom: $ => choice(
+  atom: $ => token(choice(
 
     // Atoms and ions from x-ray scattering data found in atmscat.cpp
     'H',
@@ -553,5 +553,5 @@ module.exports = {
     '244Cm',
     '246Cm',
     '248Cm',
-  ),
+  )),
 };

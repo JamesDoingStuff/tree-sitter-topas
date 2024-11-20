@@ -58,6 +58,2122 @@
       "type": "PATTERN",
       "value": "->.*"
     },
+    "definition": {
+      "type": "TOKEN",
+      "content": {
+        "type": "CHOICE",
+        "members": [
+          {
+            "type": "STRING",
+            "value": "a"
+          },
+          {
+            "type": "STRING",
+            "value": "aberration_range_change_allowed"
+          },
+          {
+            "type": "STRING",
+            "value": "accumulate_phases_and_save_to_file"
+          },
+          {
+            "type": "STRING",
+            "value": "accumulate_phases_when"
+          },
+          {
+            "type": "STRING",
+            "value": "activate"
+          },
+          {
+            "type": "STRING",
+            "value": "add_pop_1st_2nd_peak"
+          },
+          {
+            "type": "STRING",
+            "value": "add_to_cloud_N"
+          },
+          {
+            "type": "STRING",
+            "value": "add_to_cloud_when"
+          },
+          {
+            "type": "STRING",
+            "value": "add_to_phases_of_weak_reflections"
+          },
+          {
+            "type": "STRING",
+            "value": "ai_anti_bump"
+          },
+          {
+            "type": "STRING",
+            "value": "ai_closest_N"
+          },
+          {
+            "type": "STRING",
+            "value": "ai_exclude_eq_0"
+          },
+          {
+            "type": "STRING",
+            "value": "ai_flatten_with_tollerance_of"
+          },
+          {
+            "type": "STRING",
+            "value": "ai_no_self_interation"
+          },
+          {
+            "type": "STRING",
+            "value": "ai_only_eq_0"
+          },
+          {
+            "type": "STRING",
+            "value": "ai_radius"
+          },
+          {
+            "type": "STRING",
+            "value": "ai_sites_1"
+          },
+          {
+            "type": "STRING",
+            "value": "ai_sites_2"
+          },
+          {
+            "type": "STRING",
+            "value": "al"
+          },
+          {
+            "type": "STRING",
+            "value": "amorphous_area"
+          },
+          {
+            "type": "STRING",
+            "value": "amorphous_phase"
+          },
+          {
+            "type": "STRING",
+            "value": "append_bond_lengths"
+          },
+          {
+            "type": "STRING",
+            "value": "append_cartesian"
+          },
+          {
+            "type": "STRING",
+            "value": "append_fractional"
+          },
+          {
+            "type": "STRING",
+            "value": "apply_exp_scale"
+          },
+          {
+            "type": "STRING",
+            "value": "approximate_A"
+          },
+          {
+            "type": "STRING",
+            "value": "atomic_interaction"
+          },
+          {
+            "type": "STRING",
+            "value": "atom_out"
+          },
+          {
+            "type": "STRING",
+            "value": "auto_scale"
+          },
+          {
+            "type": "STRING",
+            "value": "auto_sparse_CG"
+          },
+          {
+            "type": "STRING",
+            "value": "axial_conv"
+          },
+          {
+            "type": "STRING",
+            "value": "axial_del"
+          },
+          {
+            "type": "STRING",
+            "value": "axial_n_beta"
+          },
+          {
+            "type": "STRING",
+            "value": "a_add"
+          },
+          {
+            "type": "STRING",
+            "value": "A_matrix"
+          },
+          {
+            "type": "STRING",
+            "value": "A_matrix_normalized"
+          },
+          {
+            "type": "STRING",
+            "value": "A_matrix_prm_filter"
+          },
+          {
+            "type": "STRING",
+            "value": "b"
+          },
+          {
+            "type": "STRING",
+            "value": "be"
+          },
+          {
+            "type": "STRING",
+            "value": "bkg"
+          },
+          {
+            "type": "STRING",
+            "value": "bootstrap_errors"
+          },
+          {
+            "type": "STRING",
+            "value": "box_interaction"
+          },
+          {
+            "type": "STRING",
+            "value": "break_cycle_if_true"
+          },
+          {
+            "type": "STRING",
+            "value": "brindley_spherical_r_cm"
+          },
+          {
+            "type": "STRING",
+            "value": "bring_2nd_peak_to_top"
+          },
+          {
+            "type": "STRING",
+            "value": "broaden_peaks"
+          },
+          {
+            "type": "STRING",
+            "value": "b_add"
+          },
+          {
+            "type": "STRING",
+            "value": "c"
+          },
+          {
+            "type": "STRING",
+            "value": "calculate_Lam"
+          },
+          {
+            "type": "STRING",
+            "value": "capillary_diameter_mm"
+          },
+          {
+            "type": "STRING",
+            "value": "capillary_divergent_beam"
+          },
+          {
+            "type": "STRING",
+            "value": "capillary_parallel_beam"
+          },
+          {
+            "type": "STRING",
+            "value": "capillary_u_cm_inv"
+          },
+          {
+            "type": "STRING",
+            "value": "cell_mass"
+          },
+          {
+            "type": "STRING",
+            "value": "cell_volume"
+          },
+          {
+            "type": "STRING",
+            "value": "cf_hkl_file"
+          },
+          {
+            "type": "STRING",
+            "value": "cf_in_A_matrix"
+          },
+          {
+            "type": "STRING",
+            "value": "charge_flipping"
+          },
+          {
+            "type": "STRING",
+            "value": "chi2"
+          },
+          {
+            "type": "STRING",
+            "value": "chi2_convergence_criteria"
+          },
+          {
+            "type": "STRING",
+            "value": "chk_for_best"
+          },
+          {
+            "type": "STRING",
+            "value": "choose_from"
+          },
+          {
+            "type": "STRING",
+            "value": "choose_randomly"
+          },
+          {
+            "type": "STRING",
+            "value": "choose_to"
+          },
+          {
+            "type": "STRING",
+            "value": "circles_conv"
+          },
+          {
+            "type": "STRING",
+            "value": "cloud"
+          },
+          {
+            "type": "STRING",
+            "value": "cloud"
+          },
+          {
+            "type": "STRING",
+            "value": "cloud_atomic_separation"
+          },
+          {
+            "type": "STRING",
+            "value": "cloud_atomic_separation"
+          },
+          {
+            "type": "STRING",
+            "value": "cloud_extract_and_save_xyzs"
+          },
+          {
+            "type": "STRING",
+            "value": "cloud_fit"
+          },
+          {
+            "type": "STRING",
+            "value": "cloud_formation_omit_rwps"
+          },
+          {
+            "type": "STRING",
+            "value": "cloud_gauss_fwhm"
+          },
+          {
+            "type": "STRING",
+            "value": "cloud_gauss_fwhm"
+          },
+          {
+            "type": "STRING",
+            "value": "cloud_I"
+          },
+          {
+            "type": "STRING",
+            "value": "cloud_load"
+          },
+          {
+            "type": "STRING",
+            "value": "cloud_load_fixed_starting"
+          },
+          {
+            "type": "STRING",
+            "value": "cloud_load_xyzs"
+          },
+          {
+            "type": "STRING",
+            "value": "cloud_load_xyzs"
+          },
+          {
+            "type": "STRING",
+            "value": "cloud_load_xyzs_omit_rwps"
+          },
+          {
+            "type": "STRING",
+            "value": "cloud_match_gauss_fwhm"
+          },
+          {
+            "type": "STRING",
+            "value": "cloud_min_intensity"
+          },
+          {
+            "type": "STRING",
+            "value": "cloud_number_to_extract"
+          },
+          {
+            "type": "STRING",
+            "value": "cloud_N_to_extract"
+          },
+          {
+            "type": "STRING",
+            "value": "cloud_population"
+          },
+          {
+            "type": "STRING",
+            "value": "cloud_population"
+          },
+          {
+            "type": "STRING",
+            "value": "cloud_pre_randimize_add_to"
+          },
+          {
+            "type": "STRING",
+            "value": "cloud_save"
+          },
+          {
+            "type": "STRING",
+            "value": "cloud_save"
+          },
+          {
+            "type": "STRING",
+            "value": "cloud_save_match_xy"
+          },
+          {
+            "type": "STRING",
+            "value": "cloud_save_processed_xyzs"
+          },
+          {
+            "type": "STRING",
+            "value": "cloud_save_xyzs"
+          },
+          {
+            "type": "STRING",
+            "value": "cloud_save_xyzs"
+          },
+          {
+            "type": "STRING",
+            "value": "cloud_stay_within"
+          },
+          {
+            "type": "STRING",
+            "value": "cloud_try_accept"
+          },
+          {
+            "type": "STRING",
+            "value": "conserve_memory"
+          },
+          {
+            "type": "STRING",
+            "value": "consider_lattice_parameters"
+          },
+          {
+            "type": "STRING",
+            "value": "continue_after_convergence"
+          },
+          {
+            "type": "STRING",
+            "value": "convolute_X_recal"
+          },
+          {
+            "type": "STRING",
+            "value": "convolution_step"
+          },
+          {
+            "type": "STRING",
+            "value": "corrected_weight_percent"
+          },
+          {
+            "type": "STRING",
+            "value": "correct_for_atomic_scattering_factors"
+          },
+          {
+            "type": "STRING",
+            "value": "correct_for_temperature_effects"
+          },
+          {
+            "type": "STRING",
+            "value": "crystalline_area"
+          },
+          {
+            "type": "STRING",
+            "value": "current_peak_max_x"
+          },
+          {
+            "type": "STRING",
+            "value": "current_peak_min_x"
+          },
+          {
+            "type": "STRING",
+            "value": "C_matrix"
+          },
+          {
+            "type": "STRING",
+            "value": "C_matrix_normalized"
+          },
+          {
+            "type": "STRING",
+            "value": "d"
+          },
+          {
+            "type": "STRING",
+            "value": "def"
+          },
+          {
+            "type": "STRING",
+            "value": "default_I_attributes"
+          },
+          {
+            "type": "STRING",
+            "value": "degree_of_crystallinity"
+          },
+          {
+            "type": "STRING",
+            "value": "del"
+          },
+          {
+            "type": "STRING",
+            "value": "delete_observed_reflections"
+          },
+          {
+            "type": "STRING",
+            "value": "del_approx"
+          },
+          {
+            "type": "STRING",
+            "value": "determine_values_from_samples"
+          },
+          {
+            "type": "STRING",
+            "value": "displace"
+          },
+          {
+            "type": "STRING",
+            "value": "dont_merge_equivalent_reflections"
+          },
+          {
+            "type": "STRING",
+            "value": "dont_merge_Friedel_pairs"
+          },
+          {
+            "type": "STRING",
+            "value": "do_errors"
+          },
+          {
+            "type": "STRING",
+            "value": "do_errors_include_penalties"
+          },
+          {
+            "type": "STRING",
+            "value": "do_errors_include_restraints"
+          },
+          {
+            "type": "STRING",
+            "value": "dummy"
+          },
+          {
+            "type": "STRING",
+            "value": "dummy_str"
+          },
+          {
+            "type": "STRING",
+            "value": "d_Is"
+          },
+          {
+            "type": "STRING",
+            "value": "elemental_composition"
+          },
+          {
+            "type": "STRING",
+            "value": "element_weight_percent"
+          },
+          {
+            "type": "STRING",
+            "value": "element_weight_percent_known"
+          },
+          {
+            "type": "STRING",
+            "value": "exclude"
+          },
+          {
+            "type": "STRING",
+            "value": "exp_conv_const"
+          },
+          {
+            "type": "STRING",
+            "value": "exp_limit"
+          },
+          {
+            "type": "STRING",
+            "value": "extend_calculated_sphere_to"
+          },
+          {
+            "type": "STRING",
+            "value": "extra_X"
+          },
+          {
+            "type": "STRING",
+            "value": "extra_X_left"
+          },
+          {
+            "type": "STRING",
+            "value": "extra_X_right"
+          },
+          {
+            "type": "STRING",
+            "value": "f0"
+          },
+          {
+            "type": "STRING",
+            "value": "f0_f1_f11_atom"
+          },
+          {
+            "type": "STRING",
+            "value": "f11"
+          },
+          {
+            "type": "STRING",
+            "value": "f1"
+          },
+          {
+            "type": "STRING",
+            "value": "filament_length"
+          },
+          {
+            "type": "STRING",
+            "value": "file_out"
+          },
+          {
+            "type": "STRING",
+            "value": "find_origin"
+          },
+          {
+            "type": "STRING",
+            "value": "finish_X"
+          },
+          {
+            "type": "STRING",
+            "value": "fit_obj"
+          },
+          {
+            "type": "STRING",
+            "value": "fit_obj_phase"
+          },
+          {
+            "type": "STRING",
+            "value": "Flack"
+          },
+          {
+            "type": "STRING",
+            "value": "flat_crystal_pre_monochromator_axial_const"
+          },
+          {
+            "type": "STRING",
+            "value": "flip_equation"
+          },
+          {
+            "type": "STRING",
+            "value": "flip_neutron"
+          },
+          {
+            "type": "STRING",
+            "value": "flip_regime_2"
+          },
+          {
+            "type": "STRING",
+            "value": "flip_regime_3"
+          },
+          {
+            "type": "STRING",
+            "value": "fn"
+          },
+          {
+            "type": "STRING",
+            "value": "fourier_map"
+          },
+          {
+            "type": "STRING",
+            "value": "fourier_map_formula"
+          },
+          {
+            "type": "STRING",
+            "value": "fo_transform_X"
+          },
+          {
+            "type": "STRING",
+            "value": "fraction_density_to_flip"
+          },
+          {
+            "type": "STRING",
+            "value": "fraction_of_yobs_to_resample"
+          },
+          {
+            "type": "STRING",
+            "value": "fraction_reflections_weak"
+          },
+          {
+            "type": "STRING",
+            "value": "ft_conv"
+          },
+          {
+            "type": "STRING",
+            "value": "ft_convolution"
+          },
+          {
+            "type": "STRING",
+            "value": "ft_L_max"
+          },
+          {
+            "type": "STRING",
+            "value": "ft_min"
+          },
+          {
+            "type": "STRING",
+            "value": "ft_x_axis_range"
+          },
+          {
+            "type": "STRING",
+            "value": "fullprof_format"
+          },
+          {
+            "type": "STRING",
+            "value": "f_atom_quantity"
+          },
+          {
+            "type": "STRING",
+            "value": "f_atom_type"
+          },
+          {
+            "type": "STRING",
+            "value": "ga"
+          },
+          {
+            "type": "STRING",
+            "value": "gauss_fwhm"
+          },
+          {
+            "type": "STRING",
+            "value": "generate_name_append"
+          },
+          {
+            "type": "STRING",
+            "value": "generate_stack_sequences"
+          },
+          {
+            "type": "STRING",
+            "value": "generate_these"
+          },
+          {
+            "type": "STRING",
+            "value": "gof"
+          },
+          {
+            "type": "STRING",
+            "value": "grs_interaction"
+          },
+          {
+            "type": "STRING",
+            "value": "gsas_format"
+          },
+          {
+            "type": "STRING",
+            "value": "gui_add_bkg"
+          },
+          {
+            "type": "STRING",
+            "value": "h1"
+          },
+          {
+            "type": "STRING",
+            "value": "h2"
+          },
+          {
+            "type": "STRING",
+            "value": "half_hat"
+          },
+          {
+            "type": "STRING",
+            "value": "hat"
+          },
+          {
+            "type": "STRING",
+            "value": "hat_height"
+          },
+          {
+            "type": "STRING",
+            "value": "height"
+          },
+          {
+            "type": "STRING",
+            "value": "histogram_match_scale_fwhm"
+          },
+          {
+            "type": "STRING",
+            "value": "hklis"
+          },
+          {
+            "type": "STRING",
+            "value": "hkl_Is"
+          },
+          {
+            "type": "STRING",
+            "value": "hkl_m_d_th2"
+          },
+          {
+            "type": "STRING",
+            "value": "hkl_Re_Im"
+          },
+          {
+            "type": "STRING",
+            "value": "hm_covalent_fwhm"
+          },
+          {
+            "type": "STRING",
+            "value": "hm_size_limit_in_fwhm"
+          },
+          {
+            "type": "STRING",
+            "value": "I"
+          },
+          {
+            "type": "STRING",
+            "value": "ignore_differences_in_Friedel_pairs"
+          },
+          {
+            "type": "STRING",
+            "value": "index_d"
+          },
+          {
+            "type": "STRING",
+            "value": "index_exclude_max_on_min_lp_less_than"
+          },
+          {
+            "type": "STRING",
+            "value": "index_I"
+          },
+          {
+            "type": "STRING",
+            "value": "index_lam"
+          },
+          {
+            "type": "STRING",
+            "value": "index_max_lp"
+          },
+          {
+            "type": "STRING",
+            "value": "index_max_Nc_on_No"
+          },
+          {
+            "type": "STRING",
+            "value": "index_max_number_of_solutions"
+          },
+          {
+            "type": "STRING",
+            "value": "index_max_th2_error"
+          },
+          {
+            "type": "STRING",
+            "value": "index_max_zero_error"
+          },
+          {
+            "type": "STRING",
+            "value": "index_min_lp"
+          },
+          {
+            "type": "STRING",
+            "value": "index_th2"
+          },
+          {
+            "type": "STRING",
+            "value": "index_th2_resolution"
+          },
+          {
+            "type": "STRING",
+            "value": "index_x0"
+          },
+          {
+            "type": "STRING",
+            "value": "index_zero_error"
+          },
+          {
+            "type": "STRING",
+            "value": "insert"
+          },
+          {
+            "type": "STRING",
+            "value": "in_cartesian"
+          },
+          {
+            "type": "STRING",
+            "value": "in_FC"
+          },
+          {
+            "type": "STRING",
+            "value": "in_str_format"
+          },
+          {
+            "type": "STRING",
+            "value": "iters"
+          },
+          {
+            "type": "STRING",
+            "value": "i_on_error_ratio_tolerance"
+          },
+          {
+            "type": "STRING",
+            "value": "I_parameter_names_have_hkl"
+          },
+          {
+            "type": "STRING",
+            "value": "la"
+          },
+          {
+            "type": "STRING",
+            "value": "Lam"
+          },
+          {
+            "type": "STRING",
+            "value": "lam"
+          },
+          {
+            "type": "STRING",
+            "value": "layer"
+          },
+          {
+            "type": "STRING",
+            "value": "layers_tol"
+          },
+          {
+            "type": "STRING",
+            "value": "lebail"
+          },
+          {
+            "type": "STRING",
+            "value": "lg"
+          },
+          {
+            "type": "STRING",
+            "value": "lh"
+          },
+          {
+            "type": "STRING",
+            "value": "line_min"
+          },
+          {
+            "type": "STRING",
+            "value": "lo"
+          },
+          {
+            "type": "STRING",
+            "value": "load"
+          },
+          {
+            "type": "STRING",
+            "value": "lor_fwhm"
+          },
+          {
+            "type": "STRING",
+            "value": "lpsd_beam_spill_correct_intensity"
+          },
+          {
+            "type": "STRING",
+            "value": "lpsd_equitorial_divergence_degrees"
+          },
+          {
+            "type": "STRING",
+            "value": "lpsd_equitorial_sample_length_mm"
+          },
+          {
+            "type": "STRING",
+            "value": "lpsd_th2_angular_range_degrees"
+          },
+          {
+            "type": "STRING",
+            "value": "lp_search"
+          },
+          {
+            "type": "STRING",
+            "value": "m1"
+          },
+          {
+            "type": "STRING",
+            "value": "m2"
+          },
+          {
+            "type": "STRING",
+            "value": "mag_atom_out"
+          },
+          {
+            "type": "STRING",
+            "value": "mag_only"
+          },
+          {
+            "type": "STRING",
+            "value": "mag_only_for_mag_sites"
+          },
+          {
+            "type": "STRING",
+            "value": "mag_space_group"
+          },
+          {
+            "type": "STRING",
+            "value": "marquardt_constant"
+          },
+          {
+            "type": "STRING",
+            "value": "match_transition_matrix_stats"
+          },
+          {
+            "type": "STRING",
+            "value": "max"
+          },
+          {
+            "type": "STRING",
+            "value": "max_r"
+          },
+          {
+            "type": "STRING",
+            "value": "max_X"
+          },
+          {
+            "type": "STRING",
+            "value": "mg"
+          },
+          {
+            "type": "STRING",
+            "value": "min"
+          },
+          {
+            "type": "STRING",
+            "value": "min_d"
+          },
+          {
+            "type": "STRING",
+            "value": "min_grid_spacing"
+          },
+          {
+            "type": "STRING",
+            "value": "min_r"
+          },
+          {
+            "type": "STRING",
+            "value": "min_X"
+          },
+          {
+            "type": "STRING",
+            "value": "mixture_density_g_on_cm3"
+          },
+          {
+            "type": "STRING",
+            "value": "mixture_MAC"
+          },
+          {
+            "type": "STRING",
+            "value": "mlx"
+          },
+          {
+            "type": "STRING",
+            "value": "mly"
+          },
+          {
+            "type": "STRING",
+            "value": "mlz"
+          },
+          {
+            "type": "STRING",
+            "value": "modify_initial_phases"
+          },
+          {
+            "type": "STRING",
+            "value": "modify_peak"
+          },
+          {
+            "type": "STRING",
+            "value": "modify_peak_apply_before_convolutions"
+          },
+          {
+            "type": "STRING",
+            "value": "modify_peak_eqn"
+          },
+          {
+            "type": "STRING",
+            "value": "more_accurate_Voigt"
+          },
+          {
+            "type": "STRING",
+            "value": "move_to"
+          },
+          {
+            "type": "STRING",
+            "value": "move_to_the_next_temperature_regardless_of_the_change_in_rwp"
+          },
+          {
+            "type": "STRING",
+            "value": "n1"
+          },
+          {
+            "type": "STRING",
+            "value": "n2"
+          },
+          {
+            "type": "STRING",
+            "value": "n3"
+          },
+          {
+            "type": "STRING",
+            "value": "n"
+          },
+          {
+            "type": "STRING",
+            "value": "ndx_allp"
+          },
+          {
+            "type": "STRING",
+            "value": "ndx_alp"
+          },
+          {
+            "type": "STRING",
+            "value": "ndx_belp"
+          },
+          {
+            "type": "STRING",
+            "value": "ndx_blp"
+          },
+          {
+            "type": "STRING",
+            "value": "ndx_clp"
+          },
+          {
+            "type": "STRING",
+            "value": "ndx_galp"
+          },
+          {
+            "type": "STRING",
+            "value": "ndx_gof"
+          },
+          {
+            "type": "STRING",
+            "value": "ndx_sg"
+          },
+          {
+            "type": "STRING",
+            "value": "ndx_uni"
+          },
+          {
+            "type": "STRING",
+            "value": "ndx_vol"
+          },
+          {
+            "type": "STRING",
+            "value": "ndx_ze"
+          },
+          {
+            "type": "STRING",
+            "value": "neutron_data"
+          },
+          {
+            "type": "STRING",
+            "value": "normalize_FCs"
+          },
+          {
+            "type": "STRING",
+            "value": "normals_plot"
+          },
+          {
+            "type": "STRING",
+            "value": "normals_plot_min_d"
+          },
+          {
+            "type": "STRING",
+            "value": "no_f11"
+          },
+          {
+            "type": "STRING",
+            "value": "no_inline"
+          },
+          {
+            "type": "STRING",
+            "value": "no_LIMIT_warnings"
+          },
+          {
+            "type": "STRING",
+            "value": "no_normal_equations"
+          },
+          {
+            "type": "STRING",
+            "value": "no_th_dependence"
+          },
+          {
+            "type": "STRING",
+            "value": "number_of_sequences"
+          },
+          {
+            "type": "STRING",
+            "value": "number_of_stacks_per_sequence"
+          },
+          {
+            "type": "STRING",
+            "value": "numerical_area"
+          },
+          {
+            "type": "STRING",
+            "value": "numerical_lor_gauss_conv"
+          },
+          {
+            "type": "STRING",
+            "value": "numerical_lor_ymin_on_ymax"
+          },
+          {
+            "type": "STRING",
+            "value": "num_hats"
+          },
+          {
+            "type": "STRING",
+            "value": "num_highest_I_values_to_keep"
+          },
+          {
+            "type": "STRING",
+            "value": "num_patterns_at_a_time"
+          },
+          {
+            "type": "STRING",
+            "value": "num_runs"
+          },
+          {
+            "type": "STRING",
+            "value": "num_unique_vx_vy"
+          },
+          {
+            "type": "STRING",
+            "value": "n_avg"
+          },
+          {
+            "type": "STRING",
+            "value": "occ_merge"
+          },
+          {
+            "type": "STRING",
+            "value": "occ_merge_radius"
+          },
+          {
+            "type": "STRING",
+            "value": "omit"
+          },
+          {
+            "type": "STRING",
+            "value": "omit_hkls"
+          },
+          {
+            "type": "STRING",
+            "value": "one_on_x_conv"
+          },
+          {
+            "type": "STRING",
+            "value": "only_lps"
+          },
+          {
+            "type": "STRING",
+            "value": "only_penalties"
+          },
+          {
+            "type": "STRING",
+            "value": "on_best_goto"
+          },
+          {
+            "type": "STRING",
+            "value": "on_best_rewind"
+          },
+          {
+            "type": "STRING",
+            "value": "operate_on_points"
+          },
+          {
+            "type": "STRING",
+            "value": "out"
+          },
+          {
+            "type": "STRING",
+            "value": "out_A_matrix"
+          },
+          {
+            "type": "STRING",
+            "value": "out_chi2"
+          },
+          {
+            "type": "STRING",
+            "value": "out_dependences"
+          },
+          {
+            "type": "STRING",
+            "value": "out_dependents_for"
+          },
+          {
+            "type": "STRING",
+            "value": "out_eqn"
+          },
+          {
+            "type": "STRING",
+            "value": "out_file"
+          },
+          {
+            "type": "STRING",
+            "value": "out_fmt"
+          },
+          {
+            "type": "STRING",
+            "value": "out_fmt_err"
+          },
+          {
+            "type": "STRING",
+            "value": "out_prm_vals_dependents_filter"
+          },
+          {
+            "type": "STRING",
+            "value": "out_prm_vals_filter"
+          },
+          {
+            "type": "STRING",
+            "value": "out_prm_vals_on_convergence"
+          },
+          {
+            "type": "STRING",
+            "value": "out_prm_vals_per_iteration"
+          },
+          {
+            "type": "STRING",
+            "value": "out_record"
+          },
+          {
+            "type": "STRING",
+            "value": "out_refinement_stats"
+          },
+          {
+            "type": "STRING",
+            "value": "out_rwp"
+          },
+          {
+            "type": "STRING",
+            "value": "pdf_convolute"
+          },
+          {
+            "type": "STRING",
+            "value": "pdf_data"
+          },
+          {
+            "type": "STRING",
+            "value": "pdf_for_pairs"
+          },
+          {
+            "type": "STRING",
+            "value": "pdf_gauss_fwhm"
+          },
+          {
+            "type": "STRING",
+            "value": "pdf_info"
+          },
+          {
+            "type": "STRING",
+            "value": "pdf_only_eq_0"
+          },
+          {
+            "type": "STRING",
+            "value": "pdf_scale_simple"
+          },
+          {
+            "type": "STRING",
+            "value": "pdf_ymin_on_ymax"
+          },
+          {
+            "type": "STRING",
+            "value": "pdf_zero"
+          },
+          {
+            "type": "STRING",
+            "value": "peak_buffer_based_on"
+          },
+          {
+            "type": "STRING",
+            "value": "peak_buffer_based_on_tol"
+          },
+          {
+            "type": "STRING",
+            "value": "peak_buffer_step"
+          },
+          {
+            "type": "STRING",
+            "value": "peak_type"
+          },
+          {
+            "type": "STRING",
+            "value": "penalties_weighting_K1"
+          },
+          {
+            "type": "STRING",
+            "value": "penalty"
+          },
+          {
+            "type": "STRING",
+            "value": "pen_weight"
+          },
+          {
+            "type": "STRING",
+            "value": "percent_zeros_before_sparse_A"
+          },
+          {
+            "type": "STRING",
+            "value": "phase_MAC"
+          },
+          {
+            "type": "STRING",
+            "value": "phase_name"
+          },
+          {
+            "type": "STRING",
+            "value": "phase_out"
+          },
+          {
+            "type": "STRING",
+            "value": "phase_penalties"
+          },
+          {
+            "type": "STRING",
+            "value": "pick_atoms"
+          },
+          {
+            "type": "STRING",
+            "value": "pick_atoms_when"
+          },
+          {
+            "type": "STRING",
+            "value": "pk_xo"
+          },
+          {
+            "type": "STRING",
+            "value": "point_for_site"
+          },
+          {
+            "type": "STRING",
+            "value": "primary_soller_angle"
+          },
+          {
+            "type": "STRING",
+            "value": "prm_with_error"
+          },
+          {
+            "type": "STRING",
+            "value": "process_times"
+          },
+          {
+            "type": "STRING",
+            "value": "pr_str"
+          },
+          {
+            "type": "STRING",
+            "value": "push_peak"
+          },
+          {
+            "type": "STRING",
+            "value": "pv_fwhm"
+          },
+          {
+            "type": "STRING",
+            "value": "pv_lor"
+          },
+          {
+            "type": "STRING",
+            "value": "qa"
+          },
+          {
+            "type": "STRING",
+            "value": "qb"
+          },
+          {
+            "type": "STRING",
+            "value": "qc"
+          },
+          {
+            "type": "STRING",
+            "value": "quick_refine"
+          },
+          {
+            "type": "STRING",
+            "value": "quick_refine_remove"
+          },
+          {
+            "type": "STRING",
+            "value": "qx"
+          },
+          {
+            "type": "STRING",
+            "value": "qy"
+          },
+          {
+            "type": "STRING",
+            "value": "qz"
+          },
+          {
+            "type": "STRING",
+            "value": "randomize_initial_phases_by"
+          },
+          {
+            "type": "STRING",
+            "value": "randomize_on_errors"
+          },
+          {
+            "type": "STRING",
+            "value": "randomize_phases_on_new_cycle_by"
+          },
+          {
+            "type": "STRING",
+            "value": "range"
+          },
+          {
+            "type": "STRING",
+            "value": "rebin_min_merge"
+          },
+          {
+            "type": "STRING",
+            "value": "rebin_tollerance_in_Y"
+          },
+          {
+            "type": "STRING",
+            "value": "rebin_with_dx_of"
+          },
+          {
+            "type": "STRING",
+            "value": "recal_weighting_on_iter"
+          },
+          {
+            "type": "STRING",
+            "value": "receiving_slit_length"
+          },
+          {
+            "type": "STRING",
+            "value": "redo_hkls"
+          },
+          {
+            "type": "STRING",
+            "value": "remove_phase"
+          },
+          {
+            "type": "STRING",
+            "value": "report_on"
+          },
+          {
+            "type": "STRING",
+            "value": "report_on_str"
+          },
+          {
+            "type": "STRING",
+            "value": "resample_from_current_ycalc"
+          },
+          {
+            "type": "STRING",
+            "value": "restraint"
+          },
+          {
+            "type": "STRING",
+            "value": "return"
+          },
+          {
+            "type": "STRING",
+            "value": "rigid"
+          },
+          {
+            "type": "STRING",
+            "value": "rotate"
+          },
+          {
+            "type": "STRING",
+            "value": "Rp"
+          },
+          {
+            "type": "STRING",
+            "value": "Rs"
+          },
+          {
+            "type": "STRING",
+            "value": "r_bragg"
+          },
+          {
+            "type": "STRING",
+            "value": "r_exp"
+          },
+          {
+            "type": "STRING",
+            "value": "r_exp_dash"
+          },
+          {
+            "type": "STRING",
+            "value": "r_p"
+          },
+          {
+            "type": "STRING",
+            "value": "r_p_dash"
+          },
+          {
+            "type": "STRING",
+            "value": "r_wp"
+          },
+          {
+            "type": "STRING",
+            "value": "r_wp_dash"
+          },
+          {
+            "type": "STRING",
+            "value": "r_wp_normal"
+          },
+          {
+            "type": "STRING",
+            "value": "sample_length"
+          },
+          {
+            "type": "STRING",
+            "value": "save_best_chi2"
+          },
+          {
+            "type": "STRING",
+            "value": "save_sequences"
+          },
+          {
+            "type": "STRING",
+            "value": "save_sequences_as_strs"
+          },
+          {
+            "type": "STRING",
+            "value": "save_values_as_best_after_randomization"
+          },
+          {
+            "type": "STRING",
+            "value": "scale"
+          },
+          {
+            "type": "STRING",
+            "value": "scale_Aij"
+          },
+          {
+            "type": "STRING",
+            "value": "scale_density_below_threshold"
+          },
+          {
+            "type": "STRING",
+            "value": "scale_E"
+          },
+          {
+            "type": "STRING",
+            "value": "scale_F000"
+          },
+          {
+            "type": "STRING",
+            "value": "scale_F"
+          },
+          {
+            "type": "STRING",
+            "value": "scale_phases"
+          },
+          {
+            "type": "STRING",
+            "value": "scale_phase_X"
+          },
+          {
+            "type": "STRING",
+            "value": "scale_pks"
+          },
+          {
+            "type": "STRING",
+            "value": "scale_top_peak"
+          },
+          {
+            "type": "STRING",
+            "value": "scale_weak_reflections"
+          },
+          {
+            "type": "STRING",
+            "value": "secondary_soller_angle"
+          },
+          {
+            "type": "STRING",
+            "value": "seed"
+          },
+          {
+            "type": "STRING",
+            "value": "set_initial_phases_to"
+          },
+          {
+            "type": "STRING",
+            "value": "sh_alpha"
+          },
+          {
+            "type": "STRING",
+            "value": "sh_Cij_prm"
+          },
+          {
+            "type": "STRING",
+            "value": "sh_order"
+          },
+          {
+            "type": "STRING",
+            "value": "sites_angle"
+          },
+          {
+            "type": "STRING",
+            "value": "sites_avg_rand_xyz"
+          },
+          {
+            "type": "STRING",
+            "value": "sites_distance"
+          },
+          {
+            "type": "STRING",
+            "value": "sites_flatten"
+          },
+          {
+            "type": "STRING",
+            "value": "sites_geometry"
+          },
+          {
+            "type": "STRING",
+            "value": "sites_rand_on_avg"
+          },
+          {
+            "type": "STRING",
+            "value": "sites_rand_on_avg_distance_to_randomize"
+          },
+          {
+            "type": "STRING",
+            "value": "sites_rand_on_avg_min_distance"
+          },
+          {
+            "type": "STRING",
+            "value": "site_to_restrain"
+          },
+          {
+            "type": "STRING",
+            "value": "siv_s1_s2"
+          },
+          {
+            "type": "STRING",
+            "value": "smooth"
+          },
+          {
+            "type": "STRING",
+            "value": "space_group"
+          },
+          {
+            "type": "STRING",
+            "value": "sparse_A"
+          },
+          {
+            "type": "STRING",
+            "value": "spherical_harmonics_hkl"
+          },
+          {
+            "type": "STRING",
+            "value": "spiked_phase_measured_weight_percent"
+          },
+          {
+            "type": "STRING",
+            "value": "spv_h1"
+          },
+          {
+            "type": "STRING",
+            "value": "spv_h2"
+          },
+          {
+            "type": "STRING",
+            "value": "spv_l1"
+          },
+          {
+            "type": "STRING",
+            "value": "spv_l2"
+          },
+          {
+            "type": "STRING",
+            "value": "stack"
+          },
+          {
+            "type": "STRING",
+            "value": "stacked_hats_conv"
+          },
+          {
+            "type": "STRING",
+            "value": "start_values_from_site"
+          },
+          {
+            "type": "STRING",
+            "value": "start_X"
+          },
+          {
+            "type": "STRING",
+            "value": "stop_when"
+          },
+          {
+            "type": "STRING",
+            "value": "str"
+          },
+          {
+            "type": "STRING",
+            "value": "strs"
+          },
+          {
+            "type": "STRING",
+            "value": "str_hkl_angle"
+          },
+          {
+            "type": "STRING",
+            "value": "str_hkl_smallest_angle"
+          },
+          {
+            "type": "STRING",
+            "value": "str_mass"
+          },
+          {
+            "type": "STRING",
+            "value": "str_mass"
+          },
+          {
+            "type": "STRING",
+            "value": "sx"
+          },
+          {
+            "type": "STRING",
+            "value": "sy"
+          },
+          {
+            "type": "STRING",
+            "value": "symmetry_obey_0_to_1"
+          },
+          {
+            "type": "STRING",
+            "value": "system_after_save_OUT"
+          },
+          {
+            "type": "STRING",
+            "value": "system_before_save_OUT"
+          },
+          {
+            "type": "STRING",
+            "value": "sz"
+          },
+          {
+            "type": "STRING",
+            "value": "ta"
+          },
+          {
+            "type": "STRING",
+            "value": "tag"
+          },
+          {
+            "type": "STRING",
+            "value": "tag_2"
+          },
+          {
+            "type": "STRING",
+            "value": "tangent_max_triplets_per_h"
+          },
+          {
+            "type": "STRING",
+            "value": "tangent_min_triplets_per_h"
+          },
+          {
+            "type": "STRING",
+            "value": "tangent_num_h_keep"
+          },
+          {
+            "type": "STRING",
+            "value": "tangent_num_h_read"
+          },
+          {
+            "type": "STRING",
+            "value": "tangent_num_k_read"
+          },
+          {
+            "type": "STRING",
+            "value": "tangent_scale_difference_by"
+          },
+          {
+            "type": "STRING",
+            "value": "tangent_tiny"
+          },
+          {
+            "type": "STRING",
+            "value": "tb"
+          },
+          {
+            "type": "STRING",
+            "value": "tc"
+          },
+          {
+            "type": "STRING",
+            "value": "temperature"
+          },
+          {
+            "type": "STRING",
+            "value": "test_a"
+          },
+          {
+            "type": "STRING",
+            "value": "test_al"
+          },
+          {
+            "type": "STRING",
+            "value": "test_b"
+          },
+          {
+            "type": "STRING",
+            "value": "test_be"
+          },
+          {
+            "type": "STRING",
+            "value": "test_c"
+          },
+          {
+            "type": "STRING",
+            "value": "test_ga"
+          },
+          {
+            "type": "STRING",
+            "value": "th2_offset"
+          },
+          {
+            "type": "STRING",
+            "value": "to"
+          },
+          {
+            "type": "STRING",
+            "value": "transition"
+          },
+          {
+            "type": "STRING",
+            "value": "translate"
+          },
+          {
+            "type": "STRING",
+            "value": "try_space_groups"
+          },
+          {
+            "type": "STRING",
+            "value": "two_theta_calibration"
+          },
+          {
+            "type": "STRING",
+            "value": "tx"
+          },
+          {
+            "type": "STRING",
+            "value": "ty"
+          },
+          {
+            "type": "STRING",
+            "value": "tz"
+          },
+          {
+            "type": "STRING",
+            "value": "ua"
+          },
+          {
+            "type": "STRING",
+            "value": "ub"
+          },
+          {
+            "type": "STRING",
+            "value": "uc"
+          },
+          {
+            "type": "STRING",
+            "value": "update"
+          },
+          {
+            "type": "STRING",
+            "value": "user_defined_convolution"
+          },
+          {
+            "type": "STRING",
+            "value": "user_threshold"
+          },
+          {
+            "type": "STRING",
+            "value": "user_y"
+          },
+          {
+            "type": "STRING",
+            "value": "use_best_values"
+          },
+          {
+            "type": "STRING",
+            "value": "use_CG"
+          },
+          {
+            "type": "STRING",
+            "value": "use_extrapolation"
+          },
+          {
+            "type": "STRING",
+            "value": "use_Fc"
+          },
+          {
+            "type": "STRING",
+            "value": "use_layer"
+          },
+          {
+            "type": "STRING",
+            "value": "use_LU"
+          },
+          {
+            "type": "STRING",
+            "value": "use_LU_for_errors"
+          },
+          {
+            "type": "STRING",
+            "value": "use_tube_dispersion_coefficients"
+          },
+          {
+            "type": "STRING",
+            "value": "ux"
+          },
+          {
+            "type": "STRING",
+            "value": "uy"
+          },
+          {
+            "type": "STRING",
+            "value": "uz"
+          },
+          {
+            "type": "STRING",
+            "value": "v1"
+          },
+          {
+            "type": "STRING",
+            "value": "val_on_continue"
+          },
+          {
+            "type": "STRING",
+            "value": "verbose"
+          },
+          {
+            "type": "STRING",
+            "value": "view_cloud"
+          },
+          {
+            "type": "STRING",
+            "value": "view_structure"
+          },
+          {
+            "type": "STRING",
+            "value": "volume"
+          },
+          {
+            "type": "STRING",
+            "value": "weighted_Durbin_Watson"
+          },
+          {
+            "type": "STRING",
+            "value": "weighting"
+          },
+          {
+            "type": "STRING",
+            "value": "weighting_normal"
+          },
+          {
+            "type": "STRING",
+            "value": "weight_percent"
+          },
+          {
+            "type": "STRING",
+            "value": "weight_percent_amorphous"
+          },
+          {
+            "type": "STRING",
+            "value": "whole_hat"
+          },
+          {
+            "type": "STRING",
+            "value": "WPPM_correct_Is"
+          },
+          {
+            "type": "STRING",
+            "value": "WPPM_ft_conv"
+          },
+          {
+            "type": "STRING",
+            "value": "WPPM_L_max"
+          },
+          {
+            "type": "STRING",
+            "value": "WPPM_th2_range"
+          },
+          {
+            "type": "STRING",
+            "value": "x"
+          },
+          {
+            "type": "STRING",
+            "value": "xdd"
+          },
+          {
+            "type": "STRING",
+            "value": "xdds"
+          },
+          {
+            "type": "STRING",
+            "value": "xdd_out"
+          },
+          {
+            "type": "STRING",
+            "value": "xdd_scr"
+          },
+          {
+            "type": "STRING",
+            "value": "xdd_sum"
+          },
+          {
+            "type": "STRING",
+            "value": "xo"
+          },
+          {
+            "type": "STRING",
+            "value": "xo_Is"
+          },
+          {
+            "type": "STRING",
+            "value": "xye_format"
+          },
+          {
+            "type": "STRING",
+            "value": "x_angle_scaler"
+          },
+          {
+            "type": "STRING",
+            "value": "x_axis_to_energy_in_eV"
+          },
+          {
+            "type": "STRING",
+            "value": "x_calculation_step"
+          },
+          {
+            "type": "STRING",
+            "value": "x_scaler"
+          },
+          {
+            "type": "STRING",
+            "value": "y"
+          },
+          {
+            "type": "STRING",
+            "value": "yc_eqn"
+          },
+          {
+            "type": "STRING",
+            "value": "ymin_on_ymax"
+          },
+          {
+            "type": "STRING",
+            "value": "yobs_eqn"
+          },
+          {
+            "type": "STRING",
+            "value": "yobs_to_xo_posn_yobs"
+          },
+          {
+            "type": "STRING",
+            "value": "z"
+          },
+          {
+            "type": "STRING",
+            "value": "z_add"
+          },
+          {
+            "type": "STRING",
+            "value": "z_matrix"
+          }
+        ]
+      }
+    },
     "_literal": {
       "type": "CHOICE",
       "members": [
@@ -162,2205 +2278,2208 @@
       }
     },
     "atom": {
-      "type": "CHOICE",
-      "members": [
-        {
-          "type": "STRING",
-          "value": "H"
-        },
-        {
-          "type": "STRING",
-          "value": "H-1"
-        },
-        {
-          "type": "STRING",
-          "value": "D-1"
-        },
-        {
-          "type": "STRING",
-          "value": "He"
-        },
-        {
-          "type": "STRING",
-          "value": "Li"
-        },
-        {
-          "type": "STRING",
-          "value": "Li+1"
-        },
-        {
-          "type": "STRING",
-          "value": "Be"
-        },
-        {
-          "type": "STRING",
-          "value": "Be+2"
-        },
-        {
-          "type": "STRING",
-          "value": "B"
-        },
-        {
-          "type": "STRING",
-          "value": "C"
-        },
-        {
-          "type": "STRING",
-          "value": "Cval"
-        },
-        {
-          "type": "STRING",
-          "value": "N"
-        },
-        {
-          "type": "STRING",
-          "value": "O"
-        },
-        {
-          "type": "STRING",
-          "value": "O-1"
-        },
-        {
-          "type": "STRING",
-          "value": "O-2"
-        },
-        {
-          "type": "STRING",
-          "value": "F"
-        },
-        {
-          "type": "STRING",
-          "value": "F-1"
-        },
-        {
-          "type": "STRING",
-          "value": "Ne"
-        },
-        {
-          "type": "STRING",
-          "value": "Na"
-        },
-        {
-          "type": "STRING",
-          "value": "Na+1"
-        },
-        {
-          "type": "STRING",
-          "value": "Mg"
-        },
-        {
-          "type": "STRING",
-          "value": "Mg+2"
-        },
-        {
-          "type": "STRING",
-          "value": "Al"
-        },
-        {
-          "type": "STRING",
-          "value": "Al+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Si"
-        },
-        {
-          "type": "STRING",
-          "value": "Siva"
-        },
-        {
-          "type": "STRING",
-          "value": "Si+4"
-        },
-        {
-          "type": "STRING",
-          "value": "P"
-        },
-        {
-          "type": "STRING",
-          "value": "S"
-        },
-        {
-          "type": "STRING",
-          "value": "Cl"
-        },
-        {
-          "type": "STRING",
-          "value": "Cl-1"
-        },
-        {
-          "type": "STRING",
-          "value": "Ar"
-        },
-        {
-          "type": "STRING",
-          "value": "K"
-        },
-        {
-          "type": "STRING",
-          "value": "K+1"
-        },
-        {
-          "type": "STRING",
-          "value": "Ca"
-        },
-        {
-          "type": "STRING",
-          "value": "Ca+2"
-        },
-        {
-          "type": "STRING",
-          "value": "Sc"
-        },
-        {
-          "type": "STRING",
-          "value": "Sc+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Ti"
-        },
-        {
-          "type": "STRING",
-          "value": "Ti+2"
-        },
-        {
-          "type": "STRING",
-          "value": "Ti+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Ti+4"
-        },
-        {
-          "type": "STRING",
-          "value": "V"
-        },
-        {
-          "type": "STRING",
-          "value": "V+2"
-        },
-        {
-          "type": "STRING",
-          "value": "V+3"
-        },
-        {
-          "type": "STRING",
-          "value": "V+5"
-        },
-        {
-          "type": "STRING",
-          "value": "Cr"
-        },
-        {
-          "type": "STRING",
-          "value": "Cr+2"
-        },
-        {
-          "type": "STRING",
-          "value": "Cr+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Mn"
-        },
-        {
-          "type": "STRING",
-          "value": "Mn+2"
-        },
-        {
-          "type": "STRING",
-          "value": "Mn+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Mn+4"
-        },
-        {
-          "type": "STRING",
-          "value": "Fe"
-        },
-        {
-          "type": "STRING",
-          "value": "Fe+2"
-        },
-        {
-          "type": "STRING",
-          "value": "Fe+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Co"
-        },
-        {
-          "type": "STRING",
-          "value": "Co+2"
-        },
-        {
-          "type": "STRING",
-          "value": "Co+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Ni"
-        },
-        {
-          "type": "STRING",
-          "value": "Ni+2"
-        },
-        {
-          "type": "STRING",
-          "value": "Ni+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Cu"
-        },
-        {
-          "type": "STRING",
-          "value": "Cu+1"
-        },
-        {
-          "type": "STRING",
-          "value": "Cu+2"
-        },
-        {
-          "type": "STRING",
-          "value": "Zn"
-        },
-        {
-          "type": "STRING",
-          "value": "Zn+2"
-        },
-        {
-          "type": "STRING",
-          "value": "Ga"
-        },
-        {
-          "type": "STRING",
-          "value": "Ga+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Ge"
-        },
-        {
-          "type": "STRING",
-          "value": "Ge+4"
-        },
-        {
-          "type": "STRING",
-          "value": "As"
-        },
-        {
-          "type": "STRING",
-          "value": "Se"
-        },
-        {
-          "type": "STRING",
-          "value": "Br"
-        },
-        {
-          "type": "STRING",
-          "value": "Br-1"
-        },
-        {
-          "type": "STRING",
-          "value": "Kr"
-        },
-        {
-          "type": "STRING",
-          "value": "Rb"
-        },
-        {
-          "type": "STRING",
-          "value": "Rb+1"
-        },
-        {
-          "type": "STRING",
-          "value": "Sr"
-        },
-        {
-          "type": "STRING",
-          "value": "Sr+2"
-        },
-        {
-          "type": "STRING",
-          "value": "Y"
-        },
-        {
-          "type": "STRING",
-          "value": "Zr"
-        },
-        {
-          "type": "STRING",
-          "value": "Zr+4"
-        },
-        {
-          "type": "STRING",
-          "value": "Nb"
-        },
-        {
-          "type": "STRING",
-          "value": "Nb+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Nb+5"
-        },
-        {
-          "type": "STRING",
-          "value": "Mo"
-        },
-        {
-          "type": "STRING",
-          "value": "Mo+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Mo+5"
-        },
-        {
-          "type": "STRING",
-          "value": "Mo+6"
-        },
-        {
-          "type": "STRING",
-          "value": "Tc"
-        },
-        {
-          "type": "STRING",
-          "value": "Ru"
-        },
-        {
-          "type": "STRING",
-          "value": "Ru+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Ru+4"
-        },
-        {
-          "type": "STRING",
-          "value": "Rh"
-        },
-        {
-          "type": "STRING",
-          "value": "Rh+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Rh+4"
-        },
-        {
-          "type": "STRING",
-          "value": "Pd"
-        },
-        {
-          "type": "STRING",
-          "value": "Pd+2"
-        },
-        {
-          "type": "STRING",
-          "value": "Pd+4"
-        },
-        {
-          "type": "STRING",
-          "value": "Ag"
-        },
-        {
-          "type": "STRING",
-          "value": "Ag+1"
-        },
-        {
-          "type": "STRING",
-          "value": "Ag+2"
-        },
-        {
-          "type": "STRING",
-          "value": "Cd"
-        },
-        {
-          "type": "STRING",
-          "value": "Cd+2"
-        },
-        {
-          "type": "STRING",
-          "value": "In"
-        },
-        {
-          "type": "STRING",
-          "value": "In+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Sn"
-        },
-        {
-          "type": "STRING",
-          "value": "Sn+2"
-        },
-        {
-          "type": "STRING",
-          "value": "Sn+4"
-        },
-        {
-          "type": "STRING",
-          "value": "Sb"
-        },
-        {
-          "type": "STRING",
-          "value": "Sb+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Sb+5"
-        },
-        {
-          "type": "STRING",
-          "value": "Te"
-        },
-        {
-          "type": "STRING",
-          "value": "I"
-        },
-        {
-          "type": "STRING",
-          "value": "I-1"
-        },
-        {
-          "type": "STRING",
-          "value": "Xe"
-        },
-        {
-          "type": "STRING",
-          "value": "Cs"
-        },
-        {
-          "type": "STRING",
-          "value": "Cs+1"
-        },
-        {
-          "type": "STRING",
-          "value": "Ba"
-        },
-        {
-          "type": "STRING",
-          "value": "Ba+2"
-        },
-        {
-          "type": "STRING",
-          "value": "La"
-        },
-        {
-          "type": "STRING",
-          "value": "La+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Ce"
-        },
-        {
-          "type": "STRING",
-          "value": "Ce+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Ce+4"
-        },
-        {
-          "type": "STRING",
-          "value": "Pr"
-        },
-        {
-          "type": "STRING",
-          "value": "Pr+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Pr+4"
-        },
-        {
-          "type": "STRING",
-          "value": "Nd"
-        },
-        {
-          "type": "STRING",
-          "value": "Nd+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Pm"
-        },
-        {
-          "type": "STRING",
-          "value": "Pm+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Sm"
-        },
-        {
-          "type": "STRING",
-          "value": "Sm+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Eu"
-        },
-        {
-          "type": "STRING",
-          "value": "Eu+2"
-        },
-        {
-          "type": "STRING",
-          "value": "Eu+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Gd"
-        },
-        {
-          "type": "STRING",
-          "value": "Gd+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Tb"
-        },
-        {
-          "type": "STRING",
-          "value": "Tb+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Dy"
-        },
-        {
-          "type": "STRING",
-          "value": "Dy+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Ho"
-        },
-        {
-          "type": "STRING",
-          "value": "Ho+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Er"
-        },
-        {
-          "type": "STRING",
-          "value": "Er+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Tm"
-        },
-        {
-          "type": "STRING",
-          "value": "Tm+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Yb"
-        },
-        {
-          "type": "STRING",
-          "value": "Yb+2"
-        },
-        {
-          "type": "STRING",
-          "value": "Yb+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Lu"
-        },
-        {
-          "type": "STRING",
-          "value": "Lu+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Hf"
-        },
-        {
-          "type": "STRING",
-          "value": "Hf+4"
-        },
-        {
-          "type": "STRING",
-          "value": "Ta"
-        },
-        {
-          "type": "STRING",
-          "value": "Ta+5"
-        },
-        {
-          "type": "STRING",
-          "value": "W"
-        },
-        {
-          "type": "STRING",
-          "value": "W+6"
-        },
-        {
-          "type": "STRING",
-          "value": "Re"
-        },
-        {
-          "type": "STRING",
-          "value": "Os"
-        },
-        {
-          "type": "STRING",
-          "value": "Os+4"
-        },
-        {
-          "type": "STRING",
-          "value": "Ir"
-        },
-        {
-          "type": "STRING",
-          "value": "Ir+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Ir+4"
-        },
-        {
-          "type": "STRING",
-          "value": "Pt"
-        },
-        {
-          "type": "STRING",
-          "value": "Pt+2"
-        },
-        {
-          "type": "STRING",
-          "value": "Pt+4"
-        },
-        {
-          "type": "STRING",
-          "value": "Au"
-        },
-        {
-          "type": "STRING",
-          "value": "Au+1"
-        },
-        {
-          "type": "STRING",
-          "value": "Au+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Hg"
-        },
-        {
-          "type": "STRING",
-          "value": "Hg+1"
-        },
-        {
-          "type": "STRING",
-          "value": "Hg+2"
-        },
-        {
-          "type": "STRING",
-          "value": "Tl"
-        },
-        {
-          "type": "STRING",
-          "value": "Tl+1"
-        },
-        {
-          "type": "STRING",
-          "value": "Tl+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Pb"
-        },
-        {
-          "type": "STRING",
-          "value": "Pb+2"
-        },
-        {
-          "type": "STRING",
-          "value": "Pb+4"
-        },
-        {
-          "type": "STRING",
-          "value": "Bi"
-        },
-        {
-          "type": "STRING",
-          "value": "Bi+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Bi+5"
-        },
-        {
-          "type": "STRING",
-          "value": "Po"
-        },
-        {
-          "type": "STRING",
-          "value": "At"
-        },
-        {
-          "type": "STRING",
-          "value": "Rn"
-        },
-        {
-          "type": "STRING",
-          "value": "Fr"
-        },
-        {
-          "type": "STRING",
-          "value": "Ra"
-        },
-        {
-          "type": "STRING",
-          "value": "Ra+2"
-        },
-        {
-          "type": "STRING",
-          "value": "Ac"
-        },
-        {
-          "type": "STRING",
-          "value": "Ac+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Th"
-        },
-        {
-          "type": "STRING",
-          "value": "Th+4"
-        },
-        {
-          "type": "STRING",
-          "value": "Pa"
-        },
-        {
-          "type": "STRING",
-          "value": "U"
-        },
-        {
-          "type": "STRING",
-          "value": "U+3"
-        },
-        {
-          "type": "STRING",
-          "value": "U+4"
-        },
-        {
-          "type": "STRING",
-          "value": "U+6"
-        },
-        {
-          "type": "STRING",
-          "value": "Np"
-        },
-        {
-          "type": "STRING",
-          "value": "Np+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Np+4"
-        },
-        {
-          "type": "STRING",
-          "value": "Np+6"
-        },
-        {
-          "type": "STRING",
-          "value": "Pu"
-        },
-        {
-          "type": "STRING",
-          "value": "Pu+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Pu+4"
-        },
-        {
-          "type": "STRING",
-          "value": "Pu+6"
-        },
-        {
-          "type": "STRING",
-          "value": "Am"
-        },
-        {
-          "type": "STRING",
-          "value": "Cm"
-        },
-        {
-          "type": "STRING",
-          "value": "Bk"
-        },
-        {
-          "type": "STRING",
-          "value": "Cf"
-        },
-        {
-          "type": "STRING",
-          "value": "Y+3"
-        },
-        {
-          "type": "STRING",
-          "value": "Q"
-        },
-        {
-          "type": "STRING",
-          "value": "H"
-        },
-        {
-          "type": "STRING",
-          "value": "1H"
-        },
-        {
-          "type": "STRING",
-          "value": "2H"
-        },
-        {
-          "type": "STRING",
-          "value": "3H"
-        },
-        {
-          "type": "STRING",
-          "value": "He"
-        },
-        {
-          "type": "STRING",
-          "value": "3He"
-        },
-        {
-          "type": "STRING",
-          "value": "4He"
-        },
-        {
-          "type": "STRING",
-          "value": "Li"
-        },
-        {
-          "type": "STRING",
-          "value": "6Li"
-        },
-        {
-          "type": "STRING",
-          "value": "7Li"
-        },
-        {
-          "type": "STRING",
-          "value": "Be"
-        },
-        {
-          "type": "STRING",
-          "value": "B"
-        },
-        {
-          "type": "STRING",
-          "value": "10B"
-        },
-        {
-          "type": "STRING",
-          "value": "11B"
-        },
-        {
-          "type": "STRING",
-          "value": "C"
-        },
-        {
-          "type": "STRING",
-          "value": "12C"
-        },
-        {
-          "type": "STRING",
-          "value": "13C"
-        },
-        {
-          "type": "STRING",
-          "value": "N"
-        },
-        {
-          "type": "STRING",
-          "value": "14N"
-        },
-        {
-          "type": "STRING",
-          "value": "15N"
-        },
-        {
-          "type": "STRING",
-          "value": "O"
-        },
-        {
-          "type": "STRING",
-          "value": "16O"
-        },
-        {
-          "type": "STRING",
-          "value": "17O"
-        },
-        {
-          "type": "STRING",
-          "value": "18O"
-        },
-        {
-          "type": "STRING",
-          "value": "F"
-        },
-        {
-          "type": "STRING",
-          "value": "Ne"
-        },
-        {
-          "type": "STRING",
-          "value": "20Ne"
-        },
-        {
-          "type": "STRING",
-          "value": "21Ne"
-        },
-        {
-          "type": "STRING",
-          "value": "22Ne"
-        },
-        {
-          "type": "STRING",
-          "value": "Na"
-        },
-        {
-          "type": "STRING",
-          "value": "Mg"
-        },
-        {
-          "type": "STRING",
-          "value": "24Mg"
-        },
-        {
-          "type": "STRING",
-          "value": "25Mg"
-        },
-        {
-          "type": "STRING",
-          "value": "26Mg"
-        },
-        {
-          "type": "STRING",
-          "value": "Al"
-        },
-        {
-          "type": "STRING",
-          "value": "Si"
-        },
-        {
-          "type": "STRING",
-          "value": "28Si"
-        },
-        {
-          "type": "STRING",
-          "value": "29Si"
-        },
-        {
-          "type": "STRING",
-          "value": "30Si"
-        },
-        {
-          "type": "STRING",
-          "value": "P"
-        },
-        {
-          "type": "STRING",
-          "value": "S"
-        },
-        {
-          "type": "STRING",
-          "value": "32S"
-        },
-        {
-          "type": "STRING",
-          "value": "33S"
-        },
-        {
-          "type": "STRING",
-          "value": "34S"
-        },
-        {
-          "type": "STRING",
-          "value": "36S"
-        },
-        {
-          "type": "STRING",
-          "value": "Cl"
-        },
-        {
-          "type": "STRING",
-          "value": "35Cl"
-        },
-        {
-          "type": "STRING",
-          "value": "37Cl"
-        },
-        {
-          "type": "STRING",
-          "value": "Ar"
-        },
-        {
-          "type": "STRING",
-          "value": "36Ar"
-        },
-        {
-          "type": "STRING",
-          "value": "38Ar"
-        },
-        {
-          "type": "STRING",
-          "value": "40Ar"
-        },
-        {
-          "type": "STRING",
-          "value": "K"
-        },
-        {
-          "type": "STRING",
-          "value": "39K"
-        },
-        {
-          "type": "STRING",
-          "value": "40K"
-        },
-        {
-          "type": "STRING",
-          "value": "41K"
-        },
-        {
-          "type": "STRING",
-          "value": "Ca"
-        },
-        {
-          "type": "STRING",
-          "value": "40Ca"
-        },
-        {
-          "type": "STRING",
-          "value": "42Ca"
-        },
-        {
-          "type": "STRING",
-          "value": "43Ca"
-        },
-        {
-          "type": "STRING",
-          "value": "44Ca"
-        },
-        {
-          "type": "STRING",
-          "value": "46Ca"
-        },
-        {
-          "type": "STRING",
-          "value": "48Ca"
-        },
-        {
-          "type": "STRING",
-          "value": "Sc"
-        },
-        {
-          "type": "STRING",
-          "value": "Ti"
-        },
-        {
-          "type": "STRING",
-          "value": "46Ti"
-        },
-        {
-          "type": "STRING",
-          "value": "47Ti"
-        },
-        {
-          "type": "STRING",
-          "value": "48Ti"
-        },
-        {
-          "type": "STRING",
-          "value": "49Ti"
-        },
-        {
-          "type": "STRING",
-          "value": "50Ti"
-        },
-        {
-          "type": "STRING",
-          "value": "V"
-        },
-        {
-          "type": "STRING",
-          "value": "50V"
-        },
-        {
-          "type": "STRING",
-          "value": "51V"
-        },
-        {
-          "type": "STRING",
-          "value": "Cr"
-        },
-        {
-          "type": "STRING",
-          "value": "50Cr"
-        },
-        {
-          "type": "STRING",
-          "value": "52Cr"
-        },
-        {
-          "type": "STRING",
-          "value": "53Cr"
-        },
-        {
-          "type": "STRING",
-          "value": "54Cr"
-        },
-        {
-          "type": "STRING",
-          "value": "Mn"
-        },
-        {
-          "type": "STRING",
-          "value": "Fe"
-        },
-        {
-          "type": "STRING",
-          "value": "54Fe"
-        },
-        {
-          "type": "STRING",
-          "value": "56Fe"
-        },
-        {
-          "type": "STRING",
-          "value": "57Fe"
-        },
-        {
-          "type": "STRING",
-          "value": "58Fe"
-        },
-        {
-          "type": "STRING",
-          "value": "Co"
-        },
-        {
-          "type": "STRING",
-          "value": "Ni"
-        },
-        {
-          "type": "STRING",
-          "value": "58Ni"
-        },
-        {
-          "type": "STRING",
-          "value": "60Ni"
-        },
-        {
-          "type": "STRING",
-          "value": "61Ni"
-        },
-        {
-          "type": "STRING",
-          "value": "62Ni"
-        },
-        {
-          "type": "STRING",
-          "value": "64Ni"
-        },
-        {
-          "type": "STRING",
-          "value": "Cu"
-        },
-        {
-          "type": "STRING",
-          "value": "63Cu"
-        },
-        {
-          "type": "STRING",
-          "value": "65Cu"
-        },
-        {
-          "type": "STRING",
-          "value": "Zn"
-        },
-        {
-          "type": "STRING",
-          "value": "64Zn"
-        },
-        {
-          "type": "STRING",
-          "value": "66Zn"
-        },
-        {
-          "type": "STRING",
-          "value": "67Zn"
-        },
-        {
-          "type": "STRING",
-          "value": "68Zn"
-        },
-        {
-          "type": "STRING",
-          "value": "70Zn"
-        },
-        {
-          "type": "STRING",
-          "value": "Ga"
-        },
-        {
-          "type": "STRING",
-          "value": "69Ga"
-        },
-        {
-          "type": "STRING",
-          "value": "71Ga"
-        },
-        {
-          "type": "STRING",
-          "value": "Ge"
-        },
-        {
-          "type": "STRING",
-          "value": "70Ge"
-        },
-        {
-          "type": "STRING",
-          "value": "72Ge"
-        },
-        {
-          "type": "STRING",
-          "value": "73Ge"
-        },
-        {
-          "type": "STRING",
-          "value": "74Ge"
-        },
-        {
-          "type": "STRING",
-          "value": "76Ge"
-        },
-        {
-          "type": "STRING",
-          "value": "As"
-        },
-        {
-          "type": "STRING",
-          "value": "Se"
-        },
-        {
-          "type": "STRING",
-          "value": "74Se"
-        },
-        {
-          "type": "STRING",
-          "value": "76Se"
-        },
-        {
-          "type": "STRING",
-          "value": "77Se"
-        },
-        {
-          "type": "STRING",
-          "value": "78Se"
-        },
-        {
-          "type": "STRING",
-          "value": "80Se"
-        },
-        {
-          "type": "STRING",
-          "value": "82Se"
-        },
-        {
-          "type": "STRING",
-          "value": "Br"
-        },
-        {
-          "type": "STRING",
-          "value": "79Br"
-        },
-        {
-          "type": "STRING",
-          "value": "81Br"
-        },
-        {
-          "type": "STRING",
-          "value": "Kr"
-        },
-        {
-          "type": "STRING",
-          "value": "86Kr"
-        },
-        {
-          "type": "STRING",
-          "value": "Rb"
-        },
-        {
-          "type": "STRING",
-          "value": "85Rb"
-        },
-        {
-          "type": "STRING",
-          "value": "87Rb"
-        },
-        {
-          "type": "STRING",
-          "value": "Sr"
-        },
-        {
-          "type": "STRING",
-          "value": "84Sr"
-        },
-        {
-          "type": "STRING",
-          "value": "86Sr"
-        },
-        {
-          "type": "STRING",
-          "value": "87Sr"
-        },
-        {
-          "type": "STRING",
-          "value": "88Sr"
-        },
-        {
-          "type": "STRING",
-          "value": "Y"
-        },
-        {
-          "type": "STRING",
-          "value": "Zr"
-        },
-        {
-          "type": "STRING",
-          "value": "90Zr"
-        },
-        {
-          "type": "STRING",
-          "value": "91Zr"
-        },
-        {
-          "type": "STRING",
-          "value": "92Zr"
-        },
-        {
-          "type": "STRING",
-          "value": "94Zr"
-        },
-        {
-          "type": "STRING",
-          "value": "96Zr"
-        },
-        {
-          "type": "STRING",
-          "value": "Nb"
-        },
-        {
-          "type": "STRING",
-          "value": "Mo"
-        },
-        {
-          "type": "STRING",
-          "value": "92Mo"
-        },
-        {
-          "type": "STRING",
-          "value": "94Mo"
-        },
-        {
-          "type": "STRING",
-          "value": "95Mo"
-        },
-        {
-          "type": "STRING",
-          "value": "96Mo"
-        },
-        {
-          "type": "STRING",
-          "value": "97Mo"
-        },
-        {
-          "type": "STRING",
-          "value": "98Mo"
-        },
-        {
-          "type": "STRING",
-          "value": "100Mo"
-        },
-        {
-          "type": "STRING",
-          "value": "Tc"
-        },
-        {
-          "type": "STRING",
-          "value": "Ru"
-        },
-        {
-          "type": "STRING",
-          "value": "Rh"
-        },
-        {
-          "type": "STRING",
-          "value": "Pd"
-        },
-        {
-          "type": "STRING",
-          "value": "102Pd"
-        },
-        {
-          "type": "STRING",
-          "value": "104Pd"
-        },
-        {
-          "type": "STRING",
-          "value": "105Pd"
-        },
-        {
-          "type": "STRING",
-          "value": "106Pd"
-        },
-        {
-          "type": "STRING",
-          "value": "108Pd"
-        },
-        {
-          "type": "STRING",
-          "value": "110Pd"
-        },
-        {
-          "type": "STRING",
-          "value": "Ag"
-        },
-        {
-          "type": "STRING",
-          "value": "107Ag"
-        },
-        {
-          "type": "STRING",
-          "value": "109Ag"
-        },
-        {
-          "type": "STRING",
-          "value": "Cd"
-        },
-        {
-          "type": "STRING",
-          "value": "106Cd"
-        },
-        {
-          "type": "STRING",
-          "value": "108Cd"
-        },
-        {
-          "type": "STRING",
-          "value": "110Cd"
-        },
-        {
-          "type": "STRING",
-          "value": "111Cd"
-        },
-        {
-          "type": "STRING",
-          "value": "112Cd"
-        },
-        {
-          "type": "STRING",
-          "value": "113Cd"
-        },
-        {
-          "type": "STRING",
-          "value": "114Cd"
-        },
-        {
-          "type": "STRING",
-          "value": "116Cd"
-        },
-        {
-          "type": "STRING",
-          "value": "In"
-        },
-        {
-          "type": "STRING",
-          "value": "113In"
-        },
-        {
-          "type": "STRING",
-          "value": "115In"
-        },
-        {
-          "type": "STRING",
-          "value": "Sn"
-        },
-        {
-          "type": "STRING",
-          "value": "112Sn"
-        },
-        {
-          "type": "STRING",
-          "value": "114Sn"
-        },
-        {
-          "type": "STRING",
-          "value": "115Sn"
-        },
-        {
-          "type": "STRING",
-          "value": "116Sn"
-        },
-        {
-          "type": "STRING",
-          "value": "117Sn"
-        },
-        {
-          "type": "STRING",
-          "value": "118Sn"
-        },
-        {
-          "type": "STRING",
-          "value": "119Sn"
-        },
-        {
-          "type": "STRING",
-          "value": "120Sn"
-        },
-        {
-          "type": "STRING",
-          "value": "122Sn"
-        },
-        {
-          "type": "STRING",
-          "value": "124Sn"
-        },
-        {
-          "type": "STRING",
-          "value": "Sb"
-        },
-        {
-          "type": "STRING",
-          "value": "121Sb"
-        },
-        {
-          "type": "STRING",
-          "value": "123Sb"
-        },
-        {
-          "type": "STRING",
-          "value": "Te"
-        },
-        {
-          "type": "STRING",
-          "value": "120Te"
-        },
-        {
-          "type": "STRING",
-          "value": "122Te"
-        },
-        {
-          "type": "STRING",
-          "value": "123Te"
-        },
-        {
-          "type": "STRING",
-          "value": "124Te"
-        },
-        {
-          "type": "STRING",
-          "value": "125Te"
-        },
-        {
-          "type": "STRING",
-          "value": "126Te"
-        },
-        {
-          "type": "STRING",
-          "value": "128Te"
-        },
-        {
-          "type": "STRING",
-          "value": "130Te"
-        },
-        {
-          "type": "STRING",
-          "value": "I"
-        },
-        {
-          "type": "STRING",
-          "value": "Xe"
-        },
-        {
-          "type": "STRING",
-          "value": "Cs"
-        },
-        {
-          "type": "STRING",
-          "value": "Ba"
-        },
-        {
-          "type": "STRING",
-          "value": "130Ba"
-        },
-        {
-          "type": "STRING",
-          "value": "132Ba"
-        },
-        {
-          "type": "STRING",
-          "value": "134Ba"
-        },
-        {
-          "type": "STRING",
-          "value": "135Ba"
-        },
-        {
-          "type": "STRING",
-          "value": "136Ba"
-        },
-        {
-          "type": "STRING",
-          "value": "137Ba"
-        },
-        {
-          "type": "STRING",
-          "value": "138Ba"
-        },
-        {
-          "type": "STRING",
-          "value": "La"
-        },
-        {
-          "type": "STRING",
-          "value": "138La"
-        },
-        {
-          "type": "STRING",
-          "value": "139La"
-        },
-        {
-          "type": "STRING",
-          "value": "Ce"
-        },
-        {
-          "type": "STRING",
-          "value": "136Ce"
-        },
-        {
-          "type": "STRING",
-          "value": "138Ce"
-        },
-        {
-          "type": "STRING",
-          "value": "140Ce"
-        },
-        {
-          "type": "STRING",
-          "value": "142Ce"
-        },
-        {
-          "type": "STRING",
-          "value": "Pr"
-        },
-        {
-          "type": "STRING",
-          "value": "Nd"
-        },
-        {
-          "type": "STRING",
-          "value": "142Nd"
-        },
-        {
-          "type": "STRING",
-          "value": "143Nd"
-        },
-        {
-          "type": "STRING",
-          "value": "144Nd"
-        },
-        {
-          "type": "STRING",
-          "value": "145Nd"
-        },
-        {
-          "type": "STRING",
-          "value": "146Nd"
-        },
-        {
-          "type": "STRING",
-          "value": "148Nd"
-        },
-        {
-          "type": "STRING",
-          "value": "150Nd"
-        },
-        {
-          "type": "STRING",
-          "value": "Pm"
-        },
-        {
-          "type": "STRING",
-          "value": "Sm"
-        },
-        {
-          "type": "STRING",
-          "value": "144Sm"
-        },
-        {
-          "type": "STRING",
-          "value": "147Sm"
-        },
-        {
-          "type": "STRING",
-          "value": "148Sm"
-        },
-        {
-          "type": "STRING",
-          "value": "149Sm"
-        },
-        {
-          "type": "STRING",
-          "value": "150Sm"
-        },
-        {
-          "type": "STRING",
-          "value": "152Sm"
-        },
-        {
-          "type": "STRING",
-          "value": "154Sm"
-        },
-        {
-          "type": "STRING",
-          "value": "Eu"
-        },
-        {
-          "type": "STRING",
-          "value": "151Eu"
-        },
-        {
-          "type": "STRING",
-          "value": "153Eu"
-        },
-        {
-          "type": "STRING",
-          "value": "Gd"
-        },
-        {
-          "type": "STRING",
-          "value": "152Gd"
-        },
-        {
-          "type": "STRING",
-          "value": "154Gd"
-        },
-        {
-          "type": "STRING",
-          "value": "155Gd"
-        },
-        {
-          "type": "STRING",
-          "value": "156Gd"
-        },
-        {
-          "type": "STRING",
-          "value": "157Gd"
-        },
-        {
-          "type": "STRING",
-          "value": "158Gd"
-        },
-        {
-          "type": "STRING",
-          "value": "160Gd"
-        },
-        {
-          "type": "STRING",
-          "value": "Tb"
-        },
-        {
-          "type": "STRING",
-          "value": "Dy"
-        },
-        {
-          "type": "STRING",
-          "value": "156Dy"
-        },
-        {
-          "type": "STRING",
-          "value": "158Dy"
-        },
-        {
-          "type": "STRING",
-          "value": "160Dy"
-        },
-        {
-          "type": "STRING",
-          "value": "161Dy"
-        },
-        {
-          "type": "STRING",
-          "value": "162Dy"
-        },
-        {
-          "type": "STRING",
-          "value": "163Dy"
-        },
-        {
-          "type": "STRING",
-          "value": "164Dy"
-        },
-        {
-          "type": "STRING",
-          "value": "Ho"
-        },
-        {
-          "type": "STRING",
-          "value": "Er"
-        },
-        {
-          "type": "STRING",
-          "value": "162Er"
-        },
-        {
-          "type": "STRING",
-          "value": "164Er"
-        },
-        {
-          "type": "STRING",
-          "value": "166Er"
-        },
-        {
-          "type": "STRING",
-          "value": "167Er"
-        },
-        {
-          "type": "STRING",
-          "value": "168Er"
-        },
-        {
-          "type": "STRING",
-          "value": "170Er"
-        },
-        {
-          "type": "STRING",
-          "value": "Tm"
-        },
-        {
-          "type": "STRING",
-          "value": "Yb"
-        },
-        {
-          "type": "STRING",
-          "value": "168Yb"
-        },
-        {
-          "type": "STRING",
-          "value": "170Yb"
-        },
-        {
-          "type": "STRING",
-          "value": "171Yb"
-        },
-        {
-          "type": "STRING",
-          "value": "172Yb"
-        },
-        {
-          "type": "STRING",
-          "value": "173Yb"
-        },
-        {
-          "type": "STRING",
-          "value": "174Yb"
-        },
-        {
-          "type": "STRING",
-          "value": "176Yb"
-        },
-        {
-          "type": "STRING",
-          "value": "Lu"
-        },
-        {
-          "type": "STRING",
-          "value": "175Lu"
-        },
-        {
-          "type": "STRING",
-          "value": "176Lu"
-        },
-        {
-          "type": "STRING",
-          "value": "Hf"
-        },
-        {
-          "type": "STRING",
-          "value": "174Hf"
-        },
-        {
-          "type": "STRING",
-          "value": "176Hf"
-        },
-        {
-          "type": "STRING",
-          "value": "177Hf"
-        },
-        {
-          "type": "STRING",
-          "value": "178Hf"
-        },
-        {
-          "type": "STRING",
-          "value": "179Hf"
-        },
-        {
-          "type": "STRING",
-          "value": "180Hf"
-        },
-        {
-          "type": "STRING",
-          "value": "Ta"
-        },
-        {
-          "type": "STRING",
-          "value": "180Ta"
-        },
-        {
-          "type": "STRING",
-          "value": "181Ta"
-        },
-        {
-          "type": "STRING",
-          "value": "W"
-        },
-        {
-          "type": "STRING",
-          "value": "180W"
-        },
-        {
-          "type": "STRING",
-          "value": "182W"
-        },
-        {
-          "type": "STRING",
-          "value": "183W"
-        },
-        {
-          "type": "STRING",
-          "value": "184W"
-        },
-        {
-          "type": "STRING",
-          "value": "186W"
-        },
-        {
-          "type": "STRING",
-          "value": "Re"
-        },
-        {
-          "type": "STRING",
-          "value": "185Re"
-        },
-        {
-          "type": "STRING",
-          "value": "187Re"
-        },
-        {
-          "type": "STRING",
-          "value": "Os"
-        },
-        {
-          "type": "STRING",
-          "value": "186Os"
-        },
-        {
-          "type": "STRING",
-          "value": "187Os"
-        },
-        {
-          "type": "STRING",
-          "value": "188Os"
-        },
-        {
-          "type": "STRING",
-          "value": "189Os"
-        },
-        {
-          "type": "STRING",
-          "value": "190Os"
-        },
-        {
-          "type": "STRING",
-          "value": "192Os"
-        },
-        {
-          "type": "STRING",
-          "value": "Ir"
-        },
-        {
-          "type": "STRING",
-          "value": "Pt"
-        },
-        {
-          "type": "STRING",
-          "value": "190Pt"
-        },
-        {
-          "type": "STRING",
-          "value": "192Pt"
-        },
-        {
-          "type": "STRING",
-          "value": "194Pt"
-        },
-        {
-          "type": "STRING",
-          "value": "195Pt"
-        },
-        {
-          "type": "STRING",
-          "value": "196Pt"
-        },
-        {
-          "type": "STRING",
-          "value": "198Pt"
-        },
-        {
-          "type": "STRING",
-          "value": "Au"
-        },
-        {
-          "type": "STRING",
-          "value": "Hg"
-        },
-        {
-          "type": "STRING",
-          "value": "196Hg"
-        },
-        {
-          "type": "STRING",
-          "value": "199Hg"
-        },
-        {
-          "type": "STRING",
-          "value": "Tl"
-        },
-        {
-          "type": "STRING",
-          "value": "203Tl"
-        },
-        {
-          "type": "STRING",
-          "value": "205Tl"
-        },
-        {
-          "type": "STRING",
-          "value": "Pb"
-        },
-        {
-          "type": "STRING",
-          "value": "204Pb"
-        },
-        {
-          "type": "STRING",
-          "value": "206Pb"
-        },
-        {
-          "type": "STRING",
-          "value": "207Pb"
-        },
-        {
-          "type": "STRING",
-          "value": "208Pb"
-        },
-        {
-          "type": "STRING",
-          "value": "Bi"
-        },
-        {
-          "type": "STRING",
-          "value": "Ra"
-        },
-        {
-          "type": "STRING",
-          "value": "Th"
-        },
-        {
-          "type": "STRING",
-          "value": "Pa"
-        },
-        {
-          "type": "STRING",
-          "value": "U"
-        },
-        {
-          "type": "STRING",
-          "value": "233U"
-        },
-        {
-          "type": "STRING",
-          "value": "234U"
-        },
-        {
-          "type": "STRING",
-          "value": "235U"
-        },
-        {
-          "type": "STRING",
-          "value": "238U"
-        },
-        {
-          "type": "STRING",
-          "value": "Np"
-        },
-        {
-          "type": "STRING",
-          "value": "238Pu"
-        },
-        {
-          "type": "STRING",
-          "value": "239Pu"
-        },
-        {
-          "type": "STRING",
-          "value": "240Pu"
-        },
-        {
-          "type": "STRING",
-          "value": "242Pu"
-        },
-        {
-          "type": "STRING",
-          "value": "Am"
-        },
-        {
-          "type": "STRING",
-          "value": "244Cm"
-        },
-        {
-          "type": "STRING",
-          "value": "246Cm"
-        },
-        {
-          "type": "STRING",
-          "value": "248Cm"
-        }
-      ]
+      "type": "TOKEN",
+      "content": {
+        "type": "CHOICE",
+        "members": [
+          {
+            "type": "STRING",
+            "value": "H"
+          },
+          {
+            "type": "STRING",
+            "value": "H-1"
+          },
+          {
+            "type": "STRING",
+            "value": "D-1"
+          },
+          {
+            "type": "STRING",
+            "value": "He"
+          },
+          {
+            "type": "STRING",
+            "value": "Li"
+          },
+          {
+            "type": "STRING",
+            "value": "Li+1"
+          },
+          {
+            "type": "STRING",
+            "value": "Be"
+          },
+          {
+            "type": "STRING",
+            "value": "Be+2"
+          },
+          {
+            "type": "STRING",
+            "value": "B"
+          },
+          {
+            "type": "STRING",
+            "value": "C"
+          },
+          {
+            "type": "STRING",
+            "value": "Cval"
+          },
+          {
+            "type": "STRING",
+            "value": "N"
+          },
+          {
+            "type": "STRING",
+            "value": "O"
+          },
+          {
+            "type": "STRING",
+            "value": "O-1"
+          },
+          {
+            "type": "STRING",
+            "value": "O-2"
+          },
+          {
+            "type": "STRING",
+            "value": "F"
+          },
+          {
+            "type": "STRING",
+            "value": "F-1"
+          },
+          {
+            "type": "STRING",
+            "value": "Ne"
+          },
+          {
+            "type": "STRING",
+            "value": "Na"
+          },
+          {
+            "type": "STRING",
+            "value": "Na+1"
+          },
+          {
+            "type": "STRING",
+            "value": "Mg"
+          },
+          {
+            "type": "STRING",
+            "value": "Mg+2"
+          },
+          {
+            "type": "STRING",
+            "value": "Al"
+          },
+          {
+            "type": "STRING",
+            "value": "Al+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Si"
+          },
+          {
+            "type": "STRING",
+            "value": "Siva"
+          },
+          {
+            "type": "STRING",
+            "value": "Si+4"
+          },
+          {
+            "type": "STRING",
+            "value": "P"
+          },
+          {
+            "type": "STRING",
+            "value": "S"
+          },
+          {
+            "type": "STRING",
+            "value": "Cl"
+          },
+          {
+            "type": "STRING",
+            "value": "Cl-1"
+          },
+          {
+            "type": "STRING",
+            "value": "Ar"
+          },
+          {
+            "type": "STRING",
+            "value": "K"
+          },
+          {
+            "type": "STRING",
+            "value": "K+1"
+          },
+          {
+            "type": "STRING",
+            "value": "Ca"
+          },
+          {
+            "type": "STRING",
+            "value": "Ca+2"
+          },
+          {
+            "type": "STRING",
+            "value": "Sc"
+          },
+          {
+            "type": "STRING",
+            "value": "Sc+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Ti"
+          },
+          {
+            "type": "STRING",
+            "value": "Ti+2"
+          },
+          {
+            "type": "STRING",
+            "value": "Ti+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Ti+4"
+          },
+          {
+            "type": "STRING",
+            "value": "V"
+          },
+          {
+            "type": "STRING",
+            "value": "V+2"
+          },
+          {
+            "type": "STRING",
+            "value": "V+3"
+          },
+          {
+            "type": "STRING",
+            "value": "V+5"
+          },
+          {
+            "type": "STRING",
+            "value": "Cr"
+          },
+          {
+            "type": "STRING",
+            "value": "Cr+2"
+          },
+          {
+            "type": "STRING",
+            "value": "Cr+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Mn"
+          },
+          {
+            "type": "STRING",
+            "value": "Mn+2"
+          },
+          {
+            "type": "STRING",
+            "value": "Mn+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Mn+4"
+          },
+          {
+            "type": "STRING",
+            "value": "Fe"
+          },
+          {
+            "type": "STRING",
+            "value": "Fe+2"
+          },
+          {
+            "type": "STRING",
+            "value": "Fe+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Co"
+          },
+          {
+            "type": "STRING",
+            "value": "Co+2"
+          },
+          {
+            "type": "STRING",
+            "value": "Co+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Ni"
+          },
+          {
+            "type": "STRING",
+            "value": "Ni+2"
+          },
+          {
+            "type": "STRING",
+            "value": "Ni+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Cu"
+          },
+          {
+            "type": "STRING",
+            "value": "Cu+1"
+          },
+          {
+            "type": "STRING",
+            "value": "Cu+2"
+          },
+          {
+            "type": "STRING",
+            "value": "Zn"
+          },
+          {
+            "type": "STRING",
+            "value": "Zn+2"
+          },
+          {
+            "type": "STRING",
+            "value": "Ga"
+          },
+          {
+            "type": "STRING",
+            "value": "Ga+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Ge"
+          },
+          {
+            "type": "STRING",
+            "value": "Ge+4"
+          },
+          {
+            "type": "STRING",
+            "value": "As"
+          },
+          {
+            "type": "STRING",
+            "value": "Se"
+          },
+          {
+            "type": "STRING",
+            "value": "Br"
+          },
+          {
+            "type": "STRING",
+            "value": "Br-1"
+          },
+          {
+            "type": "STRING",
+            "value": "Kr"
+          },
+          {
+            "type": "STRING",
+            "value": "Rb"
+          },
+          {
+            "type": "STRING",
+            "value": "Rb+1"
+          },
+          {
+            "type": "STRING",
+            "value": "Sr"
+          },
+          {
+            "type": "STRING",
+            "value": "Sr+2"
+          },
+          {
+            "type": "STRING",
+            "value": "Y"
+          },
+          {
+            "type": "STRING",
+            "value": "Zr"
+          },
+          {
+            "type": "STRING",
+            "value": "Zr+4"
+          },
+          {
+            "type": "STRING",
+            "value": "Nb"
+          },
+          {
+            "type": "STRING",
+            "value": "Nb+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Nb+5"
+          },
+          {
+            "type": "STRING",
+            "value": "Mo"
+          },
+          {
+            "type": "STRING",
+            "value": "Mo+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Mo+5"
+          },
+          {
+            "type": "STRING",
+            "value": "Mo+6"
+          },
+          {
+            "type": "STRING",
+            "value": "Tc"
+          },
+          {
+            "type": "STRING",
+            "value": "Ru"
+          },
+          {
+            "type": "STRING",
+            "value": "Ru+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Ru+4"
+          },
+          {
+            "type": "STRING",
+            "value": "Rh"
+          },
+          {
+            "type": "STRING",
+            "value": "Rh+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Rh+4"
+          },
+          {
+            "type": "STRING",
+            "value": "Pd"
+          },
+          {
+            "type": "STRING",
+            "value": "Pd+2"
+          },
+          {
+            "type": "STRING",
+            "value": "Pd+4"
+          },
+          {
+            "type": "STRING",
+            "value": "Ag"
+          },
+          {
+            "type": "STRING",
+            "value": "Ag+1"
+          },
+          {
+            "type": "STRING",
+            "value": "Ag+2"
+          },
+          {
+            "type": "STRING",
+            "value": "Cd"
+          },
+          {
+            "type": "STRING",
+            "value": "Cd+2"
+          },
+          {
+            "type": "STRING",
+            "value": "In"
+          },
+          {
+            "type": "STRING",
+            "value": "In+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Sn"
+          },
+          {
+            "type": "STRING",
+            "value": "Sn+2"
+          },
+          {
+            "type": "STRING",
+            "value": "Sn+4"
+          },
+          {
+            "type": "STRING",
+            "value": "Sb"
+          },
+          {
+            "type": "STRING",
+            "value": "Sb+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Sb+5"
+          },
+          {
+            "type": "STRING",
+            "value": "Te"
+          },
+          {
+            "type": "STRING",
+            "value": "I"
+          },
+          {
+            "type": "STRING",
+            "value": "I-1"
+          },
+          {
+            "type": "STRING",
+            "value": "Xe"
+          },
+          {
+            "type": "STRING",
+            "value": "Cs"
+          },
+          {
+            "type": "STRING",
+            "value": "Cs+1"
+          },
+          {
+            "type": "STRING",
+            "value": "Ba"
+          },
+          {
+            "type": "STRING",
+            "value": "Ba+2"
+          },
+          {
+            "type": "STRING",
+            "value": "La"
+          },
+          {
+            "type": "STRING",
+            "value": "La+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Ce"
+          },
+          {
+            "type": "STRING",
+            "value": "Ce+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Ce+4"
+          },
+          {
+            "type": "STRING",
+            "value": "Pr"
+          },
+          {
+            "type": "STRING",
+            "value": "Pr+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Pr+4"
+          },
+          {
+            "type": "STRING",
+            "value": "Nd"
+          },
+          {
+            "type": "STRING",
+            "value": "Nd+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Pm"
+          },
+          {
+            "type": "STRING",
+            "value": "Pm+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Sm"
+          },
+          {
+            "type": "STRING",
+            "value": "Sm+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Eu"
+          },
+          {
+            "type": "STRING",
+            "value": "Eu+2"
+          },
+          {
+            "type": "STRING",
+            "value": "Eu+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Gd"
+          },
+          {
+            "type": "STRING",
+            "value": "Gd+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Tb"
+          },
+          {
+            "type": "STRING",
+            "value": "Tb+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Dy"
+          },
+          {
+            "type": "STRING",
+            "value": "Dy+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Ho"
+          },
+          {
+            "type": "STRING",
+            "value": "Ho+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Er"
+          },
+          {
+            "type": "STRING",
+            "value": "Er+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Tm"
+          },
+          {
+            "type": "STRING",
+            "value": "Tm+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Yb"
+          },
+          {
+            "type": "STRING",
+            "value": "Yb+2"
+          },
+          {
+            "type": "STRING",
+            "value": "Yb+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Lu"
+          },
+          {
+            "type": "STRING",
+            "value": "Lu+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Hf"
+          },
+          {
+            "type": "STRING",
+            "value": "Hf+4"
+          },
+          {
+            "type": "STRING",
+            "value": "Ta"
+          },
+          {
+            "type": "STRING",
+            "value": "Ta+5"
+          },
+          {
+            "type": "STRING",
+            "value": "W"
+          },
+          {
+            "type": "STRING",
+            "value": "W+6"
+          },
+          {
+            "type": "STRING",
+            "value": "Re"
+          },
+          {
+            "type": "STRING",
+            "value": "Os"
+          },
+          {
+            "type": "STRING",
+            "value": "Os+4"
+          },
+          {
+            "type": "STRING",
+            "value": "Ir"
+          },
+          {
+            "type": "STRING",
+            "value": "Ir+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Ir+4"
+          },
+          {
+            "type": "STRING",
+            "value": "Pt"
+          },
+          {
+            "type": "STRING",
+            "value": "Pt+2"
+          },
+          {
+            "type": "STRING",
+            "value": "Pt+4"
+          },
+          {
+            "type": "STRING",
+            "value": "Au"
+          },
+          {
+            "type": "STRING",
+            "value": "Au+1"
+          },
+          {
+            "type": "STRING",
+            "value": "Au+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Hg"
+          },
+          {
+            "type": "STRING",
+            "value": "Hg+1"
+          },
+          {
+            "type": "STRING",
+            "value": "Hg+2"
+          },
+          {
+            "type": "STRING",
+            "value": "Tl"
+          },
+          {
+            "type": "STRING",
+            "value": "Tl+1"
+          },
+          {
+            "type": "STRING",
+            "value": "Tl+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Pb"
+          },
+          {
+            "type": "STRING",
+            "value": "Pb+2"
+          },
+          {
+            "type": "STRING",
+            "value": "Pb+4"
+          },
+          {
+            "type": "STRING",
+            "value": "Bi"
+          },
+          {
+            "type": "STRING",
+            "value": "Bi+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Bi+5"
+          },
+          {
+            "type": "STRING",
+            "value": "Po"
+          },
+          {
+            "type": "STRING",
+            "value": "At"
+          },
+          {
+            "type": "STRING",
+            "value": "Rn"
+          },
+          {
+            "type": "STRING",
+            "value": "Fr"
+          },
+          {
+            "type": "STRING",
+            "value": "Ra"
+          },
+          {
+            "type": "STRING",
+            "value": "Ra+2"
+          },
+          {
+            "type": "STRING",
+            "value": "Ac"
+          },
+          {
+            "type": "STRING",
+            "value": "Ac+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Th"
+          },
+          {
+            "type": "STRING",
+            "value": "Th+4"
+          },
+          {
+            "type": "STRING",
+            "value": "Pa"
+          },
+          {
+            "type": "STRING",
+            "value": "U"
+          },
+          {
+            "type": "STRING",
+            "value": "U+3"
+          },
+          {
+            "type": "STRING",
+            "value": "U+4"
+          },
+          {
+            "type": "STRING",
+            "value": "U+6"
+          },
+          {
+            "type": "STRING",
+            "value": "Np"
+          },
+          {
+            "type": "STRING",
+            "value": "Np+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Np+4"
+          },
+          {
+            "type": "STRING",
+            "value": "Np+6"
+          },
+          {
+            "type": "STRING",
+            "value": "Pu"
+          },
+          {
+            "type": "STRING",
+            "value": "Pu+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Pu+4"
+          },
+          {
+            "type": "STRING",
+            "value": "Pu+6"
+          },
+          {
+            "type": "STRING",
+            "value": "Am"
+          },
+          {
+            "type": "STRING",
+            "value": "Cm"
+          },
+          {
+            "type": "STRING",
+            "value": "Bk"
+          },
+          {
+            "type": "STRING",
+            "value": "Cf"
+          },
+          {
+            "type": "STRING",
+            "value": "Y+3"
+          },
+          {
+            "type": "STRING",
+            "value": "Q"
+          },
+          {
+            "type": "STRING",
+            "value": "H"
+          },
+          {
+            "type": "STRING",
+            "value": "1H"
+          },
+          {
+            "type": "STRING",
+            "value": "2H"
+          },
+          {
+            "type": "STRING",
+            "value": "3H"
+          },
+          {
+            "type": "STRING",
+            "value": "He"
+          },
+          {
+            "type": "STRING",
+            "value": "3He"
+          },
+          {
+            "type": "STRING",
+            "value": "4He"
+          },
+          {
+            "type": "STRING",
+            "value": "Li"
+          },
+          {
+            "type": "STRING",
+            "value": "6Li"
+          },
+          {
+            "type": "STRING",
+            "value": "7Li"
+          },
+          {
+            "type": "STRING",
+            "value": "Be"
+          },
+          {
+            "type": "STRING",
+            "value": "B"
+          },
+          {
+            "type": "STRING",
+            "value": "10B"
+          },
+          {
+            "type": "STRING",
+            "value": "11B"
+          },
+          {
+            "type": "STRING",
+            "value": "C"
+          },
+          {
+            "type": "STRING",
+            "value": "12C"
+          },
+          {
+            "type": "STRING",
+            "value": "13C"
+          },
+          {
+            "type": "STRING",
+            "value": "N"
+          },
+          {
+            "type": "STRING",
+            "value": "14N"
+          },
+          {
+            "type": "STRING",
+            "value": "15N"
+          },
+          {
+            "type": "STRING",
+            "value": "O"
+          },
+          {
+            "type": "STRING",
+            "value": "16O"
+          },
+          {
+            "type": "STRING",
+            "value": "17O"
+          },
+          {
+            "type": "STRING",
+            "value": "18O"
+          },
+          {
+            "type": "STRING",
+            "value": "F"
+          },
+          {
+            "type": "STRING",
+            "value": "Ne"
+          },
+          {
+            "type": "STRING",
+            "value": "20Ne"
+          },
+          {
+            "type": "STRING",
+            "value": "21Ne"
+          },
+          {
+            "type": "STRING",
+            "value": "22Ne"
+          },
+          {
+            "type": "STRING",
+            "value": "Na"
+          },
+          {
+            "type": "STRING",
+            "value": "Mg"
+          },
+          {
+            "type": "STRING",
+            "value": "24Mg"
+          },
+          {
+            "type": "STRING",
+            "value": "25Mg"
+          },
+          {
+            "type": "STRING",
+            "value": "26Mg"
+          },
+          {
+            "type": "STRING",
+            "value": "Al"
+          },
+          {
+            "type": "STRING",
+            "value": "Si"
+          },
+          {
+            "type": "STRING",
+            "value": "28Si"
+          },
+          {
+            "type": "STRING",
+            "value": "29Si"
+          },
+          {
+            "type": "STRING",
+            "value": "30Si"
+          },
+          {
+            "type": "STRING",
+            "value": "P"
+          },
+          {
+            "type": "STRING",
+            "value": "S"
+          },
+          {
+            "type": "STRING",
+            "value": "32S"
+          },
+          {
+            "type": "STRING",
+            "value": "33S"
+          },
+          {
+            "type": "STRING",
+            "value": "34S"
+          },
+          {
+            "type": "STRING",
+            "value": "36S"
+          },
+          {
+            "type": "STRING",
+            "value": "Cl"
+          },
+          {
+            "type": "STRING",
+            "value": "35Cl"
+          },
+          {
+            "type": "STRING",
+            "value": "37Cl"
+          },
+          {
+            "type": "STRING",
+            "value": "Ar"
+          },
+          {
+            "type": "STRING",
+            "value": "36Ar"
+          },
+          {
+            "type": "STRING",
+            "value": "38Ar"
+          },
+          {
+            "type": "STRING",
+            "value": "40Ar"
+          },
+          {
+            "type": "STRING",
+            "value": "K"
+          },
+          {
+            "type": "STRING",
+            "value": "39K"
+          },
+          {
+            "type": "STRING",
+            "value": "40K"
+          },
+          {
+            "type": "STRING",
+            "value": "41K"
+          },
+          {
+            "type": "STRING",
+            "value": "Ca"
+          },
+          {
+            "type": "STRING",
+            "value": "40Ca"
+          },
+          {
+            "type": "STRING",
+            "value": "42Ca"
+          },
+          {
+            "type": "STRING",
+            "value": "43Ca"
+          },
+          {
+            "type": "STRING",
+            "value": "44Ca"
+          },
+          {
+            "type": "STRING",
+            "value": "46Ca"
+          },
+          {
+            "type": "STRING",
+            "value": "48Ca"
+          },
+          {
+            "type": "STRING",
+            "value": "Sc"
+          },
+          {
+            "type": "STRING",
+            "value": "Ti"
+          },
+          {
+            "type": "STRING",
+            "value": "46Ti"
+          },
+          {
+            "type": "STRING",
+            "value": "47Ti"
+          },
+          {
+            "type": "STRING",
+            "value": "48Ti"
+          },
+          {
+            "type": "STRING",
+            "value": "49Ti"
+          },
+          {
+            "type": "STRING",
+            "value": "50Ti"
+          },
+          {
+            "type": "STRING",
+            "value": "V"
+          },
+          {
+            "type": "STRING",
+            "value": "50V"
+          },
+          {
+            "type": "STRING",
+            "value": "51V"
+          },
+          {
+            "type": "STRING",
+            "value": "Cr"
+          },
+          {
+            "type": "STRING",
+            "value": "50Cr"
+          },
+          {
+            "type": "STRING",
+            "value": "52Cr"
+          },
+          {
+            "type": "STRING",
+            "value": "53Cr"
+          },
+          {
+            "type": "STRING",
+            "value": "54Cr"
+          },
+          {
+            "type": "STRING",
+            "value": "Mn"
+          },
+          {
+            "type": "STRING",
+            "value": "Fe"
+          },
+          {
+            "type": "STRING",
+            "value": "54Fe"
+          },
+          {
+            "type": "STRING",
+            "value": "56Fe"
+          },
+          {
+            "type": "STRING",
+            "value": "57Fe"
+          },
+          {
+            "type": "STRING",
+            "value": "58Fe"
+          },
+          {
+            "type": "STRING",
+            "value": "Co"
+          },
+          {
+            "type": "STRING",
+            "value": "Ni"
+          },
+          {
+            "type": "STRING",
+            "value": "58Ni"
+          },
+          {
+            "type": "STRING",
+            "value": "60Ni"
+          },
+          {
+            "type": "STRING",
+            "value": "61Ni"
+          },
+          {
+            "type": "STRING",
+            "value": "62Ni"
+          },
+          {
+            "type": "STRING",
+            "value": "64Ni"
+          },
+          {
+            "type": "STRING",
+            "value": "Cu"
+          },
+          {
+            "type": "STRING",
+            "value": "63Cu"
+          },
+          {
+            "type": "STRING",
+            "value": "65Cu"
+          },
+          {
+            "type": "STRING",
+            "value": "Zn"
+          },
+          {
+            "type": "STRING",
+            "value": "64Zn"
+          },
+          {
+            "type": "STRING",
+            "value": "66Zn"
+          },
+          {
+            "type": "STRING",
+            "value": "67Zn"
+          },
+          {
+            "type": "STRING",
+            "value": "68Zn"
+          },
+          {
+            "type": "STRING",
+            "value": "70Zn"
+          },
+          {
+            "type": "STRING",
+            "value": "Ga"
+          },
+          {
+            "type": "STRING",
+            "value": "69Ga"
+          },
+          {
+            "type": "STRING",
+            "value": "71Ga"
+          },
+          {
+            "type": "STRING",
+            "value": "Ge"
+          },
+          {
+            "type": "STRING",
+            "value": "70Ge"
+          },
+          {
+            "type": "STRING",
+            "value": "72Ge"
+          },
+          {
+            "type": "STRING",
+            "value": "73Ge"
+          },
+          {
+            "type": "STRING",
+            "value": "74Ge"
+          },
+          {
+            "type": "STRING",
+            "value": "76Ge"
+          },
+          {
+            "type": "STRING",
+            "value": "As"
+          },
+          {
+            "type": "STRING",
+            "value": "Se"
+          },
+          {
+            "type": "STRING",
+            "value": "74Se"
+          },
+          {
+            "type": "STRING",
+            "value": "76Se"
+          },
+          {
+            "type": "STRING",
+            "value": "77Se"
+          },
+          {
+            "type": "STRING",
+            "value": "78Se"
+          },
+          {
+            "type": "STRING",
+            "value": "80Se"
+          },
+          {
+            "type": "STRING",
+            "value": "82Se"
+          },
+          {
+            "type": "STRING",
+            "value": "Br"
+          },
+          {
+            "type": "STRING",
+            "value": "79Br"
+          },
+          {
+            "type": "STRING",
+            "value": "81Br"
+          },
+          {
+            "type": "STRING",
+            "value": "Kr"
+          },
+          {
+            "type": "STRING",
+            "value": "86Kr"
+          },
+          {
+            "type": "STRING",
+            "value": "Rb"
+          },
+          {
+            "type": "STRING",
+            "value": "85Rb"
+          },
+          {
+            "type": "STRING",
+            "value": "87Rb"
+          },
+          {
+            "type": "STRING",
+            "value": "Sr"
+          },
+          {
+            "type": "STRING",
+            "value": "84Sr"
+          },
+          {
+            "type": "STRING",
+            "value": "86Sr"
+          },
+          {
+            "type": "STRING",
+            "value": "87Sr"
+          },
+          {
+            "type": "STRING",
+            "value": "88Sr"
+          },
+          {
+            "type": "STRING",
+            "value": "Y"
+          },
+          {
+            "type": "STRING",
+            "value": "Zr"
+          },
+          {
+            "type": "STRING",
+            "value": "90Zr"
+          },
+          {
+            "type": "STRING",
+            "value": "91Zr"
+          },
+          {
+            "type": "STRING",
+            "value": "92Zr"
+          },
+          {
+            "type": "STRING",
+            "value": "94Zr"
+          },
+          {
+            "type": "STRING",
+            "value": "96Zr"
+          },
+          {
+            "type": "STRING",
+            "value": "Nb"
+          },
+          {
+            "type": "STRING",
+            "value": "Mo"
+          },
+          {
+            "type": "STRING",
+            "value": "92Mo"
+          },
+          {
+            "type": "STRING",
+            "value": "94Mo"
+          },
+          {
+            "type": "STRING",
+            "value": "95Mo"
+          },
+          {
+            "type": "STRING",
+            "value": "96Mo"
+          },
+          {
+            "type": "STRING",
+            "value": "97Mo"
+          },
+          {
+            "type": "STRING",
+            "value": "98Mo"
+          },
+          {
+            "type": "STRING",
+            "value": "100Mo"
+          },
+          {
+            "type": "STRING",
+            "value": "Tc"
+          },
+          {
+            "type": "STRING",
+            "value": "Ru"
+          },
+          {
+            "type": "STRING",
+            "value": "Rh"
+          },
+          {
+            "type": "STRING",
+            "value": "Pd"
+          },
+          {
+            "type": "STRING",
+            "value": "102Pd"
+          },
+          {
+            "type": "STRING",
+            "value": "104Pd"
+          },
+          {
+            "type": "STRING",
+            "value": "105Pd"
+          },
+          {
+            "type": "STRING",
+            "value": "106Pd"
+          },
+          {
+            "type": "STRING",
+            "value": "108Pd"
+          },
+          {
+            "type": "STRING",
+            "value": "110Pd"
+          },
+          {
+            "type": "STRING",
+            "value": "Ag"
+          },
+          {
+            "type": "STRING",
+            "value": "107Ag"
+          },
+          {
+            "type": "STRING",
+            "value": "109Ag"
+          },
+          {
+            "type": "STRING",
+            "value": "Cd"
+          },
+          {
+            "type": "STRING",
+            "value": "106Cd"
+          },
+          {
+            "type": "STRING",
+            "value": "108Cd"
+          },
+          {
+            "type": "STRING",
+            "value": "110Cd"
+          },
+          {
+            "type": "STRING",
+            "value": "111Cd"
+          },
+          {
+            "type": "STRING",
+            "value": "112Cd"
+          },
+          {
+            "type": "STRING",
+            "value": "113Cd"
+          },
+          {
+            "type": "STRING",
+            "value": "114Cd"
+          },
+          {
+            "type": "STRING",
+            "value": "116Cd"
+          },
+          {
+            "type": "STRING",
+            "value": "In"
+          },
+          {
+            "type": "STRING",
+            "value": "113In"
+          },
+          {
+            "type": "STRING",
+            "value": "115In"
+          },
+          {
+            "type": "STRING",
+            "value": "Sn"
+          },
+          {
+            "type": "STRING",
+            "value": "112Sn"
+          },
+          {
+            "type": "STRING",
+            "value": "114Sn"
+          },
+          {
+            "type": "STRING",
+            "value": "115Sn"
+          },
+          {
+            "type": "STRING",
+            "value": "116Sn"
+          },
+          {
+            "type": "STRING",
+            "value": "117Sn"
+          },
+          {
+            "type": "STRING",
+            "value": "118Sn"
+          },
+          {
+            "type": "STRING",
+            "value": "119Sn"
+          },
+          {
+            "type": "STRING",
+            "value": "120Sn"
+          },
+          {
+            "type": "STRING",
+            "value": "122Sn"
+          },
+          {
+            "type": "STRING",
+            "value": "124Sn"
+          },
+          {
+            "type": "STRING",
+            "value": "Sb"
+          },
+          {
+            "type": "STRING",
+            "value": "121Sb"
+          },
+          {
+            "type": "STRING",
+            "value": "123Sb"
+          },
+          {
+            "type": "STRING",
+            "value": "Te"
+          },
+          {
+            "type": "STRING",
+            "value": "120Te"
+          },
+          {
+            "type": "STRING",
+            "value": "122Te"
+          },
+          {
+            "type": "STRING",
+            "value": "123Te"
+          },
+          {
+            "type": "STRING",
+            "value": "124Te"
+          },
+          {
+            "type": "STRING",
+            "value": "125Te"
+          },
+          {
+            "type": "STRING",
+            "value": "126Te"
+          },
+          {
+            "type": "STRING",
+            "value": "128Te"
+          },
+          {
+            "type": "STRING",
+            "value": "130Te"
+          },
+          {
+            "type": "STRING",
+            "value": "I"
+          },
+          {
+            "type": "STRING",
+            "value": "Xe"
+          },
+          {
+            "type": "STRING",
+            "value": "Cs"
+          },
+          {
+            "type": "STRING",
+            "value": "Ba"
+          },
+          {
+            "type": "STRING",
+            "value": "130Ba"
+          },
+          {
+            "type": "STRING",
+            "value": "132Ba"
+          },
+          {
+            "type": "STRING",
+            "value": "134Ba"
+          },
+          {
+            "type": "STRING",
+            "value": "135Ba"
+          },
+          {
+            "type": "STRING",
+            "value": "136Ba"
+          },
+          {
+            "type": "STRING",
+            "value": "137Ba"
+          },
+          {
+            "type": "STRING",
+            "value": "138Ba"
+          },
+          {
+            "type": "STRING",
+            "value": "La"
+          },
+          {
+            "type": "STRING",
+            "value": "138La"
+          },
+          {
+            "type": "STRING",
+            "value": "139La"
+          },
+          {
+            "type": "STRING",
+            "value": "Ce"
+          },
+          {
+            "type": "STRING",
+            "value": "136Ce"
+          },
+          {
+            "type": "STRING",
+            "value": "138Ce"
+          },
+          {
+            "type": "STRING",
+            "value": "140Ce"
+          },
+          {
+            "type": "STRING",
+            "value": "142Ce"
+          },
+          {
+            "type": "STRING",
+            "value": "Pr"
+          },
+          {
+            "type": "STRING",
+            "value": "Nd"
+          },
+          {
+            "type": "STRING",
+            "value": "142Nd"
+          },
+          {
+            "type": "STRING",
+            "value": "143Nd"
+          },
+          {
+            "type": "STRING",
+            "value": "144Nd"
+          },
+          {
+            "type": "STRING",
+            "value": "145Nd"
+          },
+          {
+            "type": "STRING",
+            "value": "146Nd"
+          },
+          {
+            "type": "STRING",
+            "value": "148Nd"
+          },
+          {
+            "type": "STRING",
+            "value": "150Nd"
+          },
+          {
+            "type": "STRING",
+            "value": "Pm"
+          },
+          {
+            "type": "STRING",
+            "value": "Sm"
+          },
+          {
+            "type": "STRING",
+            "value": "144Sm"
+          },
+          {
+            "type": "STRING",
+            "value": "147Sm"
+          },
+          {
+            "type": "STRING",
+            "value": "148Sm"
+          },
+          {
+            "type": "STRING",
+            "value": "149Sm"
+          },
+          {
+            "type": "STRING",
+            "value": "150Sm"
+          },
+          {
+            "type": "STRING",
+            "value": "152Sm"
+          },
+          {
+            "type": "STRING",
+            "value": "154Sm"
+          },
+          {
+            "type": "STRING",
+            "value": "Eu"
+          },
+          {
+            "type": "STRING",
+            "value": "151Eu"
+          },
+          {
+            "type": "STRING",
+            "value": "153Eu"
+          },
+          {
+            "type": "STRING",
+            "value": "Gd"
+          },
+          {
+            "type": "STRING",
+            "value": "152Gd"
+          },
+          {
+            "type": "STRING",
+            "value": "154Gd"
+          },
+          {
+            "type": "STRING",
+            "value": "155Gd"
+          },
+          {
+            "type": "STRING",
+            "value": "156Gd"
+          },
+          {
+            "type": "STRING",
+            "value": "157Gd"
+          },
+          {
+            "type": "STRING",
+            "value": "158Gd"
+          },
+          {
+            "type": "STRING",
+            "value": "160Gd"
+          },
+          {
+            "type": "STRING",
+            "value": "Tb"
+          },
+          {
+            "type": "STRING",
+            "value": "Dy"
+          },
+          {
+            "type": "STRING",
+            "value": "156Dy"
+          },
+          {
+            "type": "STRING",
+            "value": "158Dy"
+          },
+          {
+            "type": "STRING",
+            "value": "160Dy"
+          },
+          {
+            "type": "STRING",
+            "value": "161Dy"
+          },
+          {
+            "type": "STRING",
+            "value": "162Dy"
+          },
+          {
+            "type": "STRING",
+            "value": "163Dy"
+          },
+          {
+            "type": "STRING",
+            "value": "164Dy"
+          },
+          {
+            "type": "STRING",
+            "value": "Ho"
+          },
+          {
+            "type": "STRING",
+            "value": "Er"
+          },
+          {
+            "type": "STRING",
+            "value": "162Er"
+          },
+          {
+            "type": "STRING",
+            "value": "164Er"
+          },
+          {
+            "type": "STRING",
+            "value": "166Er"
+          },
+          {
+            "type": "STRING",
+            "value": "167Er"
+          },
+          {
+            "type": "STRING",
+            "value": "168Er"
+          },
+          {
+            "type": "STRING",
+            "value": "170Er"
+          },
+          {
+            "type": "STRING",
+            "value": "Tm"
+          },
+          {
+            "type": "STRING",
+            "value": "Yb"
+          },
+          {
+            "type": "STRING",
+            "value": "168Yb"
+          },
+          {
+            "type": "STRING",
+            "value": "170Yb"
+          },
+          {
+            "type": "STRING",
+            "value": "171Yb"
+          },
+          {
+            "type": "STRING",
+            "value": "172Yb"
+          },
+          {
+            "type": "STRING",
+            "value": "173Yb"
+          },
+          {
+            "type": "STRING",
+            "value": "174Yb"
+          },
+          {
+            "type": "STRING",
+            "value": "176Yb"
+          },
+          {
+            "type": "STRING",
+            "value": "Lu"
+          },
+          {
+            "type": "STRING",
+            "value": "175Lu"
+          },
+          {
+            "type": "STRING",
+            "value": "176Lu"
+          },
+          {
+            "type": "STRING",
+            "value": "Hf"
+          },
+          {
+            "type": "STRING",
+            "value": "174Hf"
+          },
+          {
+            "type": "STRING",
+            "value": "176Hf"
+          },
+          {
+            "type": "STRING",
+            "value": "177Hf"
+          },
+          {
+            "type": "STRING",
+            "value": "178Hf"
+          },
+          {
+            "type": "STRING",
+            "value": "179Hf"
+          },
+          {
+            "type": "STRING",
+            "value": "180Hf"
+          },
+          {
+            "type": "STRING",
+            "value": "Ta"
+          },
+          {
+            "type": "STRING",
+            "value": "180Ta"
+          },
+          {
+            "type": "STRING",
+            "value": "181Ta"
+          },
+          {
+            "type": "STRING",
+            "value": "W"
+          },
+          {
+            "type": "STRING",
+            "value": "180W"
+          },
+          {
+            "type": "STRING",
+            "value": "182W"
+          },
+          {
+            "type": "STRING",
+            "value": "183W"
+          },
+          {
+            "type": "STRING",
+            "value": "184W"
+          },
+          {
+            "type": "STRING",
+            "value": "186W"
+          },
+          {
+            "type": "STRING",
+            "value": "Re"
+          },
+          {
+            "type": "STRING",
+            "value": "185Re"
+          },
+          {
+            "type": "STRING",
+            "value": "187Re"
+          },
+          {
+            "type": "STRING",
+            "value": "Os"
+          },
+          {
+            "type": "STRING",
+            "value": "186Os"
+          },
+          {
+            "type": "STRING",
+            "value": "187Os"
+          },
+          {
+            "type": "STRING",
+            "value": "188Os"
+          },
+          {
+            "type": "STRING",
+            "value": "189Os"
+          },
+          {
+            "type": "STRING",
+            "value": "190Os"
+          },
+          {
+            "type": "STRING",
+            "value": "192Os"
+          },
+          {
+            "type": "STRING",
+            "value": "Ir"
+          },
+          {
+            "type": "STRING",
+            "value": "Pt"
+          },
+          {
+            "type": "STRING",
+            "value": "190Pt"
+          },
+          {
+            "type": "STRING",
+            "value": "192Pt"
+          },
+          {
+            "type": "STRING",
+            "value": "194Pt"
+          },
+          {
+            "type": "STRING",
+            "value": "195Pt"
+          },
+          {
+            "type": "STRING",
+            "value": "196Pt"
+          },
+          {
+            "type": "STRING",
+            "value": "198Pt"
+          },
+          {
+            "type": "STRING",
+            "value": "Au"
+          },
+          {
+            "type": "STRING",
+            "value": "Hg"
+          },
+          {
+            "type": "STRING",
+            "value": "196Hg"
+          },
+          {
+            "type": "STRING",
+            "value": "199Hg"
+          },
+          {
+            "type": "STRING",
+            "value": "Tl"
+          },
+          {
+            "type": "STRING",
+            "value": "203Tl"
+          },
+          {
+            "type": "STRING",
+            "value": "205Tl"
+          },
+          {
+            "type": "STRING",
+            "value": "Pb"
+          },
+          {
+            "type": "STRING",
+            "value": "204Pb"
+          },
+          {
+            "type": "STRING",
+            "value": "206Pb"
+          },
+          {
+            "type": "STRING",
+            "value": "207Pb"
+          },
+          {
+            "type": "STRING",
+            "value": "208Pb"
+          },
+          {
+            "type": "STRING",
+            "value": "Bi"
+          },
+          {
+            "type": "STRING",
+            "value": "Ra"
+          },
+          {
+            "type": "STRING",
+            "value": "Th"
+          },
+          {
+            "type": "STRING",
+            "value": "Pa"
+          },
+          {
+            "type": "STRING",
+            "value": "U"
+          },
+          {
+            "type": "STRING",
+            "value": "233U"
+          },
+          {
+            "type": "STRING",
+            "value": "234U"
+          },
+          {
+            "type": "STRING",
+            "value": "235U"
+          },
+          {
+            "type": "STRING",
+            "value": "238U"
+          },
+          {
+            "type": "STRING",
+            "value": "Np"
+          },
+          {
+            "type": "STRING",
+            "value": "238Pu"
+          },
+          {
+            "type": "STRING",
+            "value": "239Pu"
+          },
+          {
+            "type": "STRING",
+            "value": "240Pu"
+          },
+          {
+            "type": "STRING",
+            "value": "242Pu"
+          },
+          {
+            "type": "STRING",
+            "value": "Am"
+          },
+          {
+            "type": "STRING",
+            "value": "244Cm"
+          },
+          {
+            "type": "STRING",
+            "value": "246Cm"
+          },
+          {
+            "type": "STRING",
+            "value": "248Cm"
+          }
+        ]
+      }
     },
     "integer_literal": {
       "type": "PATTERN",
@@ -4834,2119 +6953,6 @@
               }
             }
           ]
-        }
-      ]
-    },
-    "definition": {
-      "type": "CHOICE",
-      "members": [
-        {
-          "type": "STRING",
-          "value": "a"
-        },
-        {
-          "type": "STRING",
-          "value": "aberration_range_change_allowed"
-        },
-        {
-          "type": "STRING",
-          "value": "accumulate_phases_and_save_to_file"
-        },
-        {
-          "type": "STRING",
-          "value": "accumulate_phases_when"
-        },
-        {
-          "type": "STRING",
-          "value": "activate"
-        },
-        {
-          "type": "STRING",
-          "value": "add_pop_1st_2nd_peak"
-        },
-        {
-          "type": "STRING",
-          "value": "add_to_cloud_N"
-        },
-        {
-          "type": "STRING",
-          "value": "add_to_cloud_when"
-        },
-        {
-          "type": "STRING",
-          "value": "add_to_phases_of_weak_reflections"
-        },
-        {
-          "type": "STRING",
-          "value": "ai_anti_bump"
-        },
-        {
-          "type": "STRING",
-          "value": "ai_closest_N"
-        },
-        {
-          "type": "STRING",
-          "value": "ai_exclude_eq_0"
-        },
-        {
-          "type": "STRING",
-          "value": "ai_flatten_with_tollerance_of"
-        },
-        {
-          "type": "STRING",
-          "value": "ai_no_self_interation"
-        },
-        {
-          "type": "STRING",
-          "value": "ai_only_eq_0"
-        },
-        {
-          "type": "STRING",
-          "value": "ai_radius"
-        },
-        {
-          "type": "STRING",
-          "value": "ai_sites_1"
-        },
-        {
-          "type": "STRING",
-          "value": "ai_sites_2"
-        },
-        {
-          "type": "STRING",
-          "value": "al"
-        },
-        {
-          "type": "STRING",
-          "value": "amorphous_area"
-        },
-        {
-          "type": "STRING",
-          "value": "amorphous_phase"
-        },
-        {
-          "type": "STRING",
-          "value": "append_bond_lengths"
-        },
-        {
-          "type": "STRING",
-          "value": "append_cartesian"
-        },
-        {
-          "type": "STRING",
-          "value": "append_fractional"
-        },
-        {
-          "type": "STRING",
-          "value": "apply_exp_scale"
-        },
-        {
-          "type": "STRING",
-          "value": "approximate_A"
-        },
-        {
-          "type": "STRING",
-          "value": "atomic_interaction"
-        },
-        {
-          "type": "STRING",
-          "value": "atom_out"
-        },
-        {
-          "type": "STRING",
-          "value": "auto_scale"
-        },
-        {
-          "type": "STRING",
-          "value": "auto_sparse_CG"
-        },
-        {
-          "type": "STRING",
-          "value": "axial_conv"
-        },
-        {
-          "type": "STRING",
-          "value": "axial_del"
-        },
-        {
-          "type": "STRING",
-          "value": "axial_n_beta"
-        },
-        {
-          "type": "STRING",
-          "value": "a_add"
-        },
-        {
-          "type": "STRING",
-          "value": "A_matrix"
-        },
-        {
-          "type": "STRING",
-          "value": "A_matrix_normalized"
-        },
-        {
-          "type": "STRING",
-          "value": "A_matrix_prm_filter"
-        },
-        {
-          "type": "STRING",
-          "value": "b"
-        },
-        {
-          "type": "STRING",
-          "value": "be"
-        },
-        {
-          "type": "STRING",
-          "value": "bkg"
-        },
-        {
-          "type": "STRING",
-          "value": "bootstrap_errors"
-        },
-        {
-          "type": "STRING",
-          "value": "box_interaction"
-        },
-        {
-          "type": "STRING",
-          "value": "break_cycle_if_true"
-        },
-        {
-          "type": "STRING",
-          "value": "brindley_spherical_r_cm"
-        },
-        {
-          "type": "STRING",
-          "value": "bring_2nd_peak_to_top"
-        },
-        {
-          "type": "STRING",
-          "value": "broaden_peaks"
-        },
-        {
-          "type": "STRING",
-          "value": "b_add"
-        },
-        {
-          "type": "STRING",
-          "value": "c"
-        },
-        {
-          "type": "STRING",
-          "value": "calculate_Lam"
-        },
-        {
-          "type": "STRING",
-          "value": "capillary_diameter_mm"
-        },
-        {
-          "type": "STRING",
-          "value": "capillary_divergent_beam"
-        },
-        {
-          "type": "STRING",
-          "value": "capillary_parallel_beam"
-        },
-        {
-          "type": "STRING",
-          "value": "capillary_u_cm_inv"
-        },
-        {
-          "type": "STRING",
-          "value": "cell_mass"
-        },
-        {
-          "type": "STRING",
-          "value": "cell_volume"
-        },
-        {
-          "type": "STRING",
-          "value": "cf_hkl_file"
-        },
-        {
-          "type": "STRING",
-          "value": "cf_in_A_matrix"
-        },
-        {
-          "type": "STRING",
-          "value": "charge_flipping"
-        },
-        {
-          "type": "STRING",
-          "value": "chi2"
-        },
-        {
-          "type": "STRING",
-          "value": "chi2_convergence_criteria"
-        },
-        {
-          "type": "STRING",
-          "value": "chk_for_best"
-        },
-        {
-          "type": "STRING",
-          "value": "choose_from"
-        },
-        {
-          "type": "STRING",
-          "value": "choose_randomly"
-        },
-        {
-          "type": "STRING",
-          "value": "choose_to"
-        },
-        {
-          "type": "STRING",
-          "value": "circles_conv"
-        },
-        {
-          "type": "STRING",
-          "value": "cloud"
-        },
-        {
-          "type": "STRING",
-          "value": "cloud"
-        },
-        {
-          "type": "STRING",
-          "value": "cloud_atomic_separation"
-        },
-        {
-          "type": "STRING",
-          "value": "cloud_atomic_separation"
-        },
-        {
-          "type": "STRING",
-          "value": "cloud_extract_and_save_xyzs"
-        },
-        {
-          "type": "STRING",
-          "value": "cloud_fit"
-        },
-        {
-          "type": "STRING",
-          "value": "cloud_formation_omit_rwps"
-        },
-        {
-          "type": "STRING",
-          "value": "cloud_gauss_fwhm"
-        },
-        {
-          "type": "STRING",
-          "value": "cloud_gauss_fwhm"
-        },
-        {
-          "type": "STRING",
-          "value": "cloud_I"
-        },
-        {
-          "type": "STRING",
-          "value": "cloud_load"
-        },
-        {
-          "type": "STRING",
-          "value": "cloud_load_fixed_starting"
-        },
-        {
-          "type": "STRING",
-          "value": "cloud_load_xyzs"
-        },
-        {
-          "type": "STRING",
-          "value": "cloud_load_xyzs"
-        },
-        {
-          "type": "STRING",
-          "value": "cloud_load_xyzs_omit_rwps"
-        },
-        {
-          "type": "STRING",
-          "value": "cloud_match_gauss_fwhm"
-        },
-        {
-          "type": "STRING",
-          "value": "cloud_min_intensity"
-        },
-        {
-          "type": "STRING",
-          "value": "cloud_number_to_extract"
-        },
-        {
-          "type": "STRING",
-          "value": "cloud_N_to_extract"
-        },
-        {
-          "type": "STRING",
-          "value": "cloud_population"
-        },
-        {
-          "type": "STRING",
-          "value": "cloud_population"
-        },
-        {
-          "type": "STRING",
-          "value": "cloud_pre_randimize_add_to"
-        },
-        {
-          "type": "STRING",
-          "value": "cloud_save"
-        },
-        {
-          "type": "STRING",
-          "value": "cloud_save"
-        },
-        {
-          "type": "STRING",
-          "value": "cloud_save_match_xy"
-        },
-        {
-          "type": "STRING",
-          "value": "cloud_save_processed_xyzs"
-        },
-        {
-          "type": "STRING",
-          "value": "cloud_save_xyzs"
-        },
-        {
-          "type": "STRING",
-          "value": "cloud_save_xyzs"
-        },
-        {
-          "type": "STRING",
-          "value": "cloud_stay_within"
-        },
-        {
-          "type": "STRING",
-          "value": "cloud_try_accept"
-        },
-        {
-          "type": "STRING",
-          "value": "conserve_memory"
-        },
-        {
-          "type": "STRING",
-          "value": "consider_lattice_parameters"
-        },
-        {
-          "type": "STRING",
-          "value": "continue_after_convergence"
-        },
-        {
-          "type": "STRING",
-          "value": "convolute_X_recal"
-        },
-        {
-          "type": "STRING",
-          "value": "convolution_step"
-        },
-        {
-          "type": "STRING",
-          "value": "corrected_weight_percent"
-        },
-        {
-          "type": "STRING",
-          "value": "correct_for_atomic_scattering_factors"
-        },
-        {
-          "type": "STRING",
-          "value": "correct_for_temperature_effects"
-        },
-        {
-          "type": "STRING",
-          "value": "crystalline_area"
-        },
-        {
-          "type": "STRING",
-          "value": "current_peak_max_x"
-        },
-        {
-          "type": "STRING",
-          "value": "current_peak_min_x"
-        },
-        {
-          "type": "STRING",
-          "value": "C_matrix"
-        },
-        {
-          "type": "STRING",
-          "value": "C_matrix_normalized"
-        },
-        {
-          "type": "STRING",
-          "value": "d"
-        },
-        {
-          "type": "STRING",
-          "value": "def"
-        },
-        {
-          "type": "STRING",
-          "value": "default_I_attributes"
-        },
-        {
-          "type": "STRING",
-          "value": "degree_of_crystallinity"
-        },
-        {
-          "type": "STRING",
-          "value": "del"
-        },
-        {
-          "type": "STRING",
-          "value": "delete_observed_reflections"
-        },
-        {
-          "type": "STRING",
-          "value": "del_approx"
-        },
-        {
-          "type": "STRING",
-          "value": "determine_values_from_samples"
-        },
-        {
-          "type": "STRING",
-          "value": "displace"
-        },
-        {
-          "type": "STRING",
-          "value": "dont_merge_equivalent_reflections"
-        },
-        {
-          "type": "STRING",
-          "value": "dont_merge_Friedel_pairs"
-        },
-        {
-          "type": "STRING",
-          "value": "do_errors"
-        },
-        {
-          "type": "STRING",
-          "value": "do_errors_include_penalties"
-        },
-        {
-          "type": "STRING",
-          "value": "do_errors_include_restraints"
-        },
-        {
-          "type": "STRING",
-          "value": "dummy"
-        },
-        {
-          "type": "STRING",
-          "value": "dummy_str"
-        },
-        {
-          "type": "STRING",
-          "value": "d_Is"
-        },
-        {
-          "type": "STRING",
-          "value": "elemental_composition"
-        },
-        {
-          "type": "STRING",
-          "value": "element_weight_percent"
-        },
-        {
-          "type": "STRING",
-          "value": "element_weight_percent_known"
-        },
-        {
-          "type": "STRING",
-          "value": "exclude"
-        },
-        {
-          "type": "STRING",
-          "value": "exp_conv_const"
-        },
-        {
-          "type": "STRING",
-          "value": "exp_limit"
-        },
-        {
-          "type": "STRING",
-          "value": "extend_calculated_sphere_to"
-        },
-        {
-          "type": "STRING",
-          "value": "extra_X"
-        },
-        {
-          "type": "STRING",
-          "value": "extra_X_left"
-        },
-        {
-          "type": "STRING",
-          "value": "extra_X_right"
-        },
-        {
-          "type": "STRING",
-          "value": "f0"
-        },
-        {
-          "type": "STRING",
-          "value": "f0_f1_f11_atom"
-        },
-        {
-          "type": "STRING",
-          "value": "f11"
-        },
-        {
-          "type": "STRING",
-          "value": "f1"
-        },
-        {
-          "type": "STRING",
-          "value": "filament_length"
-        },
-        {
-          "type": "STRING",
-          "value": "file_out"
-        },
-        {
-          "type": "STRING",
-          "value": "find_origin"
-        },
-        {
-          "type": "STRING",
-          "value": "finish_X"
-        },
-        {
-          "type": "STRING",
-          "value": "fit_obj"
-        },
-        {
-          "type": "STRING",
-          "value": "fit_obj_phase"
-        },
-        {
-          "type": "STRING",
-          "value": "Flack"
-        },
-        {
-          "type": "STRING",
-          "value": "flat_crystal_pre_monochromator_axial_const"
-        },
-        {
-          "type": "STRING",
-          "value": "flip_equation"
-        },
-        {
-          "type": "STRING",
-          "value": "flip_neutron"
-        },
-        {
-          "type": "STRING",
-          "value": "flip_regime_2"
-        },
-        {
-          "type": "STRING",
-          "value": "flip_regime_3"
-        },
-        {
-          "type": "STRING",
-          "value": "fn"
-        },
-        {
-          "type": "STRING",
-          "value": "fourier_map"
-        },
-        {
-          "type": "STRING",
-          "value": "fourier_map_formula"
-        },
-        {
-          "type": "STRING",
-          "value": "fo_transform_X"
-        },
-        {
-          "type": "STRING",
-          "value": "fraction_density_to_flip"
-        },
-        {
-          "type": "STRING",
-          "value": "fraction_of_yobs_to_resample"
-        },
-        {
-          "type": "STRING",
-          "value": "fraction_reflections_weak"
-        },
-        {
-          "type": "STRING",
-          "value": "ft_conv"
-        },
-        {
-          "type": "STRING",
-          "value": "ft_convolution"
-        },
-        {
-          "type": "STRING",
-          "value": "ft_L_max"
-        },
-        {
-          "type": "STRING",
-          "value": "ft_min"
-        },
-        {
-          "type": "STRING",
-          "value": "ft_x_axis_range"
-        },
-        {
-          "type": "STRING",
-          "value": "fullprof_format"
-        },
-        {
-          "type": "STRING",
-          "value": "f_atom_quantity"
-        },
-        {
-          "type": "STRING",
-          "value": "f_atom_type"
-        },
-        {
-          "type": "STRING",
-          "value": "ga"
-        },
-        {
-          "type": "STRING",
-          "value": "gauss_fwhm"
-        },
-        {
-          "type": "STRING",
-          "value": "generate_name_append"
-        },
-        {
-          "type": "STRING",
-          "value": "generate_stack_sequences"
-        },
-        {
-          "type": "STRING",
-          "value": "generate_these"
-        },
-        {
-          "type": "STRING",
-          "value": "gof"
-        },
-        {
-          "type": "STRING",
-          "value": "grs_interaction"
-        },
-        {
-          "type": "STRING",
-          "value": "gsas_format"
-        },
-        {
-          "type": "STRING",
-          "value": "gui_add_bkg"
-        },
-        {
-          "type": "STRING",
-          "value": "h1"
-        },
-        {
-          "type": "STRING",
-          "value": "h2"
-        },
-        {
-          "type": "STRING",
-          "value": "half_hat"
-        },
-        {
-          "type": "STRING",
-          "value": "hat"
-        },
-        {
-          "type": "STRING",
-          "value": "hat_height"
-        },
-        {
-          "type": "STRING",
-          "value": "height"
-        },
-        {
-          "type": "STRING",
-          "value": "histogram_match_scale_fwhm"
-        },
-        {
-          "type": "STRING",
-          "value": "hklis"
-        },
-        {
-          "type": "STRING",
-          "value": "hkl_Is"
-        },
-        {
-          "type": "STRING",
-          "value": "hkl_m_d_th2"
-        },
-        {
-          "type": "STRING",
-          "value": "hkl_Re_Im"
-        },
-        {
-          "type": "STRING",
-          "value": "hm_covalent_fwhm"
-        },
-        {
-          "type": "STRING",
-          "value": "hm_size_limit_in_fwhm"
-        },
-        {
-          "type": "STRING",
-          "value": "I"
-        },
-        {
-          "type": "STRING",
-          "value": "ignore_differences_in_Friedel_pairs"
-        },
-        {
-          "type": "STRING",
-          "value": "index_d"
-        },
-        {
-          "type": "STRING",
-          "value": "index_exclude_max_on_min_lp_less_than"
-        },
-        {
-          "type": "STRING",
-          "value": "index_I"
-        },
-        {
-          "type": "STRING",
-          "value": "index_lam"
-        },
-        {
-          "type": "STRING",
-          "value": "index_max_lp"
-        },
-        {
-          "type": "STRING",
-          "value": "index_max_Nc_on_No"
-        },
-        {
-          "type": "STRING",
-          "value": "index_max_number_of_solutions"
-        },
-        {
-          "type": "STRING",
-          "value": "index_max_th2_error"
-        },
-        {
-          "type": "STRING",
-          "value": "index_max_zero_error"
-        },
-        {
-          "type": "STRING",
-          "value": "index_min_lp"
-        },
-        {
-          "type": "STRING",
-          "value": "index_th2"
-        },
-        {
-          "type": "STRING",
-          "value": "index_th2_resolution"
-        },
-        {
-          "type": "STRING",
-          "value": "index_x0"
-        },
-        {
-          "type": "STRING",
-          "value": "index_zero_error"
-        },
-        {
-          "type": "STRING",
-          "value": "insert"
-        },
-        {
-          "type": "STRING",
-          "value": "in_cartesian"
-        },
-        {
-          "type": "STRING",
-          "value": "in_FC"
-        },
-        {
-          "type": "STRING",
-          "value": "in_str_format"
-        },
-        {
-          "type": "STRING",
-          "value": "iters"
-        },
-        {
-          "type": "STRING",
-          "value": "i_on_error_ratio_tolerance"
-        },
-        {
-          "type": "STRING",
-          "value": "I_parameter_names_have_hkl"
-        },
-        {
-          "type": "STRING",
-          "value": "la"
-        },
-        {
-          "type": "STRING",
-          "value": "Lam"
-        },
-        {
-          "type": "STRING",
-          "value": "lam"
-        },
-        {
-          "type": "STRING",
-          "value": "layer"
-        },
-        {
-          "type": "STRING",
-          "value": "layers_tol"
-        },
-        {
-          "type": "STRING",
-          "value": "lebail"
-        },
-        {
-          "type": "STRING",
-          "value": "lg"
-        },
-        {
-          "type": "STRING",
-          "value": "lh"
-        },
-        {
-          "type": "STRING",
-          "value": "line_min"
-        },
-        {
-          "type": "STRING",
-          "value": "lo"
-        },
-        {
-          "type": "STRING",
-          "value": "load"
-        },
-        {
-          "type": "STRING",
-          "value": "lor_fwhm"
-        },
-        {
-          "type": "STRING",
-          "value": "lpsd_beam_spill_correct_intensity"
-        },
-        {
-          "type": "STRING",
-          "value": "lpsd_equitorial_divergence_degrees"
-        },
-        {
-          "type": "STRING",
-          "value": "lpsd_equitorial_sample_length_mm"
-        },
-        {
-          "type": "STRING",
-          "value": "lpsd_th2_angular_range_degrees"
-        },
-        {
-          "type": "STRING",
-          "value": "lp_search"
-        },
-        {
-          "type": "STRING",
-          "value": "m1"
-        },
-        {
-          "type": "STRING",
-          "value": "m2"
-        },
-        {
-          "type": "STRING",
-          "value": "mag_atom_out"
-        },
-        {
-          "type": "STRING",
-          "value": "mag_only"
-        },
-        {
-          "type": "STRING",
-          "value": "mag_only_for_mag_sites"
-        },
-        {
-          "type": "STRING",
-          "value": "mag_space_group"
-        },
-        {
-          "type": "STRING",
-          "value": "marquardt_constant"
-        },
-        {
-          "type": "STRING",
-          "value": "match_transition_matrix_stats"
-        },
-        {
-          "type": "STRING",
-          "value": "max"
-        },
-        {
-          "type": "STRING",
-          "value": "max_r"
-        },
-        {
-          "type": "STRING",
-          "value": "max_X"
-        },
-        {
-          "type": "STRING",
-          "value": "mg"
-        },
-        {
-          "type": "STRING",
-          "value": "min"
-        },
-        {
-          "type": "STRING",
-          "value": "min_d"
-        },
-        {
-          "type": "STRING",
-          "value": "min_grid_spacing"
-        },
-        {
-          "type": "STRING",
-          "value": "min_r"
-        },
-        {
-          "type": "STRING",
-          "value": "min_X"
-        },
-        {
-          "type": "STRING",
-          "value": "mixture_density_g_on_cm3"
-        },
-        {
-          "type": "STRING",
-          "value": "mixture_MAC"
-        },
-        {
-          "type": "STRING",
-          "value": "mlx"
-        },
-        {
-          "type": "STRING",
-          "value": "mly"
-        },
-        {
-          "type": "STRING",
-          "value": "mlz"
-        },
-        {
-          "type": "STRING",
-          "value": "modify_initial_phases"
-        },
-        {
-          "type": "STRING",
-          "value": "modify_peak"
-        },
-        {
-          "type": "STRING",
-          "value": "modify_peak_apply_before_convolutions"
-        },
-        {
-          "type": "STRING",
-          "value": "modify_peak_eqn"
-        },
-        {
-          "type": "STRING",
-          "value": "more_accurate_Voigt"
-        },
-        {
-          "type": "STRING",
-          "value": "move_to"
-        },
-        {
-          "type": "STRING",
-          "value": "move_to_the_next_temperature_regardless_of_the_change_in_rwp"
-        },
-        {
-          "type": "STRING",
-          "value": "n1"
-        },
-        {
-          "type": "STRING",
-          "value": "n2"
-        },
-        {
-          "type": "STRING",
-          "value": "n3"
-        },
-        {
-          "type": "STRING",
-          "value": "n"
-        },
-        {
-          "type": "STRING",
-          "value": "ndx_allp"
-        },
-        {
-          "type": "STRING",
-          "value": "ndx_alp"
-        },
-        {
-          "type": "STRING",
-          "value": "ndx_belp"
-        },
-        {
-          "type": "STRING",
-          "value": "ndx_blp"
-        },
-        {
-          "type": "STRING",
-          "value": "ndx_clp"
-        },
-        {
-          "type": "STRING",
-          "value": "ndx_galp"
-        },
-        {
-          "type": "STRING",
-          "value": "ndx_gof"
-        },
-        {
-          "type": "STRING",
-          "value": "ndx_sg"
-        },
-        {
-          "type": "STRING",
-          "value": "ndx_uni"
-        },
-        {
-          "type": "STRING",
-          "value": "ndx_vol"
-        },
-        {
-          "type": "STRING",
-          "value": "ndx_ze"
-        },
-        {
-          "type": "STRING",
-          "value": "neutron_data"
-        },
-        {
-          "type": "STRING",
-          "value": "normalize_FCs"
-        },
-        {
-          "type": "STRING",
-          "value": "normals_plot"
-        },
-        {
-          "type": "STRING",
-          "value": "normals_plot_min_d"
-        },
-        {
-          "type": "STRING",
-          "value": "no_f11"
-        },
-        {
-          "type": "STRING",
-          "value": "no_inline"
-        },
-        {
-          "type": "STRING",
-          "value": "no_LIMIT_warnings"
-        },
-        {
-          "type": "STRING",
-          "value": "no_normal_equations"
-        },
-        {
-          "type": "STRING",
-          "value": "no_th_dependence"
-        },
-        {
-          "type": "STRING",
-          "value": "number_of_sequences"
-        },
-        {
-          "type": "STRING",
-          "value": "number_of_stacks_per_sequence"
-        },
-        {
-          "type": "STRING",
-          "value": "numerical_area"
-        },
-        {
-          "type": "STRING",
-          "value": "numerical_lor_gauss_conv"
-        },
-        {
-          "type": "STRING",
-          "value": "numerical_lor_ymin_on_ymax"
-        },
-        {
-          "type": "STRING",
-          "value": "num_hats"
-        },
-        {
-          "type": "STRING",
-          "value": "num_highest_I_values_to_keep"
-        },
-        {
-          "type": "STRING",
-          "value": "num_patterns_at_a_time"
-        },
-        {
-          "type": "STRING",
-          "value": "num_runs"
-        },
-        {
-          "type": "STRING",
-          "value": "num_unique_vx_vy"
-        },
-        {
-          "type": "STRING",
-          "value": "n_avg"
-        },
-        {
-          "type": "STRING",
-          "value": "occ_merge"
-        },
-        {
-          "type": "STRING",
-          "value": "occ_merge_radius"
-        },
-        {
-          "type": "STRING",
-          "value": "omit"
-        },
-        {
-          "type": "STRING",
-          "value": "omit_hkls"
-        },
-        {
-          "type": "STRING",
-          "value": "one_on_x_conv"
-        },
-        {
-          "type": "STRING",
-          "value": "only_lps"
-        },
-        {
-          "type": "STRING",
-          "value": "only_penalties"
-        },
-        {
-          "type": "STRING",
-          "value": "on_best_goto"
-        },
-        {
-          "type": "STRING",
-          "value": "on_best_rewind"
-        },
-        {
-          "type": "STRING",
-          "value": "operate_on_points"
-        },
-        {
-          "type": "STRING",
-          "value": "out"
-        },
-        {
-          "type": "STRING",
-          "value": "out_A_matrix"
-        },
-        {
-          "type": "STRING",
-          "value": "out_chi2"
-        },
-        {
-          "type": "STRING",
-          "value": "out_dependences"
-        },
-        {
-          "type": "STRING",
-          "value": "out_dependents_for"
-        },
-        {
-          "type": "STRING",
-          "value": "out_eqn"
-        },
-        {
-          "type": "STRING",
-          "value": "out_file"
-        },
-        {
-          "type": "STRING",
-          "value": "out_fmt"
-        },
-        {
-          "type": "STRING",
-          "value": "out_fmt_err"
-        },
-        {
-          "type": "STRING",
-          "value": "out_prm_vals_dependents_filter"
-        },
-        {
-          "type": "STRING",
-          "value": "out_prm_vals_filter"
-        },
-        {
-          "type": "STRING",
-          "value": "out_prm_vals_on_convergence"
-        },
-        {
-          "type": "STRING",
-          "value": "out_prm_vals_per_iteration"
-        },
-        {
-          "type": "STRING",
-          "value": "out_record"
-        },
-        {
-          "type": "STRING",
-          "value": "out_refinement_stats"
-        },
-        {
-          "type": "STRING",
-          "value": "out_rwp"
-        },
-        {
-          "type": "STRING",
-          "value": "pdf_convolute"
-        },
-        {
-          "type": "STRING",
-          "value": "pdf_data"
-        },
-        {
-          "type": "STRING",
-          "value": "pdf_for_pairs"
-        },
-        {
-          "type": "STRING",
-          "value": "pdf_gauss_fwhm"
-        },
-        {
-          "type": "STRING",
-          "value": "pdf_info"
-        },
-        {
-          "type": "STRING",
-          "value": "pdf_only_eq_0"
-        },
-        {
-          "type": "STRING",
-          "value": "pdf_scale_simple"
-        },
-        {
-          "type": "STRING",
-          "value": "pdf_ymin_on_ymax"
-        },
-        {
-          "type": "STRING",
-          "value": "pdf_zero"
-        },
-        {
-          "type": "STRING",
-          "value": "peak_buffer_based_on"
-        },
-        {
-          "type": "STRING",
-          "value": "peak_buffer_based_on_tol"
-        },
-        {
-          "type": "STRING",
-          "value": "peak_buffer_step"
-        },
-        {
-          "type": "STRING",
-          "value": "peak_type"
-        },
-        {
-          "type": "STRING",
-          "value": "penalties_weighting_K1"
-        },
-        {
-          "type": "STRING",
-          "value": "penalty"
-        },
-        {
-          "type": "STRING",
-          "value": "pen_weight"
-        },
-        {
-          "type": "STRING",
-          "value": "percent_zeros_before_sparse_A"
-        },
-        {
-          "type": "STRING",
-          "value": "phase_MAC"
-        },
-        {
-          "type": "STRING",
-          "value": "phase_name"
-        },
-        {
-          "type": "STRING",
-          "value": "phase_out"
-        },
-        {
-          "type": "STRING",
-          "value": "phase_penalties"
-        },
-        {
-          "type": "STRING",
-          "value": "pick_atoms"
-        },
-        {
-          "type": "STRING",
-          "value": "pick_atoms_when"
-        },
-        {
-          "type": "STRING",
-          "value": "pk_xo"
-        },
-        {
-          "type": "STRING",
-          "value": "point_for_site"
-        },
-        {
-          "type": "STRING",
-          "value": "primary_soller_angle"
-        },
-        {
-          "type": "STRING",
-          "value": "prm_with_error"
-        },
-        {
-          "type": "STRING",
-          "value": "process_times"
-        },
-        {
-          "type": "STRING",
-          "value": "pr_str"
-        },
-        {
-          "type": "STRING",
-          "value": "push_peak"
-        },
-        {
-          "type": "STRING",
-          "value": "pv_fwhm"
-        },
-        {
-          "type": "STRING",
-          "value": "pv_lor"
-        },
-        {
-          "type": "STRING",
-          "value": "qa"
-        },
-        {
-          "type": "STRING",
-          "value": "qb"
-        },
-        {
-          "type": "STRING",
-          "value": "qc"
-        },
-        {
-          "type": "STRING",
-          "value": "quick_refine"
-        },
-        {
-          "type": "STRING",
-          "value": "quick_refine_remove"
-        },
-        {
-          "type": "STRING",
-          "value": "qx"
-        },
-        {
-          "type": "STRING",
-          "value": "qy"
-        },
-        {
-          "type": "STRING",
-          "value": "qz"
-        },
-        {
-          "type": "STRING",
-          "value": "randomize_initial_phases_by"
-        },
-        {
-          "type": "STRING",
-          "value": "randomize_on_errors"
-        },
-        {
-          "type": "STRING",
-          "value": "randomize_phases_on_new_cycle_by"
-        },
-        {
-          "type": "STRING",
-          "value": "range"
-        },
-        {
-          "type": "STRING",
-          "value": "rebin_min_merge"
-        },
-        {
-          "type": "STRING",
-          "value": "rebin_tollerance_in_Y"
-        },
-        {
-          "type": "STRING",
-          "value": "rebin_with_dx_of"
-        },
-        {
-          "type": "STRING",
-          "value": "recal_weighting_on_iter"
-        },
-        {
-          "type": "STRING",
-          "value": "receiving_slit_length"
-        },
-        {
-          "type": "STRING",
-          "value": "redo_hkls"
-        },
-        {
-          "type": "STRING",
-          "value": "remove_phase"
-        },
-        {
-          "type": "STRING",
-          "value": "report_on"
-        },
-        {
-          "type": "STRING",
-          "value": "report_on_str"
-        },
-        {
-          "type": "STRING",
-          "value": "resample_from_current_ycalc"
-        },
-        {
-          "type": "STRING",
-          "value": "restraint"
-        },
-        {
-          "type": "STRING",
-          "value": "return"
-        },
-        {
-          "type": "STRING",
-          "value": "rigid"
-        },
-        {
-          "type": "STRING",
-          "value": "rotate"
-        },
-        {
-          "type": "STRING",
-          "value": "Rp"
-        },
-        {
-          "type": "STRING",
-          "value": "Rs"
-        },
-        {
-          "type": "STRING",
-          "value": "r_bragg"
-        },
-        {
-          "type": "STRING",
-          "value": "r_exp"
-        },
-        {
-          "type": "STRING",
-          "value": "r_exp_dash"
-        },
-        {
-          "type": "STRING",
-          "value": "r_p"
-        },
-        {
-          "type": "STRING",
-          "value": "r_p_dash"
-        },
-        {
-          "type": "STRING",
-          "value": "r_wp"
-        },
-        {
-          "type": "STRING",
-          "value": "r_wp_dash"
-        },
-        {
-          "type": "STRING",
-          "value": "r_wp_normal"
-        },
-        {
-          "type": "STRING",
-          "value": "sample_length"
-        },
-        {
-          "type": "STRING",
-          "value": "save_best_chi2"
-        },
-        {
-          "type": "STRING",
-          "value": "save_sequences"
-        },
-        {
-          "type": "STRING",
-          "value": "save_sequences_as_strs"
-        },
-        {
-          "type": "STRING",
-          "value": "save_values_as_best_after_randomization"
-        },
-        {
-          "type": "STRING",
-          "value": "scale"
-        },
-        {
-          "type": "STRING",
-          "value": "scale_Aij"
-        },
-        {
-          "type": "STRING",
-          "value": "scale_density_below_threshold"
-        },
-        {
-          "type": "STRING",
-          "value": "scale_E"
-        },
-        {
-          "type": "STRING",
-          "value": "scale_F000"
-        },
-        {
-          "type": "STRING",
-          "value": "scale_F"
-        },
-        {
-          "type": "STRING",
-          "value": "scale_phases"
-        },
-        {
-          "type": "STRING",
-          "value": "scale_phase_X"
-        },
-        {
-          "type": "STRING",
-          "value": "scale_pks"
-        },
-        {
-          "type": "STRING",
-          "value": "scale_top_peak"
-        },
-        {
-          "type": "STRING",
-          "value": "scale_weak_reflections"
-        },
-        {
-          "type": "STRING",
-          "value": "secondary_soller_angle"
-        },
-        {
-          "type": "STRING",
-          "value": "seed"
-        },
-        {
-          "type": "STRING",
-          "value": "set_initial_phases_to"
-        },
-        {
-          "type": "STRING",
-          "value": "sh_alpha"
-        },
-        {
-          "type": "STRING",
-          "value": "sh_Cij_prm"
-        },
-        {
-          "type": "STRING",
-          "value": "sh_order"
-        },
-        {
-          "type": "STRING",
-          "value": "sites_angle"
-        },
-        {
-          "type": "STRING",
-          "value": "sites_avg_rand_xyz"
-        },
-        {
-          "type": "STRING",
-          "value": "sites_distance"
-        },
-        {
-          "type": "STRING",
-          "value": "sites_flatten"
-        },
-        {
-          "type": "STRING",
-          "value": "sites_geometry"
-        },
-        {
-          "type": "STRING",
-          "value": "sites_rand_on_avg"
-        },
-        {
-          "type": "STRING",
-          "value": "sites_rand_on_avg_distance_to_randomize"
-        },
-        {
-          "type": "STRING",
-          "value": "sites_rand_on_avg_min_distance"
-        },
-        {
-          "type": "STRING",
-          "value": "site_to_restrain"
-        },
-        {
-          "type": "STRING",
-          "value": "siv_s1_s2"
-        },
-        {
-          "type": "STRING",
-          "value": "smooth"
-        },
-        {
-          "type": "STRING",
-          "value": "space_group"
-        },
-        {
-          "type": "STRING",
-          "value": "sparse_A"
-        },
-        {
-          "type": "STRING",
-          "value": "spherical_harmonics_hkl"
-        },
-        {
-          "type": "STRING",
-          "value": "spiked_phase_measured_weight_percent"
-        },
-        {
-          "type": "STRING",
-          "value": "spv_h1"
-        },
-        {
-          "type": "STRING",
-          "value": "spv_h2"
-        },
-        {
-          "type": "STRING",
-          "value": "spv_l1"
-        },
-        {
-          "type": "STRING",
-          "value": "spv_l2"
-        },
-        {
-          "type": "STRING",
-          "value": "stack"
-        },
-        {
-          "type": "STRING",
-          "value": "stacked_hats_conv"
-        },
-        {
-          "type": "STRING",
-          "value": "start_values_from_site"
-        },
-        {
-          "type": "STRING",
-          "value": "start_X"
-        },
-        {
-          "type": "STRING",
-          "value": "stop_when"
-        },
-        {
-          "type": "STRING",
-          "value": "str"
-        },
-        {
-          "type": "STRING",
-          "value": "strs"
-        },
-        {
-          "type": "STRING",
-          "value": "str_hkl_angle"
-        },
-        {
-          "type": "STRING",
-          "value": "str_hkl_smallest_angle"
-        },
-        {
-          "type": "STRING",
-          "value": "str_mass"
-        },
-        {
-          "type": "STRING",
-          "value": "str_mass"
-        },
-        {
-          "type": "STRING",
-          "value": "sx"
-        },
-        {
-          "type": "STRING",
-          "value": "sy"
-        },
-        {
-          "type": "STRING",
-          "value": "symmetry_obey_0_to_1"
-        },
-        {
-          "type": "STRING",
-          "value": "system_after_save_OUT"
-        },
-        {
-          "type": "STRING",
-          "value": "system_before_save_OUT"
-        },
-        {
-          "type": "STRING",
-          "value": "sz"
-        },
-        {
-          "type": "STRING",
-          "value": "ta"
-        },
-        {
-          "type": "STRING",
-          "value": "tag"
-        },
-        {
-          "type": "STRING",
-          "value": "tag_2"
-        },
-        {
-          "type": "STRING",
-          "value": "tangent_max_triplets_per_h"
-        },
-        {
-          "type": "STRING",
-          "value": "tangent_min_triplets_per_h"
-        },
-        {
-          "type": "STRING",
-          "value": "tangent_num_h_keep"
-        },
-        {
-          "type": "STRING",
-          "value": "tangent_num_h_read"
-        },
-        {
-          "type": "STRING",
-          "value": "tangent_num_k_read"
-        },
-        {
-          "type": "STRING",
-          "value": "tangent_scale_difference_by"
-        },
-        {
-          "type": "STRING",
-          "value": "tangent_tiny"
-        },
-        {
-          "type": "STRING",
-          "value": "tb"
-        },
-        {
-          "type": "STRING",
-          "value": "tc"
-        },
-        {
-          "type": "STRING",
-          "value": "temperature"
-        },
-        {
-          "type": "STRING",
-          "value": "test_a"
-        },
-        {
-          "type": "STRING",
-          "value": "test_al"
-        },
-        {
-          "type": "STRING",
-          "value": "test_b"
-        },
-        {
-          "type": "STRING",
-          "value": "test_be"
-        },
-        {
-          "type": "STRING",
-          "value": "test_c"
-        },
-        {
-          "type": "STRING",
-          "value": "test_ga"
-        },
-        {
-          "type": "STRING",
-          "value": "th2_offset"
-        },
-        {
-          "type": "STRING",
-          "value": "to"
-        },
-        {
-          "type": "STRING",
-          "value": "transition"
-        },
-        {
-          "type": "STRING",
-          "value": "translate"
-        },
-        {
-          "type": "STRING",
-          "value": "try_space_groups"
-        },
-        {
-          "type": "STRING",
-          "value": "two_theta_calibration"
-        },
-        {
-          "type": "STRING",
-          "value": "tx"
-        },
-        {
-          "type": "STRING",
-          "value": "ty"
-        },
-        {
-          "type": "STRING",
-          "value": "tz"
-        },
-        {
-          "type": "STRING",
-          "value": "ua"
-        },
-        {
-          "type": "STRING",
-          "value": "ub"
-        },
-        {
-          "type": "STRING",
-          "value": "uc"
-        },
-        {
-          "type": "STRING",
-          "value": "update"
-        },
-        {
-          "type": "STRING",
-          "value": "user_defined_convolution"
-        },
-        {
-          "type": "STRING",
-          "value": "user_threshold"
-        },
-        {
-          "type": "STRING",
-          "value": "user_y"
-        },
-        {
-          "type": "STRING",
-          "value": "use_best_values"
-        },
-        {
-          "type": "STRING",
-          "value": "use_CG"
-        },
-        {
-          "type": "STRING",
-          "value": "use_extrapolation"
-        },
-        {
-          "type": "STRING",
-          "value": "use_Fc"
-        },
-        {
-          "type": "STRING",
-          "value": "use_layer"
-        },
-        {
-          "type": "STRING",
-          "value": "use_LU"
-        },
-        {
-          "type": "STRING",
-          "value": "use_LU_for_errors"
-        },
-        {
-          "type": "STRING",
-          "value": "use_tube_dispersion_coefficients"
-        },
-        {
-          "type": "STRING",
-          "value": "ux"
-        },
-        {
-          "type": "STRING",
-          "value": "uy"
-        },
-        {
-          "type": "STRING",
-          "value": "uz"
-        },
-        {
-          "type": "STRING",
-          "value": "v1"
-        },
-        {
-          "type": "STRING",
-          "value": "val_on_continue"
-        },
-        {
-          "type": "STRING",
-          "value": "verbose"
-        },
-        {
-          "type": "STRING",
-          "value": "view_cloud"
-        },
-        {
-          "type": "STRING",
-          "value": "view_structure"
-        },
-        {
-          "type": "STRING",
-          "value": "volume"
-        },
-        {
-          "type": "STRING",
-          "value": "weighted_Durbin_Watson"
-        },
-        {
-          "type": "STRING",
-          "value": "weighting"
-        },
-        {
-          "type": "STRING",
-          "value": "weighting_normal"
-        },
-        {
-          "type": "STRING",
-          "value": "weight_percent"
-        },
-        {
-          "type": "STRING",
-          "value": "weight_percent_amorphous"
-        },
-        {
-          "type": "STRING",
-          "value": "whole_hat"
-        },
-        {
-          "type": "STRING",
-          "value": "WPPM_correct_Is"
-        },
-        {
-          "type": "STRING",
-          "value": "WPPM_ft_conv"
-        },
-        {
-          "type": "STRING",
-          "value": "WPPM_L_max"
-        },
-        {
-          "type": "STRING",
-          "value": "WPPM_th2_range"
-        },
-        {
-          "type": "STRING",
-          "value": "x"
-        },
-        {
-          "type": "STRING",
-          "value": "xdd"
-        },
-        {
-          "type": "STRING",
-          "value": "xdds"
-        },
-        {
-          "type": "STRING",
-          "value": "xdd_out"
-        },
-        {
-          "type": "STRING",
-          "value": "xdd_scr"
-        },
-        {
-          "type": "STRING",
-          "value": "xdd_sum"
-        },
-        {
-          "type": "STRING",
-          "value": "xo"
-        },
-        {
-          "type": "STRING",
-          "value": "xo_Is"
-        },
-        {
-          "type": "STRING",
-          "value": "xye_format"
-        },
-        {
-          "type": "STRING",
-          "value": "x_angle_scaler"
-        },
-        {
-          "type": "STRING",
-          "value": "x_axis_to_energy_in_eV"
-        },
-        {
-          "type": "STRING",
-          "value": "x_calculation_step"
-        },
-        {
-          "type": "STRING",
-          "value": "x_scaler"
-        },
-        {
-          "type": "STRING",
-          "value": "y"
-        },
-        {
-          "type": "STRING",
-          "value": "yc_eqn"
-        },
-        {
-          "type": "STRING",
-          "value": "ymin_on_ymax"
-        },
-        {
-          "type": "STRING",
-          "value": "yobs_eqn"
-        },
-        {
-          "type": "STRING",
-          "value": "yobs_to_xo_posn_yobs"
-        },
-        {
-          "type": "STRING",
-          "value": "z"
-        },
-        {
-          "type": "STRING",
-          "value": "z_add"
-        },
-        {
-          "type": "STRING",
-          "value": "z_matrix"
         }
       ]
     }
