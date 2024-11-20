@@ -50,10 +50,20 @@ module.exports = grammar({
 
     integer_literal: $ => /-?\d+/,
 
-    float_literal: $ => token(choice(
-      /-?\d*\.\d+/, // Floats with optional prefix digits e.g. 1.23 or .34
-      /-?\d+\.\d*/, // Floats with optional suffix digits e.g. 1.23 or 9.
-      /-?\d+(\.\d+)?(e|E)-?\d+(\.\d+)?/, // Scientific notation e.g., 1.3e4 or 2e5.5
+    float_literal: $ => token(seq(
+      choice(
+        /-?\d*\.\d+/, // Floats with optional prefix digits e.g. 1.23 or .34
+        /-?\d+\.\d*/, // Floats with optional suffix digits e.g. 1.23 or 9.
+        /-?\d+(\.\d+)?(e|E)-?\d+(\.\d+)?/, // Scientific notation e.g., 1.3e4 or 2e5.5
+      ),
+      optional('`'),
+      optional(seq(
+        token.immediate('_'),
+        choice(
+          /\d+.?\d*/,
+          /\d*.?\d+/,
+        ),
+      )),
     )),
 
     macro_invocation: $ => seq(
