@@ -54,10 +54,6 @@
         }
       ]
     },
-    "arrow_comment": {
-      "type": "PATTERN",
-      "value": "->.*"
-    },
     "definition": {
       "type": "TOKEN",
       "content": {
@@ -6969,10 +6965,6 @@
     {
       "type": "SYMBOL",
       "name": "block_comment"
-    },
-    {
-      "type": "SYMBOL",
-      "name": "arrow_comment"
     }
   ],
   "conflicts": [],
