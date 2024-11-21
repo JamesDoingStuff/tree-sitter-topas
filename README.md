@@ -47,3 +47,26 @@ It requires:
 
 3. Open Neovim and run `:TSInstall topas`. Once the installation has completed, highlighting should be active for TOPAS. Check by running `:checkhealth nvim-treesitter` and looking for a tick
    in the first column of the row labelled `topas`.
+
+## Features
+
+- [x] Comments
+- [x] Numbers
+- [x] Strings
+- [x] Macro declarations
+- [x] Macro invocations
+- [x] Preprocessor directives
+- [x] Unary operators
+- [x] Binary operators
+- [x] Equations
+- [x] Refinement signallers
+- [x] Variable declaration keywords (`prm`, `local`)
+- [x] `existing_prm` keyword
+- [x] `site` declaration keywords
+- [x] Unstructured keyword identification
+- [ ] Built-in maths functions 
+- [ ] Structured keywords
+- [ ] File path strings
+- [ ] Data blocks { ... }
+- [ ] Function declarations (`fn` keyword)
+- [ ] If statements (`if` keyword)
