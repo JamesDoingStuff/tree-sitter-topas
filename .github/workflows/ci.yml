@@ -27,3 +27,26 @@ jobs:
       - name: Run parser tests
         shell: sh
         run: tree-sitter test
+
+  build:
+    name: Build WASM bindings
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.2.1
+
+      - name: Set up tree-sitter
+        uses: tree-sitter/setup-action/cli@v1
+
+      - name: Set up Emscripten
+        uses: mymindstorm/setup-emsdk@v14
+
+      - name: Build WASM
+        shell: sh
+        run: tree-sitter build --wasm
+      
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4.4.3
+        with:
+          name: tree-sitter-topas.wasm
+          path: ./tree-sitter-topas.wasm
