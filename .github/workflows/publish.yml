@@ -6,6 +6,11 @@ on:
       - main
     tags: ["*"]
 
+permissions:
+  contents: write
+  id-token: write
+  attestations: write
+
 jobs:
   release:
     uses: tree-sitter/workflows/.github/workflows/release.yml@main
