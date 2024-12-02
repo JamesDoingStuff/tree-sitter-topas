@@ -4482,17 +4482,74 @@
       "value": "-?\\d+"
     },
     "float_literal": {
-      "type": "CHOICE",
-      "members": [
-        {
-          "type": "PATTERN",
-          "value": "-?\\d*\\.\\d+"
-        },
-        {
-          "type": "PATTERN",
-          "value": "-?\\d+(\\.\\d+)?(e|E)-?\\d+(\\.\\d+)?"
-        }
-      ]
+      "type": "TOKEN",
+      "content": {
+        "type": "SEQ",
+        "members": [
+          {
+            "type": "CHOICE",
+            "members": [
+              {
+                "type": "PATTERN",
+                "value": "-?\\d*\\.\\d+"
+              },
+              {
+                "type": "PATTERN",
+                "value": "-?\\d+\\.\\d*"
+              },
+              {
+                "type": "PATTERN",
+                "value": "-?\\d+(\\.\\d+)?(e|E)-?\\d+(\\.\\d+)?"
+              }
+            ]
+          },
+          {
+            "type": "CHOICE",
+            "members": [
+              {
+                "type": "STRING",
+                "value": "`"
+              },
+              {
+                "type": "BLANK"
+              }
+            ]
+          },
+          {
+            "type": "CHOICE",
+            "members": [
+              {
+                "type": "SEQ",
+                "members": [
+                  {
+                    "type": "IMMEDIATE_TOKEN",
+                    "content": {
+                      "type": "STRING",
+                      "value": "_"
+                    }
+                  },
+                  {
+                    "type": "CHOICE",
+                    "members": [
+                      {
+                        "type": "PATTERN",
+                        "value": "\\d+.?\\d*"
+                      },
+                      {
+                        "type": "PATTERN",
+                        "value": "\\d*.?\\d+"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "BLANK"
+              }
+            ]
+          }
+        ]
+      }
     },
     "macro_invocation": {
       "type": "SEQ",

@@ -399,11 +399,6 @@
     }
   },
   {
-    "type": "float_literal",
-    "named": true,
-    "fields": {}
-  },
-  {
     "type": "keyword_statement",
     "named": true,
     "fields": {
@@ -2094,6 +2089,10 @@
   {
     "type": "existing_prm",
     "named": false
+  },
+  {
+    "type": "float_literal",
+    "named": true
   },
   {
     "type": "identifier",
