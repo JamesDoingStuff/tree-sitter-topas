@@ -34,6 +34,22 @@ Scientific floats
   (float_literal)
   (float_literal))
 
+=================
+Floats with error
+=================
+
+2.7`_0.12
+9.0_.24
+132.23` 910.14
+37.2_0.333
+-----------------
+(source_file
+  (float_literal)
+  (float_literal)
+  (float_literal)
+  (float_literal)
+  (float_literal))
+
 ===================
 Number in a comment
 ===================
