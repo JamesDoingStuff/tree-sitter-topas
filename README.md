@@ -48,6 +48,58 @@ It requires:
 3. Open Neovim and run `:TSInstall topas`. Once the installation has completed, highlighting should be active for TOPAS. Check by running `:checkhealth nvim-treesitter` and looking for a tick
    in the first column of the row labelled `topas`.
 
+#
+### VS Code
+
+Through a third-party extension, this grammar can be used to provide semantic highlighting for TOPAS `.inp` files in Visual Studio Code.
+
+**Requirements:**
+- [VS Code](https://code.visualstudio.com/download)
+- The [tree-sitter-vscode](https://marketplace.visualstudio.com/items?itemName=AlecGhost.tree-sitter-vscode) extension
+
+1. You will also need local copies of `tree-sitter-topas.wasm` and `highlights.scm`, included in [each release](https://github.com/JamesDoingStuff/tree-sitter-topas/releases).
+   Experimental versions of the .wasm file can also be sourced as artifacts of the [CI workflow](https://github.com/JamesDoingStuff/tree-sitter-topas/actions/workflows/ci.yml).
+   
+2. In the `package.json` for the tree-sitter-vscode extension, add the following key to the "contributes" section:
+
+   ```JSON
+    "languages": [
+      {
+        "id": "topas",
+        "extensions": [
+          ".inp"
+        ]
+      }
+    ]
+    ```
+
+    If you are having trouble locating the `package.json`, bring up the command palette (`Ctrl`+`shift`+`P`), use the command 
+    `> Extensions: Open extensions folder`, then look in the folder `alecghost.tree-sitter-vscode-0.0.1`
+   
+3. In that same file, change the `activationEvents` array to the following:
+   
+   ```JSON
+   "activationEvents": [
+      "onLanguage:topas"
+    ]
+   ```
+
+4. In your `settings.json` (`> Open user settings (JSON)`), add the following, updating the file paths to point to the respective files:
+   
+    ```JSON
+     "tree-sitter-vscode.languageConfigs": [
+       {
+         "lang": "topas",
+         "parser": "/path/to/tree-sitter-topas.wasm",
+         "highlights": "/path/to/highlights.scm"
+       }
+     ]
+    ```
+
+5. Now, a `.inp` file should register as having a language mode of 'topas' in the lower right corner of VS Code. To turn on highlighting, open settings (`Ctrl`+`,`), search for 'semantic highlighting'
+   and make sure `Editor > Semantic Higlighting` is enabled.
+
+
 ## Features
 
 - [x] Comments
